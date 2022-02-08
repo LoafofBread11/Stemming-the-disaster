@@ -1,0 +1,4 @@
+#Files to ignore. This includes files that are generated / do not need to be shared on the repo / are too large to share on the repo
+Intermediate/
+DerivedDataCache/
+.vs/
