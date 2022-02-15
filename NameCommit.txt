@@ -3,3 +3,4 @@ Name document so that everyone can be seen on the repo.
 -David Bugbee, GitHub: DAwesme
 -Samin Yasar, GitHub: Samin2668
 -Andrew Ragland, Github: agragland
+-Mario Torres, GitHub: BlueKaveri
