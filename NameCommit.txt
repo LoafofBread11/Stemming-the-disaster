@@ -4,3 +4,4 @@ Name document so that everyone can be seen on the repo.
 -Samin Yasar, GitHub: Samin2668
 -Andrew Ragland, Github: agragland
 -Mario Torres, GitHub: BlueKaveri
+-Justin Schultz, Github: zodiak217
