@@ -82,3 +82,8 @@ void APlayerCharacter::Interact()
 	//Take appropriate action depending on which cast is successful
 	//For interactables, ensure that the action is idle before activating them
 }
+
+FString APlayerCharacter::GetLookingAtText()
+{
+	return lookingAtText;
+}

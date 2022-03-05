@@ -47,6 +47,12 @@ public:
 	UFUNCTION()
 	void Interact(); //Function that fires the hit scan beam, and depending on what it collides with, calls different functions.
 
+	UPROPERTY(VisibleAnywhere)
+	FString lookingAtText;
+
+	UFUNCTION()
+	FString GetLookingAtText();
+
 	//Create a pointer to the game instance here, will need to cast it in the constructor
 
 };
