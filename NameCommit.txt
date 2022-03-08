@@ -5,3 +5,4 @@ Name document so that everyone can be seen on the repo.
 -Andrew Ragland, Github: agragland
 -Mario Torres, GitHub: BlueKaveri
 -Justin Schultz, Github: zodiak217
+-Janna Duke, Github: jannaduke
