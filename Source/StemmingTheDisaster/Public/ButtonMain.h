@@ -6,6 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "Components/StaticMeshComponent.h"
 #include "Components/TextRenderComponent.h"
+#include "Math/UnrealMathUtility.h"
 #include "ButtonMain.generated.h"
 
 UCLASS()
@@ -29,7 +30,7 @@ public:
 	virtual void click();
 
 	UFUNCTION()
-	void setText(FString text);
+	void setText(FText text);
 
 	UPROPERTY(VisibleAnywhere)
 	UStaticMeshComponent* visualMesh;
@@ -41,11 +42,7 @@ public:
 	int buttonScale;
 
 	UPROPERTY(VisibleAnywhere)
-	int flag;
-
-	UPROPERTY(VisibleAnywhere)
 	float isPressed;
 
-
-	//add uproperty and ufunction
+	FVector myScale = GetActorScale3D();
 };
