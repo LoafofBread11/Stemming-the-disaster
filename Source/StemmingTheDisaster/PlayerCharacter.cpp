@@ -3,6 +3,7 @@
 
 #include "PlayerCharacter.h"
 #include "Camera/CameraComponent.h"
+#include "Public/Interactable.h"
 #include "DrawDebugHelpers.h"
 
 // Sets default values
@@ -34,6 +35,21 @@ void APlayerCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	FHitResult OutHit = Hitscan(); //Fire the beam, see if the object is looking at anything
+	if (OutHit.bBlockingHit) //If something collided
+	{
+		if (OutHit.GetComponent()->GetAttachmentRootActor() != NULL) //Make sure we hit something and not a volume
+		{
+			AInteractable* collideInt = Cast<AInteractable>(OutHit.GetActor()); //Attempt to cast the object to an interactable
+			if (collideInt) //If successful
+			{
+				lookingAtText = collideInt->textName;
+			}
+		}
+	}
+	else //If no text was successful
+	{
+		lookingAtText = "";
+	}
 
 }
 

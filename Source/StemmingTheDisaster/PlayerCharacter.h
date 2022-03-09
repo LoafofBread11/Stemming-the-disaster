@@ -50,7 +50,7 @@ public:
 	UPROPERTY(VisibleAnywhere)
 	FString lookingAtText;
 
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable)
 	FString GetLookingAtText();
 
 	//Create a pointer to the game instance here, will need to cast it in the constructor
