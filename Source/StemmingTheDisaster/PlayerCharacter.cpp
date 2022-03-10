@@ -44,6 +44,14 @@ void APlayerCharacter::Tick(float DeltaTime)
 			{
 				lookingAtText = collideInt->textName;
 			}
+			else
+			{
+				lookingAtText = ""; //Set looking at text to nothing, then check rest of conditions
+			}
+		}
+		else
+		{
+			lookingAtText = ""; //Set looking at text to nothing
 		}
 	}
 	else //If no text was successful
