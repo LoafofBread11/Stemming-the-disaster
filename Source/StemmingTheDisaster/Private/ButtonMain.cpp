@@ -8,41 +8,49 @@ AButtonMain::AButtonMain()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	buttonScale = 1;
-	isPressed = -1;
+
 	visualMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Main Button"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> ButtonMain(TEXT("/Game/StaticMeshes/ButtonCentered.ButtonCentered"));
+	if (ButtonMain.Succeeded())
+	{
+		visualMesh->SetStaticMesh(ButtonMain.Object);
+	}
+	RootComponent = visualMesh;
+
+	Text = CreateDefaultSubobject<UTextRenderComponent>(TEXT("Text"));
+	Text->SetupAttachment(visualMesh);
 }
 
 // Called when the game starts or when spawned
 void AButtonMain::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	myScale = GetActorScale3D();
 }
 
 // Called every frame
 void AButtonMain::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	if (isPressed != -1)
+	if (isPressed >= 0.0f)
 	{
 		isPressed += DeltaTime;
-		buttonScale = .5 + (cos(PI * isPressed) / 2);
-		myScale.Y = buttonScale;
+		myScale.Y = .5 + (cos(PI * isPressed) / 2);
+		
 		SetActorScale3D(myScale);
 	}
-	else if (isPressed >= 1)
+	else if (isPressed >= 1.0f)
 	{
-		myScale.Y = 1;
+		myScale.Y = 1.0f;
 		SetActorScale3D(myScale);
-		isPressed = -1;
+		isPressed = -1.0f;
 	}
 }
 
 //virtual click function 
 void AButtonMain::click()
 {
-	isPressed = 0;
+	isPressed = 0.0f;
 }
 
 void AButtonMain::setText(FText text)

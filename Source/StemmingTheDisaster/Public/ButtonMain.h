@@ -13,8 +13,8 @@ UCLASS()
 class STEMMINGTHEDISASTER_API AButtonMain : public AActor
 {
 	GENERATED_BODY()
-	
-public:	
+
+public:
 	// Sets default values for this actor's properties
 	AButtonMain();
 
@@ -22,27 +22,24 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 	UFUNCTION()
-	virtual void click();
+		virtual void click();
 
 	UFUNCTION()
-	void setText(FText text);
+		void setText(FText text);
 
 	UPROPERTY(VisibleAnywhere)
-	UStaticMeshComponent* visualMesh;
+		UStaticMeshComponent* visualMesh;
 
 	UPROPERTY(VisibleAnywhere)
-	UTextRenderComponent* Text;
+		UTextRenderComponent* Text;
 
 	UPROPERTY(VisibleAnywhere)
-	int buttonScale;
+		float isPressed = -1.0f;
 
-	UPROPERTY(VisibleAnywhere)
-	float isPressed;
-
-	FVector myScale = GetActorScale3D();
+	FVector myScale;
 };
