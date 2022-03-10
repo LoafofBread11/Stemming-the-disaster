@@ -10,7 +10,7 @@ AInteractable::AInteractable()
 	PrimaryActorTick.bCanEverTick = true;
 
 	VisualMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh"));
-	VisualMesh->SetupAttachment(RootComponent);
+	RootComponent = VisualMesh;
 }
 
 // Called when the game starts or when spawned

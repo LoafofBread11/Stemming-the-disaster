@@ -27,13 +27,14 @@ public:
 	void SendInteractableData();
 
 	UPROPERTY(VisibleAnywhere)
-		UStaticMeshComponent* VisualMesh;
+	UStaticMeshComponent* VisualMesh;
 
-private:
 	UPROPERTY(EditAnywhere)
-		TArray<FString> relevantCareers;
+	TArray<FString> relevantCareers;
+
 	UPROPERTY(EditAnywhere)
-		FString textName;
+	FString textName = "";
+
 	UPROPERTY(EditAnywhere)
-		FString textDescription;
+	FString textDescription = "";
 };
