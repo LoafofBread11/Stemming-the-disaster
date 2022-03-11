@@ -45,6 +45,9 @@ class STEMMINGTHEDISASTER_API USD_GameInstance : public UGameInstance
 		TArray <FString> travelableMaps; //array of all maps that can be traveled to
 
 		UPROPERTY(VisibleAnywhere)
+		TArray<FString> alreadyInvested;
+
+		UPROPERTY(VisibleAnywhere)
 		float remainingTime = 1200.0f; //amount of time remaining
 
 		UPROPERTY(VisibleAnywhere)
@@ -66,13 +69,10 @@ class STEMMINGTHEDISASTER_API USD_GameInstance : public UGameInstance
 		void SetupMap();
 
 		UFUNCTION()
-		int GetInvestment(FString item);
+		TMap<FString, int> GetInvestments();
 
 		UFUNCTION()
-		void SetInvestment(FString item, int money);
-
-		UFUNCTION()
-		bool UpdateInvestment(FString item, int money);
+		bool MakeInvestment(FString item);
 
 		UFUNCTION()
 		TArray<FString> GetDialouge();

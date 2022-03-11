@@ -23,17 +23,13 @@ void USD_GameInstance::SetupMap()
 	return;
 }
 
-int USD_GameInstance::GetInvestment(FString item)
+TMap<FString, int> USD_GameInstance::GetInvestments()
 {
-	return 0;
+	return investmentOptions;
 }
 
-void USD_GameInstance::SetInvestment(FString item, int money)
-{
-	return;
-}
 
-bool USD_GameInstance::UpdateInvestment(FString item, int money)
+bool USD_GameInstance::MakeInvestment(FString item)
 {
 	return true;
 }
