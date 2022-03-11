@@ -5,6 +5,8 @@
 #include "Camera/CameraComponent.h"
 #include "Public/Interactable.h"
 #include "DrawDebugHelpers.h"
+#include "Kismet/GameplayStatics.h"
+#include "Public/ButtonMain.h"
 
 // Sets default values
 APlayerCharacter::APlayerCharacter()
@@ -27,6 +29,8 @@ APlayerCharacter::APlayerCharacter()
 void APlayerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+	GI = Cast<USD_GameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
+	GI->SetCurrentAction("IDLE");
 	
 }
 
@@ -67,6 +71,7 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 	PlayerInputComponent->BindAxis("MouseX", this, &APlayerCharacter::AddMouseX);
 	PlayerInputComponent->BindAxis("MouseY", this, &APlayerCharacter::AddMouseY);
+	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &APlayerCharacter::Interact);
 
 }
 
@@ -97,14 +102,30 @@ FHitResult APlayerCharacter::Hitscan()
 
 void APlayerCharacter::Interact()
 {
-	//TO DO
-	//Get the game instance's current action
-	//If the action is looking at an interactable, set the action to idle, and exit the function
+	FString ca = GI->GetCurrentAction();
+	if (ca == "INTERACTABLE") //If we are currently already looking at an interactable
+	{
+		GI->SetCurrentAction("IDLE"); //Clear the state
+		return; //Exit the function
+	}
 	FHitResult OutHit = Hitscan(); //Call the hitscan function to determine what is being looked at, if anything
-	//TO DO
-	//Determine what object is interrupting the beam via casting
-	//Take appropriate action depending on which cast is successful
-	//For interactables, ensure that the action is idle before activating them
+	if (OutHit.bBlockingHit && OutHit.GetComponent()->GetAttachmentRootActor() != NULL)
+	{
+		AInteractable* collideInt = Cast<AInteractable>(OutHit.GetActor()); //Attempt to cast the object to an interactable
+		if (collideInt && ca == "IDLE") //If successful
+		{
+			GI->SetCurrentAction("INTERACTABLE"); //Set the current action
+			collideInt->SendInteractableData();
+			return;
+		}
+
+		AButtonMain* collideBut = Cast<AButtonMain>(OutHit.GetActor());
+		if (collideBut)
+		{
+			collideBut->click();
+			return;
+		}
+	}
 }
 
 FString APlayerCharacter::GetLookingAtText()

@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
+#include "Public/SD_GameInstance.h"
 #include "PlayerCharacter.generated.h"
 
 UCLASS()
@@ -53,6 +54,7 @@ public:
 	UFUNCTION(BlueprintCallable)
 	FString GetLookingAtText();
 
-	//Create a pointer to the game instance here, will need to cast it in the constructor
+	UPROPERTY(VisibleAnywhere)
+	USD_GameInstance* GI;
 
 };

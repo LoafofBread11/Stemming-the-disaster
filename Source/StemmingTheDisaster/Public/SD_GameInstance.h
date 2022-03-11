@@ -21,13 +21,13 @@ class STEMMINGTHEDISASTER_API USD_GameInstance : public UGameInstance
 		USD_GameInstance();
 
 		UPROPERTY(VisibleAnywhere)
-		FString currentAction; 
+		FString currentAction = "IDLE"; 
 
 		UPROPERTY(VisibleAnywhere)
-		FText interactableText;
+		FString interactableText = "";
 
 		UPROPERTY(VisibleAnywhere)
-		FText interactableName;
+		FString interactableName = "";
 
 		UPROPERTY(VisibleAnywhere)
 		TMap <FString, int> careerPathScores; //scoreList in LucidChart
@@ -45,10 +45,10 @@ class STEMMINGTHEDISASTER_API USD_GameInstance : public UGameInstance
 		TArray <FString> travelableMaps; //array of all maps that can be traveled to
 
 		UPROPERTY(VisibleAnywhere)
-		float remainingTime; //amount of time remaining
+		float remainingTime = 1200.0f; //amount of time remaining
 
 		UPROPERTY(VisibleAnywhere)
-		int remainingCurrency; //amount of currency remaining 
+		int remainingCurrency = 1000000; //amount of currency remaining 
 
 		UFUNCTION(BlueprintCallable)
 		void setRemainingTime(float time) { remainingTime = time; }
@@ -86,7 +86,7 @@ class STEMMINGTHEDISASTER_API USD_GameInstance : public UGameInstance
 		UFUNCTION()
 		void ChangeMap(int selection);
 
-		UFUNCTION()
+		UFUNCTION(BlueprintCallable)
 		FString GetCurrentAction();
 
 		UFUNCTION()
@@ -94,5 +94,8 @@ class STEMMINGTHEDISASTER_API USD_GameInstance : public UGameInstance
 
 		UFUNCTION()
 		void SetInteractableData(FText name, FText desc);
+
+		UFUNCTION(BlueprintCallable)
+		int getCurrencyRemaining();
 
 };

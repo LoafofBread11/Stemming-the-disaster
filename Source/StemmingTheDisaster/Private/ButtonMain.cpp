@@ -39,7 +39,7 @@ void AButtonMain::Tick(float DeltaTime)
 		
 		SetActorScale3D(myScale);
 	}
-	else if (isPressed >= 1.0f)
+	if (isPressed >= 1.0f)
 	{
 		myScale.Y = 1.0f;
 		SetActorScale3D(myScale);

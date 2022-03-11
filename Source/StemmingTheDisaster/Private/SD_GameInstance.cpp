@@ -73,3 +73,7 @@ void USD_GameInstance::SetInteractableData(FText name, FText desc)
 	return;
 }
 
+int USD_GameInstance::getCurrencyRemaining()
+{
+	return remainingCurrency;
+}
