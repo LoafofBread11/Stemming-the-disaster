@@ -57,4 +57,7 @@ public:
 	UPROPERTY(VisibleAnywhere)
 	USD_GameInstance* GI;
 
+	UPROPERTY(VisibleAnywhere)
+	bool done = false;
+
 };

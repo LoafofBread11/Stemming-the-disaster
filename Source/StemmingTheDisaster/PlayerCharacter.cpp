@@ -63,6 +63,15 @@ void APlayerCharacter::Tick(float DeltaTime)
 		lookingAtText = "";
 	}
 
+	if (!done) //If not done yet
+	{
+		float time = GI->getRemainingTime(); //Get the remaining time
+		time -= DeltaTime; //Subtract the delta time from it
+		GI->setRemainingTime(time); //Set the new time
+		if (time <= 0.0f) //If no more time remains
+			done = true; //Then we are done
+	}
+
 }
 
 // Called to bind functionality to input

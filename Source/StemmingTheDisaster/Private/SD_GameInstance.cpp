@@ -73,3 +73,13 @@ int USD_GameInstance::getCurrencyRemaining()
 {
 	return remainingCurrency;
 }
+
+FString USD_GameInstance::getInteractableText()
+{
+	return interactableText;
+}
+
+FString USD_GameInstance::getInteractableName()
+{
+	return interactableName;
+}

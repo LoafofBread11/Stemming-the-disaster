@@ -98,4 +98,10 @@ class STEMMINGTHEDISASTER_API USD_GameInstance : public UGameInstance
 		UFUNCTION(BlueprintCallable)
 		int getCurrencyRemaining();
 
+		UFUNCTION(BlueprintCallable)
+		FString getInteractableText();
+
+		UFUNCTION(BlueprintCallable)
+		FString getInteractableName();
+
 };
