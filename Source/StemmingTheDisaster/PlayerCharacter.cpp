@@ -7,11 +7,13 @@
 #include "DrawDebugHelpers.h"
 #include "Kismet/GameplayStatics.h"
 #include "Public/ButtonMain.h"
+#include "Components/WidgetComponent.h"
+#include "UObject/ConstructorHelpers.h"
 
 // Sets default values
 APlayerCharacter::APlayerCharacter()
 {
- 	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	base = CreateDefaultSubobject<USceneComponent>(TEXT("Base")); //Setup the base component. This allows for the component to be moved around
 	RootComponent = base; //Set the base as the root component
@@ -22,6 +24,19 @@ APlayerCharacter::APlayerCharacter()
 	camera->bUsePawnControlRotation = true; //Allow for controller rotation inputs to manipulate the camera
 	camera->bLockToHmd = true; //Allow for HMD inputs to manipulate the camera
 
+	//Create UI Widgets
+	valueWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("3D Value Displays"));
+	
+	static ConstructorHelpers::FClassFinder<UUserWidget> valueObj(TEXT("/Game/UIWidgets/ValueDisplays"));
+	if (valueObj.Succeeded())
+	{
+		valueWidget->SetWidgetClass(valueObj.Class);
+	}
+	valueWidget->SetupAttachment(camera);
+	valueWidget->SetRelativeLocation(FVector(80.0f, 50.0f, 10.0f));
+	valueWidget->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
+	valueWidget->SetRelativeScale3D(FVector(1.0f, .1f, .1f));
+	valueWidget->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	AutoPossessPlayer = EAutoReceiveInput::Player0; //Set the pawn to take input from the player
 }
 
@@ -29,8 +44,18 @@ APlayerCharacter::APlayerCharacter()
 void APlayerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	GI = Cast<USD_GameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
+	GI = Cast<USD_GameInstance>(UGameplayStatics::GetGameInstance(GetWorld())); //Get and cast Game Instance
 	GI->SetCurrentAction("IDLE");
+	if (GI->getInVR()) //If we are in VR
+	{
+		FVector loc = GetActorLocation(); //Get location of actor
+		loc.Z += 150; //Raise location by 150 units
+		SetActorLocation(loc); //Set the location
+	}
+	else
+	{
+		valueWidget->SetRelativeScale3D(FVector(0.0f)); //Hide the component
+	}
 	
 }
 

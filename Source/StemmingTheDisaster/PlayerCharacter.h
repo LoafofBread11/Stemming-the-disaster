@@ -60,4 +60,7 @@ public:
 	UPROPERTY(VisibleAnywhere)
 	bool done = false;
 
+	UPROPERTY(VisibleAnywhere)
+	class UWidgetComponent* valueWidget;
+
 };

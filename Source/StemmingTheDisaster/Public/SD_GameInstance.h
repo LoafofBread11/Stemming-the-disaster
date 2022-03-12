@@ -104,4 +104,13 @@ class STEMMINGTHEDISASTER_API USD_GameInstance : public UGameInstance
 		UFUNCTION(BlueprintCallable)
 		FString getInteractableName();
 
+		UPROPERTY(VisibleAnywhere)
+		bool inVR = false;
+
+		UFUNCTION(BlueprintCallable)
+		void setInVR(bool mode);
+
+		UFUNCTION(BlueprintCallable)
+		bool getInVR();
+
 };

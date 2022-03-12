@@ -83,3 +83,13 @@ FString USD_GameInstance::getInteractableName()
 {
 	return interactableName;
 }
+
+void USD_GameInstance::setInVR(bool mode)
+{
+	inVR = mode;
+}
+
+bool USD_GameInstance::getInVR()
+{
+	return inVR;
+}
