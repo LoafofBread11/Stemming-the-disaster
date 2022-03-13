@@ -26,7 +26,6 @@ APlayerCharacter::APlayerCharacter()
 
 	//Create UI Widgets
 	valueWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("3D Value Displays"));
-	
 	static ConstructorHelpers::FClassFinder<UUserWidget> valueObj(TEXT("/Game/UIWidgets/ValueDisplays"));
 	if (valueObj.Succeeded())
 	{
@@ -37,6 +36,58 @@ APlayerCharacter::APlayerCharacter()
 	valueWidget->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
 	valueWidget->SetRelativeScale3D(FVector(1.0f, .1f, .1f));
 	valueWidget->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+
+	reticleWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("3D Reticle"));
+	static ConstructorHelpers::FClassFinder<UUserWidget> retObj(TEXT("/Game/UIWidgets/Reticle"));
+	if (retObj.Succeeded())
+	{
+		reticleWidget->SetWidgetClass(retObj.Class);
+	}
+	reticleWidget->SetupAttachment(camera);
+	reticleWidget->SetRelativeLocation(FVector(80.0f, 0.0f, 0.0f));
+	reticleWidget->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
+	reticleWidget->SetRelativeScale3D(FVector(1.0f, .1f, .1f));
+	reticleWidget->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+
+	lAtWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("3D Looking At Text"));
+	static ConstructorHelpers::FClassFinder<UUserWidget> latObj(TEXT("/Game/UIWidgets/LookingAtText"));
+	if (latObj.Succeeded())
+	{
+		lAtWidget->SetWidgetClass(latObj.Class);
+	}
+	lAtWidget->SetupAttachment(camera);
+	lAtWidget->SetRelativeLocation(FVector(80.0f, 0.0f, -2.5f));
+	lAtWidget->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
+	lAtWidget->SetRelativeScale3D(FVector(1.0f, .1f, .1f));
+	lAtWidget->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+
+	interactableWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("3D Interactable Text"));
+	static ConstructorHelpers::FClassFinder<UUserWidget> intObj(TEXT("/Game/UIWidgets/InteractableInfoWidget"));
+	if (intObj.Succeeded())
+	{
+		interactableWidget->SetWidgetClass(intObj.Class);
+	}
+	interactableWidget->SetupAttachment(camera);
+	interactableWidget->SetRelativeLocation(FVector(80.0f, -50.0f, 0.0f));
+	interactableWidget->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
+	interactableWidget->SetRelativeScale3D(FVector(1.0f, .1f, .1f));
+	interactableWidget->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	interactableWidget->SetBlendMode(EWidgetBlendMode::Transparent);
+
+	captionWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("3D Caption Text"));
+	static ConstructorHelpers::FClassFinder<UUserWidget> capObj(TEXT("/Game/UIWidgets/Captions"));
+	if (capObj.Succeeded())
+	{
+		captionWidget->SetWidgetClass(capObj.Class);
+	}
+	captionWidget->SetupAttachment(camera);
+	captionWidget->SetRelativeLocation(FVector(80.0f, -15.0f, 2.5f));
+	captionWidget->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
+	captionWidget->SetRelativeScale3D(FVector(1.0f, .1f, .1f));
+	captionWidget->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+
+
+
 	AutoPossessPlayer = EAutoReceiveInput::Player0; //Set the pawn to take input from the player
 }
 
@@ -54,7 +105,13 @@ void APlayerCharacter::BeginPlay()
 	}
 	else
 	{
-		valueWidget->SetRelativeScale3D(FVector(0.0f)); //Hide the component
+		
+		valueWidget->SetRelativeScale3D(FVector(0.0f)); //Hide the components
+		reticleWidget->SetRelativeScale3D(FVector(0.0f));
+		lAtWidget->SetRelativeScale3D(FVector(0.0f));
+		interactableWidget->SetRelativeScale3D(FVector(0.0f));
+		captionWidget->SetRelativeScale3D(FVector(0.0f));
+		
 	}
 	
 }
