@@ -63,4 +63,16 @@ public:
 	UPROPERTY(VisibleAnywhere)
 	class UWidgetComponent* valueWidget;
 
+	UPROPERTY(VisibleAnywhere)
+	class UWidgetComponent* reticleWidget;
+
+	UPROPERTY(VisibleAnywhere)
+	class UWidgetComponent* lAtWidget;
+
+	UPROPERTY(VisibleAnywhere)
+	class UWidgetComponent* interactableWidget;
+
+	UPROPERTY(VisibleAnywhere)
+	class UWidgetComponent* captionWidget;
+
 };
