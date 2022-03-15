@@ -36,6 +36,7 @@ APlayerCharacter::APlayerCharacter()
 	valueWidget->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
 	valueWidget->SetRelativeScale3D(FVector(1.0f, .1f, .1f));
 	valueWidget->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	valueWidget->SetBlendMode(EWidgetBlendMode::Transparent);
 
 	reticleWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("3D Reticle"));
 	static ConstructorHelpers::FClassFinder<UUserWidget> retObj(TEXT("/Game/UIWidgets/Reticle"));
@@ -48,6 +49,7 @@ APlayerCharacter::APlayerCharacter()
 	reticleWidget->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
 	reticleWidget->SetRelativeScale3D(FVector(1.0f, .1f, .1f));
 	reticleWidget->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	reticleWidget->SetBlendMode(EWidgetBlendMode::Transparent);
 
 	lAtWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("3D Looking At Text"));
 	static ConstructorHelpers::FClassFinder<UUserWidget> latObj(TEXT("/Game/UIWidgets/LookingAtText"));
@@ -60,6 +62,7 @@ APlayerCharacter::APlayerCharacter()
 	lAtWidget->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
 	lAtWidget->SetRelativeScale3D(FVector(1.0f, .1f, .1f));
 	lAtWidget->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	lAtWidget->SetBlendMode(EWidgetBlendMode::Transparent);
 
 	interactableWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("3D Interactable Text"));
 	static ConstructorHelpers::FClassFinder<UUserWidget> intObj(TEXT("/Game/UIWidgets/InteractableInfoWidget"));
@@ -85,8 +88,7 @@ APlayerCharacter::APlayerCharacter()
 	captionWidget->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
 	captionWidget->SetRelativeScale3D(FVector(1.0f, .1f, .1f));
 	captionWidget->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-
-
+	captionWidget->SetBlendMode(EWidgetBlendMode::Transparent);
 
 	AutoPossessPlayer = EAutoReceiveInput::Player0; //Set the pawn to take input from the player
 }
@@ -105,13 +107,13 @@ void APlayerCharacter::BeginPlay()
 	}
 	else
 	{
-		
+		/*
 		valueWidget->SetRelativeScale3D(FVector(0.0f)); //Hide the components
 		reticleWidget->SetRelativeScale3D(FVector(0.0f));
 		lAtWidget->SetRelativeScale3D(FVector(0.0f));
 		interactableWidget->SetRelativeScale3D(FVector(0.0f));
 		captionWidget->SetRelativeScale3D(FVector(0.0f));
-		
+		*/
 	}
 	
 }
