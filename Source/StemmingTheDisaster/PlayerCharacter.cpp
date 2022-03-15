@@ -107,13 +107,11 @@ void APlayerCharacter::BeginPlay()
 	}
 	else
 	{
-		/*
 		valueWidget->SetRelativeScale3D(FVector(0.0f)); //Hide the components
 		reticleWidget->SetRelativeScale3D(FVector(0.0f));
 		lAtWidget->SetRelativeScale3D(FVector(0.0f));
 		interactableWidget->SetRelativeScale3D(FVector(0.0f));
 		captionWidget->SetRelativeScale3D(FVector(0.0f));
-		*/
 	}
 	
 }
