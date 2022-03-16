@@ -24,6 +24,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	//Sends interactable data to game instance
+	UFUNCTION()
 	void SendInteractableData();
 
 	UPROPERTY(VisibleAnywhere)
