@@ -2,6 +2,8 @@
 
 
 #include "Interactable.h"
+#include "SD_GameInstance.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 AInteractable::AInteractable()
@@ -30,6 +32,7 @@ void AInteractable::Tick(float DeltaTime)
 //Sends interactable data to game instance
 void AInteractable::SendInteractableData() {
 
-	//game instance function here
+	USD_GameInstance* GI = Cast<USD_GameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
+	GI->SetInteractableData(FText::FromString(textName), FText::FromString(textDescription));
 }
 

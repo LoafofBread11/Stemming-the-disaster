@@ -66,6 +66,8 @@ void USD_GameInstance::SetCurrentAction(FString action)
 
 void USD_GameInstance::SetInteractableData(FText name, FText desc)
 {
+	interactableName = name.ToString();
+	interactableText = desc.ToString();
 	return;
 }
 
