@@ -18,14 +18,17 @@ AButtonMain::AButtonMain()
 	RootComponent = visualMesh;
 
 	Text = CreateDefaultSubobject<UTextRenderComponent>(TEXT("Text"));
-	Text->SetupAttachment(visualMesh);
+	Text->SetupAttachment(RootComponent);
+	Text->SetRelativeLocationAndRotation(FVector(0.0f, 31.0f, 0.0f), FRotator(0.0f, 90.0f, 0.0f)); //Realign text so it's on top of the button
+	Text->SetHorizontalAlignment(EHTA_Center); //Align the Horizontal Center of the text to be the center, not the left
 }
 
 // Called when the game starts or when spawned
 void AButtonMain::BeginPlay()
 {
 	Super::BeginPlay();
-	myScale = GetActorScale3D();
+	myScale = GetActorScale3D(); //Get the scale of the actor
+	normalScale = myScale.Y; //Store the Y of the scale
 }
 
 // Called every frame
@@ -34,15 +37,18 @@ void AButtonMain::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 	if (isPressed >= 0.0f)
 	{
-		isPressed += DeltaTime;
-		myScale.Y = .5 + (cos(PI * isPressed) / 2);
-		
+		isPressed += (DeltaTime * 2);
+		myScale.Y = (normalScale / 4) + (FMath::Abs(cos(PI * isPressed)) * 3 * normalScale / 4); //Scale the button relative to itself on an absolute cosine wave, producing a smooth animation
 		SetActorScale3D(myScale);
+		Text->SetWorldScale3D(FVector(myScale.X, normalScale, myScale.Z)); //Set the absolute scale of the text so that it remains visible
+		
+		
 	}
 	if (isPressed >= 1.0f)
 	{
-		myScale.Y = 1.0f;
-		SetActorScale3D(myScale);
+		myScale.Y = normalScale; //Ensure the scale of Y is reset back to normal
+		SetActorScale3D(myScale); //Reset the actor scale
+		Text->SetWorldScale3D(FVector(myScale)); //Reset the text scale
 		isPressed = -1.0f;
 	}
 }

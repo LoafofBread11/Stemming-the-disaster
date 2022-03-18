@@ -27,19 +27,23 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	UFUNCTION()
-		virtual void click();
+	virtual void click();
 
 	UFUNCTION()
-		void setText(FText text);
+	void setText(FText text);
 
 	UPROPERTY(VisibleAnywhere)
-		UStaticMeshComponent* visualMesh;
+	UStaticMeshComponent* visualMesh;
 
 	UPROPERTY(VisibleAnywhere)
-		UTextRenderComponent* Text;
+	UTextRenderComponent* Text;
 
 	UPROPERTY(VisibleAnywhere)
-		float isPressed = -1.0f;
+	float isPressed = -1.0f;
 
+	UPROPERTY(VisibleAnywhere)
 	FVector myScale;
+
+	UPROPERTY(VisibleAnywhere)
+	float normalScale = 1.0f;
 };

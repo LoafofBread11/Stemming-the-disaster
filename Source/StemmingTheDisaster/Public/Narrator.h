@@ -59,8 +59,5 @@ public:
 	TMap<FString, int> items;
 
 	UPROPERTY(VisibleAnywhere)
-	TMap<FString, FText> itemRep;
-
-	UPROPERTY(VisibleAnywhere)
 	USD_GameInstance* GI;
 };
