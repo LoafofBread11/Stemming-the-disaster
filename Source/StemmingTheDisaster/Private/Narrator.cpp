@@ -2,6 +2,7 @@
 
 
 #include "Narrator.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 ANarrator::ANarrator()
@@ -11,12 +12,18 @@ ANarrator::ANarrator()
 
 	VisualMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh"));
 	RootComponent = VisualMesh;
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> vmObj(TEXT("/Game/StaticMeshes/NarratorStaticMesh/Narrator_Model.Narrator_Model"));
+	if (vmObj.Succeeded())
+	{
+		VisualMesh->SetStaticMesh(vmObj.Object);
+	}
 }
 
 // Called when the game starts or when spawned
 void ANarrator::BeginPlay()
 {
 	Super::BeginPlay();
+	GI = Cast<USD_GameInstance>(UGameplayStatics::GetGameInstance(GetWorld())); //Get and cast Game Instance
 	
 }
 
@@ -28,7 +35,8 @@ void ANarrator::Tick(float DeltaTime)
 }
 
 void ANarrator::StartTalk() {
-
+	GI->SetCurrentAction("NARRATOR_MAIN");
+	CreateMainMenu();
 }
 
 void ANarrator::EndTalk() {

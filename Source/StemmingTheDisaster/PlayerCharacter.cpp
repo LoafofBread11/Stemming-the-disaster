@@ -9,6 +9,7 @@
 #include "Public/ButtonMain.h"
 #include "Components/WidgetComponent.h"
 #include "UObject/ConstructorHelpers.h"
+#include "Narrator.h"
 
 // Sets default values
 APlayerCharacter::APlayerCharacter()
@@ -151,7 +152,15 @@ void APlayerCharacter::Tick(float DeltaTime)
 			}
 			else
 			{
-				lookingAtText = ""; //Set looking at text to nothing, then check rest of conditions
+				ANarrator* collideNar = Cast<ANarrator>(OutHit.GetActor());
+				if (collideNar)
+				{
+					lookingAtText = "Narrator";
+				}
+				else
+				{
+					lookingAtText = ""; //Set looking at text to nothing, then check rest of conditions
+				}
 			}
 		}
 		else
@@ -233,6 +242,13 @@ void APlayerCharacter::Interact()
 		if (collideBut)
 		{
 			collideBut->click();
+			return;
+		}
+
+		ANarrator* collideNar = Cast<ANarrator>(OutHit.GetActor());
+		if (collideNar && GI->GetCurrentAction() == "IDLE") //If we are in idle and we talked to the narrator
+		{
+			collideNar->StartTalk(); //Begin talking to narrator
 			return;
 		}
 	}
