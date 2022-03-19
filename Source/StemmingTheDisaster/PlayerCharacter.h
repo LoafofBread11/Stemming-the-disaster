@@ -70,9 +70,12 @@ public:
 	class UWidgetComponent* lAtWidget;
 
 	UPROPERTY(VisibleAnywhere)
-	class UWidgetComponent* interactableWidget;
+	class UWidgetComponent* captionWidget;
 
 	UPROPERTY(VisibleAnywhere)
-	class UWidgetComponent* captionWidget;
+	class UWidgetComponent* interactableName;
+
+	UPROPERTY(VisibleAnywhere)
+	class UWidgetComponent* interactableText;
 
 };

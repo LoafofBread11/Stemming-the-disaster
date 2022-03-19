@@ -41,8 +41,6 @@ void AButtonMain::Tick(float DeltaTime)
 		myScale.Y = (normalScale / 4) + (FMath::Abs(cos(PI * isPressed)) * 3 * normalScale / 4); //Scale the button relative to itself on an absolute cosine wave, producing a smooth animation
 		SetActorScale3D(myScale);
 		Text->SetWorldScale3D(FVector(myScale.X, normalScale, myScale.Z)); //Set the absolute scale of the text so that it remains visible
-		
-		
 	}
 	if (isPressed >= 1.0f)
 	{
@@ -56,7 +54,8 @@ void AButtonMain::Tick(float DeltaTime)
 //virtual click function 
 void AButtonMain::click()
 {
-	isPressed = 0.0f;
+	if(isPressed < 0.0f) //If the button isn't already clicked
+		isPressed = 0.0f; //Push the button
 }
 
 void AButtonMain::setText(FText text)

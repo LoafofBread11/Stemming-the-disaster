@@ -6,11 +6,6 @@
 #include "Engine/GameInstance.h"
 #include "SD_GameInstance.generated.h"
 
-
-
-/**
- * 
- */
 UCLASS()
 class STEMMINGTHEDISASTER_API USD_GameInstance : public UGameInstance
 {
