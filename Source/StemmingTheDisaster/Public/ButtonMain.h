@@ -46,4 +46,7 @@ public:
 
 	UPROPERTY(VisibleAnywhere)
 	float normalScale = 1.0f;
+
+	UFUNCTION()
+	virtual void raiseFlag();
 };

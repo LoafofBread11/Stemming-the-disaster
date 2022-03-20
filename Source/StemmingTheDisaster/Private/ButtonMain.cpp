@@ -48,6 +48,7 @@ void AButtonMain::Tick(float DeltaTime)
 		SetActorScale3D(myScale); //Reset the actor scale
 		Text->SetWorldScale3D(FVector(myScale)); //Reset the text scale
 		isPressed = -1.0f;
+		raiseFlag();
 	}
 }
 
@@ -63,3 +64,7 @@ void AButtonMain::setText(FText text)
 	Text->SetText(text);
 }
 
+void AButtonMain::raiseFlag()
+{
+	//Raise your flags here
+}
