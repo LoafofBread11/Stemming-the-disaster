@@ -60,7 +60,7 @@ class STEMMINGTHEDISASTER_API USD_GameInstance : public UGameInstance
 		UFUNCTION()
 		void EndSimulator();
 
-		UFUNCTION()
+		UFUNCTION(BlueprintCallable)
 		void SetupMap();
 
 		UFUNCTION()

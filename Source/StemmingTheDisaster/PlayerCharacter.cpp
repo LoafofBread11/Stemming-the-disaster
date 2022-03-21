@@ -104,8 +104,6 @@ APlayerCharacter::APlayerCharacter()
 	captionWidget->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	captionWidget->SetBlendMode(EWidgetBlendMode::Transparent);
 
-
-
 	AutoPossessPlayer = EAutoReceiveInput::Player0; //Set the pawn to take input from the player
 }
 

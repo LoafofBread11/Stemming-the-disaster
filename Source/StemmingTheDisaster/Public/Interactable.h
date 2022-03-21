@@ -36,6 +36,6 @@ public:
 	UPROPERTY(EditAnywhere)
 	FString textName = "";
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, meta = (MultiLine = true))
 	FString textDescription = "";
 };
