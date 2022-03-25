@@ -158,6 +158,11 @@ void APlayerCharacter::Tick(float DeltaTime)
 				else
 				{
 					lookingAtText = ""; //Set looking at text to nothing, then check rest of conditions
+					AButtonMain* collideBut = Cast<AButtonMain>(OutHit.GetActor());
+					if (collideBut)
+					{
+						collideBut->isHighlighted = 1.0f;
+					}
 				}
 			}
 		}

@@ -49,4 +49,10 @@ public:
 
 	UFUNCTION()
 	virtual void raiseFlag();
+
+	UPROPERTY(VisibleAnywhere)
+	UMaterialInstanceDynamic* ButtonVisProp;
+
+	UPROPERTY(VisibleAnywhere)
+	float isHighlighted = -1.0f;
 };

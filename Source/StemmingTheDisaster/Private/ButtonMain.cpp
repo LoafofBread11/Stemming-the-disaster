@@ -29,6 +29,10 @@ void AButtonMain::BeginPlay()
 	Super::BeginPlay();
 	myScale = GetActorScale3D(); //Get the scale of the actor
 	normalScale = myScale.Y; //Store the Y of the scale
+	ButtonVisProp = UMaterialInstanceDynamic::Create(visualMesh->GetMaterial(0), this);
+	ButtonVisProp->SetScalarParameterValue(FName(TEXT("ButtonGlow")), 0);
+	//ButtonVisProp->SetVectorParameterValue(FName(TEXT("ButtonColor")), FLinearColor(0.0f, 1.0f, .5f, 1.0f));
+	visualMesh->SetMaterial(0, ButtonVisProp);
 }
 
 // Called every frame
@@ -49,6 +53,18 @@ void AButtonMain::Tick(float DeltaTime)
 		Text->SetWorldScale3D(FVector(myScale)); //Reset the text scale
 		isPressed = -1.0f;
 		raiseFlag();
+	}
+	if (isHighlighted > 0.0f)
+	{
+		isHighlighted -= (DeltaTime * 2.0f);
+		if (isHighlighted < 0.0f)
+		{
+			isHighlighted = -1.0f;
+			ButtonVisProp->SetScalarParameterValue(FName(TEXT("ButtonGlow")), 0);
+		}
+		else
+			ButtonVisProp->SetScalarParameterValue(FName(TEXT("ButtonGlow")), isHighlighted);
+		visualMesh->SetMaterial(0, ButtonVisProp);
 	}
 }
 

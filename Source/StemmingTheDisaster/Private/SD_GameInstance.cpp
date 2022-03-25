@@ -18,8 +18,11 @@ void USD_GameInstance::EndSimulator()
 	return;
 }
 
-void USD_GameInstance::SetupMap()
+void USD_GameInstance::SetupMap(FString mapName)
 {
+	//Setup variables upon the switching of maps. Called by level blueprint
+	dialougeOptions = exDat.createExplainData(mapName);
+	investmentOptions = inDat.createInvestmentData(mapName);
 	return;
 }
 

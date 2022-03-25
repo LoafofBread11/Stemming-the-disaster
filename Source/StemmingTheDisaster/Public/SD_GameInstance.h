@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "Engine/GameInstance.h"
+#include "ExplainData.h"
+#include "InvestData.h"
 #include "SD_GameInstance.generated.h"
 
 UCLASS()
@@ -61,7 +63,7 @@ class STEMMINGTHEDISASTER_API USD_GameInstance : public UGameInstance
 		void EndSimulator();
 
 		UFUNCTION(BlueprintCallable)
-		void SetupMap();
+		void SetupMap(FString mapName);
 
 		UFUNCTION()
 		TMap<FString, int> GetInvestments();
@@ -107,5 +109,9 @@ class STEMMINGTHEDISASTER_API USD_GameInstance : public UGameInstance
 
 		UFUNCTION(BlueprintCallable)
 		bool getInVR();
+
+		//Objects that will hold data for when the map gets populated
+		ExplainData exDat;
+		InvestData inDat;
 
 };
