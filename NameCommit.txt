@@ -7,3 +7,4 @@ Name document so that everyone can be seen on the repo.
 -Justin Schultz, Github: zodiak217
 -Janna Duke, Github: jannaduke
 -Camden Williams, Github: LoafofBread11
+-Cameron Rosales, Github: CameronRosales
