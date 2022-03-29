@@ -98,3 +98,19 @@ bool USD_GameInstance::getInVR()
 {
 	return inVR;
 }
+
+void USD_GameInstance::scoreInteractable(FString career, int value)
+{
+	int* result = careerPathScores.Find(career);
+	if (result != nullptr) //If the map contains the career already
+	{
+		int scoreSum = *result + value;
+		careerPathScores.Remove(career);
+		careerPathScores.Add(career, scoreSum);
+		UE_LOG(LogTemp, Warning, TEXT("Value changed: map value has a value of %d"), scoreSum);
+	}
+	else
+	{
+		careerPathScores.Add(career, value);
+	}
+}

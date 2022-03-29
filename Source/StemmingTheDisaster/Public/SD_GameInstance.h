@@ -114,4 +114,7 @@ class STEMMINGTHEDISASTER_API USD_GameInstance : public UGameInstance
 		ExplainData exDat;
 		InvestData inDat;
 
+		UFUNCTION()
+		void scoreInteractable(FString career, int value);
+
 };
