@@ -6,6 +6,7 @@
 #include "Engine/GameInstance.h"
 #include "ExplainData.h"
 #include "InvestData.h"
+#include "Containers/Map.h"
 #include "SD_GameInstance.generated.h"
 
 UCLASS()
@@ -32,8 +33,8 @@ class STEMMINGTHEDISASTER_API USD_GameInstance : public UGameInstance
 		UPROPERTY(VisibleAnywhere)
 		TMap <FString, int> investmentOptions;
 
-		UPROPERTY(VisibleAnywhere)
-		TArray <FString> dialougeOptions;
+		//UPROPERTY(VisibleAnywhere) Turns out TPair can't be in a UPROPERTY.
+		TArray <TPair <FString, FString>> dialogueOptions;
 
 		UPROPERTY(VisibleAnywhere)
 		TArray <FString> results;
@@ -71,11 +72,11 @@ class STEMMINGTHEDISASTER_API USD_GameInstance : public UGameInstance
 		UFUNCTION()
 		bool MakeInvestment(FString item);
 
-		UFUNCTION()
-		TArray<FString> GetDialouge();
+		//UFUNCTION() See above, Can't put UFUNCTION decorations over TPairs
+		TArray<TPair <FString, FString>> GetDialouge();
 
 		UFUNCTION()
-		void GenerateDialouge(FString dialouge);
+		void GenerateDialouge(FString dialouge, FString dialogueCode);
 
 		UFUNCTION()
 		TArray<FString> GetMaps();

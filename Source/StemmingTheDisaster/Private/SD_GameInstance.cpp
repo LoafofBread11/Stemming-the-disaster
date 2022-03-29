@@ -21,7 +21,7 @@ void USD_GameInstance::EndSimulator()
 void USD_GameInstance::SetupMap(FString mapName)
 {
 	//Setup variables upon the switching of maps. Called by level blueprint
-	dialougeOptions = exDat.createExplainData(mapName);
+	dialogueOptions = exDat.createExplainData(mapName);
 	investmentOptions = inDat.createInvestmentData(mapName);
 	return;
 }
@@ -37,13 +37,14 @@ bool USD_GameInstance::MakeInvestment(FString item)
 	return true;
 }
 
-TArray<FString> USD_GameInstance::GetDialouge()
+TArray<TPair <FString, FString>> USD_GameInstance::GetDialouge()
 {
-	return dialougeOptions;
+	return dialogueOptions;
 }
 
-void USD_GameInstance::GenerateDialouge(FString dialogue)
+void USD_GameInstance::GenerateDialouge(FString dialogue, FString dialogueCode)
 {
+	//dialogueOptions.Add(TPair<FString, FString>("", ""));
 	return;
 }
 

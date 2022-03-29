@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Containers/Map.h"
 
 /**
  * 
@@ -14,5 +15,5 @@ public:
 	~ExplainData();
 
 	UFUNCTION()
-	TArray<FString> createExplainData(FString mapName);
+	TArray<TPair <FString, FString>> createExplainData(FString mapName);
 };
