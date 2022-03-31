@@ -60,7 +60,13 @@ void ANarrator::CreateExplainMenu() {
 }
 
 void ANarrator::ClearMenu() {
+	int i;
 
+	for (i = 0; i < buttons.Num(); i++) {
+		buttons.RemoveAt(i);
+	}
+
+	buttons.Empty();
 }
 
 void ANarrator::HandleFlags() {
