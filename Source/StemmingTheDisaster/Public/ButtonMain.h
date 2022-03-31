@@ -55,4 +55,7 @@ public:
 
 	UPROPERTY(VisibleAnywhere)
 	float isHighlighted = -1.0f;
+
+	UPROPERTY(VisibleAnywhere)
+	int flag = -1;
 };
