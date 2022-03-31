@@ -34,7 +34,22 @@ TMap<FString, int> USD_GameInstance::GetInvestments()
 
 bool USD_GameInstance::MakeInvestment(FString item)
 {
-	return true;
+	int *invest = investmentOptions.Find(item);
+	if (invest != nullptr) //basically, if the item was an investment option...
+	{	
+		int cost = *invest; //storing the cost of the item
+		if (cost <= remainingCurrency)
+		{
+			remainingCurrency = remainingCurrency - cost;
+			investmentOptions.Remove(item);
+			alreadyInvested.Add(item);
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	return false;
 }
 
 TArray<TPair <FString, FString>> USD_GameInstance::GetDialouge()
