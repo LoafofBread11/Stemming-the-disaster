@@ -9,7 +9,7 @@ AExplainButton::AExplainButton() : AButtonMain() {
 }
 
 void AExplainButton::BeginPlay() {
-	AButtonMain::BeginPlay();
+	Super::BeginPlay();
 	GI = Cast<USD_GameInstance>(UGameplayStatics::GetGameInstance(GetWorld())); //Get and cast Game Instance
 }
 
@@ -18,7 +18,7 @@ void AExplainButton::raiseFlag(){
 }
 
 void AExplainButton::click() {
-	AButtonMain::click();//call base click
+	Super::click();//call base click
 	GI->SetCurrentAction("EXPLAIN");//
 	raiseFlag();
 }
