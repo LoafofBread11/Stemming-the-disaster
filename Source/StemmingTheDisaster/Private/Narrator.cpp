@@ -63,10 +63,10 @@ void ANarrator::ClearMenu() {
 	int i;
 
 	for (i = 0; i < buttons.Num(); i++) {
-		buttons.RemoveAt(i);
+		buttons[i]->Destroy(); //Destroy the button
 	}
 
-	buttons.Empty();
+	buttons.Empty(); //Empty the list
 }
 
 void ANarrator::HandleFlags() {

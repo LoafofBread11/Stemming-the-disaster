@@ -33,6 +33,9 @@ class STEMMINGTHEDISASTER_API USD_GameInstance : public UGameInstance
 		UPROPERTY(VisibleAnywhere)
 		TMap <FString, int> investmentOptions;
 
+		UPROPERTY(VisibleAnywhere)
+		TMap <FString, FString> investmentCareers;
+
 		//UPROPERTY(VisibleAnywhere) Turns out TPair can't be in a UPROPERTY.
 		TArray <TPair <FString, FString>> dialogueOptions;
 

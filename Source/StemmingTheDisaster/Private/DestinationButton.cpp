@@ -3,13 +3,19 @@
 
 #include "DestinationButton.h"
 
-ADestinationButton::ADestinationButton(FString name)
+ADestinationButton::ADestinationButton() : AButtonMain()
 {
-	mapName = name;
+
+}
+
+void ADestinationButton::BeginPlay()
+{
+	Super::BeginPlay();
 }
 
 void ADestinationButton::raiseFlag()
 {
 	GI = Cast<USD_GameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
-	UGameplayStatics::OpenLevel((UObject*)GI, FName(mapName));
+	if(mapName != "")
+		UGameplayStatics::OpenLevel((UObject*)GI, FName(mapName));
 }

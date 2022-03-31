@@ -23,6 +23,7 @@ void USD_GameInstance::SetupMap(FString mapName)
 	//Setup variables upon the switching of maps. Called by level blueprint
 	dialogueOptions = exDat.createExplainData(mapName);
 	investmentOptions = inDat.createInvestmentData(mapName);
+	investmentCareers = inDat.createInvestmentCareerData(mapName);
 	return;
 }
 
@@ -38,18 +39,23 @@ bool USD_GameInstance::MakeInvestment(FString item)
 	if (invest != nullptr) //basically, if the item was an investment option...
 	{	
 		int cost = *invest; //storing the cost of the item
-		if (cost <= remainingCurrency)
+		if (cost <= remainingCurrency) //See if there is enough funds
 		{
-			remainingCurrency = remainingCurrency - cost;
-			investmentOptions.Remove(item);
-			alreadyInvested.Add(item);
+			remainingCurrency = remainingCurrency - cost; //Subtract the currency
+			FString* career = investmentCareers.Find(item); //Find the relevant career
+			if (career != nullptr) //If the career was found
+			{
+				scoreInteractable(*career, cost); //Score the career
+			}
+			investmentOptions.Remove(item); //Remove the item from the investments
+			alreadyInvested.Add(item); //Add the item to the list of already invested things
 			return true;
 		}
 		else {
-			return false;
+			return false; //Not enough funds
 		}
 	}
-	return false;
+	return false; //Item didn't exist
 }
 
 TArray<TPair <FString, FString>> USD_GameInstance::GetDialouge()

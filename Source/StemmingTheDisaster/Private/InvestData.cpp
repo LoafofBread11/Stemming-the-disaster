@@ -18,3 +18,11 @@ TMap<FString, int> InvestData::createInvestmentData(FString mapName)
 
 	return retMap; //Return the populated map
 }
+
+
+TMap<FString, FString> InvestData::createInvestmentCareerData(FString mapName)
+{
+	TMap<FString, FString> retMap;
+
+	return retMap;
+}
