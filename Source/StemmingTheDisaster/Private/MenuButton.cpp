@@ -2,4 +2,18 @@
 
 
 #include "MenuButton.h"
+AMenuButton::AMenuButton() : AButtonMain()
+{
 
+}
+
+void AMenuButton::BeginPlay()
+{
+	Super::BeginPlay();
+}
+
+void AMenuButton::raiseFlag()
+{
+	GI = Cast<USD_GameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
+
+}
