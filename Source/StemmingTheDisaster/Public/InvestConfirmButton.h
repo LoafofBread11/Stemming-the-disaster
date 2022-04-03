@@ -6,6 +6,7 @@
 #include "ButtonMain.h"
 #include "InvestConfirmButton.generated.h"
 
+UCLASS()
 class STEMMINGTHEDISASTER_API AInvestConfirmButton : public AButtonMain
 {
 	GENERATED_BODY()
@@ -25,25 +26,14 @@ class STEMMINGTHEDISASTER_API AInvestConfirmButton : public AButtonMain
 
 		//Variable to hold the description of the item.
 		UPROPERTY(VisibleAnywhere)
-		TextComponent itemDesc;
-
-		//Flag for the button
-		UPROPERTY(VisibleAnywhere)
-		int flag = -1;
-
-		//Copy of the game instance.
-		UPROPERTY(VisibleAnywhere)
-		USD_GameInstance* GI;
+		UTextRenderComponent* itemDesc;
 
 		//Function to raise the flag once the button is pressed.
 		virtual void raiseFlag() override;
-
-		//Function for when the button is clicked.
-		void click() override;
 
 		//Function to set the item's name.
 		void setItem(FString itemName);
 
 		//Funtion to set the item's description.
-		void setItemDesc(TextComponent newItemDesc);
+		void setItemDesc(FString newItemDesc);
 };
