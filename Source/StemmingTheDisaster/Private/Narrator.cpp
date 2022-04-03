@@ -70,5 +70,15 @@ void ANarrator::ClearMenu() {
 }
 
 void ANarrator::HandleFlags() {
-
+	for (int i = 0; i > buttons.Num(); i++)
+	{
+		if (buttons[i]->flag > 0)
+		{
+			if (i == 0)
+			{
+				ABackButton* castBackBut = Cast<ABackButton>(APlayerCharacter::Hitscan.GetActor());
+				
+			}
+		}
+	}
 }

@@ -5,6 +5,12 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "ButtonMain.h"
+#include "BackButton.h"
+#include "DestinationButton.h"
+#include "ExplainButton.h"
+#include "InvestConfirmButton.h"
+#include "MenuButton.h"
+#include "PlayerCharacter.h"
 #include "SD_GameInstance.h"
 #include "Narrator.generated.h"
 
