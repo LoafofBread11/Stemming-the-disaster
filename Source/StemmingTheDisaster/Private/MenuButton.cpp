@@ -14,6 +14,12 @@ void AMenuButton::BeginPlay()
 
 void AMenuButton::raiseFlag()
 {
-	GI = Cast<USD_GameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
-
+	if (textString == "Invest")
+		flag = 1;
+	else if (textString == "Travel")
+		flag = 2;
+	else if (textString == "Explain")
+		flag = 3;
+	else
+		flag = 0;
 }

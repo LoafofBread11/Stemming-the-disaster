@@ -29,6 +29,9 @@ public:
 	UFUNCTION()
 	virtual void click();
 
+	UPROPERTY(EditAnywhere)
+	FString textString = "";
+
 	UFUNCTION()
 	void setText(FText text);
 

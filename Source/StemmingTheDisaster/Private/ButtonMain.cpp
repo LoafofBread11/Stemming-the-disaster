@@ -78,6 +78,7 @@ void AButtonMain::click()
 void AButtonMain::setText(FText text)
 {
 	Text->SetText(text);
+	textString = text.ToString(); //Convert the text to a string so we can store an work with it
 }
 
 void AButtonMain::raiseFlag()
