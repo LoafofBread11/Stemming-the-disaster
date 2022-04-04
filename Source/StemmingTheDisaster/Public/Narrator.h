@@ -5,6 +5,11 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "ButtonMain.h"
+#include "BackButton.h"
+#include "DestinationButton.h"
+#include "ExplainButton.h"
+#include "InvestConfirmButton.h"
+#include "MenuButton.h"
 #include "SD_GameInstance.h"
 #include "Narrator.generated.h"
 
@@ -60,4 +65,19 @@ public:
 
 	UPROPERTY(VisibleAnywhere)
 	USD_GameInstance* GI;
+
+	UPROPERTY(VisibleAnywhere)
+	ABackButton* BB;
+
+	UPROPERTY(VisibleAnywhere)
+	ADestinationButton* DB;
+
+	UPROPERTY(VisibleAnywhere)
+	AExplainButton* EB;
+
+	UPROPERTY(VisibleAnywhere)
+	AInvestConfirmButton* CB;
+
+	UPROPERTY(VisibleAnywhere)
+	AMenuButton* MB;
 };

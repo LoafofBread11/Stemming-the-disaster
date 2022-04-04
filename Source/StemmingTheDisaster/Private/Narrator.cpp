@@ -70,5 +70,27 @@ void ANarrator::ClearMenu() {
 }
 
 void ANarrator::HandleFlags() {
-
+	for (int i = 0; i > buttons.Num(); i++)
+	{
+		if (buttons[i]->flag > 0)
+		{
+			BB = Cast<ABackButton>(buttons[i]);
+			if (!BB)
+			{
+				DB = Cast<ADestinationButton>(buttons[i]);
+				if (!DB)
+				{
+					EB = Cast<AExplainButton>(buttons[i]);
+					if (!EB)
+					{
+						CB = Cast<AInvestConfirmButton>(buttons[i]);
+						if (!CB)
+						{
+							MB = Cast<AMenuButton>(buttons[i]);
+						}
+					}
+				}
+			}
+		}
+	}
 }
