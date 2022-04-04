@@ -65,19 +65,4 @@ public:
 
 	UPROPERTY(VisibleAnywhere)
 	USD_GameInstance* GI;
-
-	UPROPERTY(VisibleAnywhere)
-	ABackButton* BB;
-
-	UPROPERTY(VisibleAnywhere)
-	ADestinationButton* DB;
-
-	UPROPERTY(VisibleAnywhere)
-	AExplainButton* EB;
-
-	UPROPERTY(VisibleAnywhere)
-	AInvestConfirmButton* CB;
-
-	UPROPERTY(VisibleAnywhere)
-	AMenuButton* MB;
 };

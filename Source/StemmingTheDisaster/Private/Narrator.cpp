@@ -74,19 +74,43 @@ void ANarrator::HandleFlags() {
 	{
 		if (buttons[i]->flag > 0)
 		{
-			BB = Cast<ABackButton>(buttons[i]);
-			if (!BB)
+			ABackButton* BB = Cast<ABackButton>(buttons[i]);
+			if (BB)
 			{
-				DB = Cast<ADestinationButton>(buttons[i]);
-				if (!DB)
+				//Deal with Back Button Here
+			}
+			else
+			{
+				ADestinationButton* DB = Cast<ADestinationButton>(buttons[i]);
+				if (DB)
 				{
-					EB = Cast<AExplainButton>(buttons[i]);
-					if (!EB)
+					//Left in in case we decide to move the functionality of changing menus to the narrator, maybe for visual flair
+				}
+				else
+				{
+					AExplainButton* EB = Cast<AExplainButton>(buttons[i]);
+					if (EB)
 					{
-						CB = Cast<AInvestConfirmButton>(buttons[i]);
-						if (!CB)
+						//Deal with Explanation button here. We can load the sound and necessary things in here. 
+					}
+					else
+					{
+						AInvestConfirmButton* CB = Cast<AInvestConfirmButton>(buttons[i]);
+						if (CB)
 						{
-							MB = Cast<AMenuButton>(buttons[i]);
+							//Deal with Investment here
+						}
+						else
+						{
+							AMenuButton* MB = Cast<AMenuButton>(buttons[i]);
+							if (MB)
+							{
+								//Deal with Menu Buttons here
+							}
+							else
+							{
+								//Something went wrong, or a regular button was pressed.
+							}
 						}
 					}
 				}
