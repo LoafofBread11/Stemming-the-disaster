@@ -78,6 +78,24 @@ void ANarrator::HandleFlags() {
 			if (BB)
 			{
 				//Deal with Back Button Here
+				//clear menu
+				ClearMenu();
+				//call game instance and get current action save in FSTRING
+				FString temp = GI->GetCurrentAction();
+				//see if FSTRING = Narrator_main As scene and start talk, set to idel
+				if (temp == "NARRATOR_MAIN")
+				{
+					GI->SetCurrentAction("IDLE");
+				}
+				else
+				{
+					GI->SetCurrentAction("NARRATOR_MAIN");
+					CreateMainMenu();
+					//create main menu
+				}
+				// if not, set to narrator main and create main menu
+				//return out
+				return;
 			}
 			else
 			{
@@ -106,6 +124,22 @@ void ANarrator::HandleFlags() {
 							if (MB)
 							{
 								//Deal with Menu Buttons here
+								//compare FSRING to invest travel explain, compare then create menus
+								if (buttons[i]->textString == "INVEST")
+								{
+									CreateInvestMenu();
+								}
+								else if (buttons[i]->textString == "EXPLAIN")
+								{
+									CreateExplainMenu();
+								}
+								else if (buttons[i]->textString == "TRAVEL")
+								{
+									CreateTravelMenu();
+								}
+								//delete buttons
+								ClearMenu();
+								return;
 							}
 							else
 							{
