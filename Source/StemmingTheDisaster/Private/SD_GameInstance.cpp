@@ -21,8 +21,9 @@ void USD_GameInstance::EndSimulator()
 void USD_GameInstance::SetupMap(FString mapName)
 {
 	//Setup variables upon the switching of maps. Called by level blueprint
-	dialougeOptions = exDat.createExplainData(mapName);
+	dialogueOptions = exDat.createExplainData(mapName);
 	investmentOptions = inDat.createInvestmentData(mapName);
+	investmentCareers = inDat.createInvestmentCareerData(mapName);
 	return;
 }
 
@@ -34,16 +35,37 @@ TMap<FString, int> USD_GameInstance::GetInvestments()
 
 bool USD_GameInstance::MakeInvestment(FString item)
 {
-	return true;
+	int *invest = investmentOptions.Find(item);
+	if (invest != nullptr) //basically, if the item was an investment option...
+	{	
+		int cost = *invest; //storing the cost of the item
+		if (cost <= remainingCurrency) //See if there is enough funds
+		{
+			remainingCurrency = remainingCurrency - cost; //Subtract the currency
+			FString* career = investmentCareers.Find(item); //Find the relevant career
+			if (career != nullptr) //If the career was found
+			{
+				scoreInteractable(*career, cost); //Score the career
+			}
+			investmentOptions.Remove(item); //Remove the item from the investments
+			alreadyInvested.Add(item); //Add the item to the list of already invested things
+			return true;
+		}
+		else {
+			return false; //Not enough funds
+		}
+	}
+	return false; //Item didn't exist
 }
 
-TArray<FString> USD_GameInstance::GetDialouge()
+TArray<TPair <FString, FString>> USD_GameInstance::GetDialouge()
 {
-	return dialougeOptions;
+	return dialogueOptions;
 }
 
-void USD_GameInstance::GenerateDialouge(FString dialogue)
+void USD_GameInstance::GenerateDialouge(FString dialogue, FString dialogueCode)
 {
+	//dialogueOptions.Add(TPair<FString, FString>("", ""));
 	return;
 }
 
@@ -97,4 +119,20 @@ void USD_GameInstance::setInVR(bool mode)
 bool USD_GameInstance::getInVR()
 {
 	return inVR;
+}
+
+void USD_GameInstance::scoreInteractable(FString career, int value)
+{
+	int* result = careerPathScores.Find(career);
+	if (result != nullptr) //If the map contains the career already
+	{
+		int scoreSum = *result + value;
+		careerPathScores.Remove(career);
+		careerPathScores.Add(career, scoreSum);
+		UE_LOG(LogTemp, Warning, TEXT("Value changed: map value has a value of %d"), scoreSum);
+	}
+	else
+	{
+		careerPathScores.Add(career, value);
+	}
 }

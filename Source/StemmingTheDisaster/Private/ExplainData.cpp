@@ -11,9 +11,9 @@ ExplainData::~ExplainData()
 {
 }
 
-TArray<FString> ExplainData::createExplainData(FString mapName)
+TArray<TPair <FString, FString>> ExplainData::createExplainData(FString mapName)
 {
-	TArray<FString> retArr; //Return array that will be populated with data
+	TArray<TPair <FString, FString>> retArr; //Return array that will be populated with data
 
 	return retArr; //Return the populated array
 }

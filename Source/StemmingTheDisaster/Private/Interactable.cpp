@@ -34,5 +34,9 @@ void AInteractable::SendInteractableData() {
 
 	USD_GameInstance* GI = Cast<USD_GameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
 	GI->SetInteractableData(FText::FromString(textName), FText::FromString(textDescription));
+	for (int i = 0; i < relevantCareers.Num(); i++)
+	{
+		GI->scoreInteractable(relevantCareers[i], 2); //Add 2 points to an interactable, we might change this
+	}
 }
 

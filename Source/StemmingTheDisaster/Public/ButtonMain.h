@@ -29,6 +29,9 @@ public:
 	UFUNCTION()
 	virtual void click();
 
+	UPROPERTY(EditAnywhere)
+	FString textString = "";
+
 	UFUNCTION()
 	void setText(FText text);
 
@@ -55,4 +58,7 @@ public:
 
 	UPROPERTY(VisibleAnywhere)
 	float isHighlighted = -1.0f;
+
+	UPROPERTY(VisibleAnywhere)
+	int flag = -1;
 };

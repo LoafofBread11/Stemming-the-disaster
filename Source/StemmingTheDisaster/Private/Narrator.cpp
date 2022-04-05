@@ -60,9 +60,61 @@ void ANarrator::CreateExplainMenu() {
 }
 
 void ANarrator::ClearMenu() {
+	int i;
 
+	for (i = 0; i < buttons.Num(); i++) {
+		buttons[i]->Destroy(); //Destroy the button
+	}
+
+	buttons.Empty(); //Empty the list
 }
 
 void ANarrator::HandleFlags() {
-
+	for (int i = 0; i > buttons.Num(); i++)
+	{
+		if (buttons[i]->flag > 0)
+		{
+			ABackButton* BB = Cast<ABackButton>(buttons[i]);
+			if (BB)
+			{
+				//Deal with Back Button Here
+			}
+			else
+			{
+				ADestinationButton* DB = Cast<ADestinationButton>(buttons[i]);
+				if (DB)
+				{
+					//Left in in case we decide to move the functionality of changing menus to the narrator, maybe for visual flair
+				}
+				else
+				{
+					AExplainButton* EB = Cast<AExplainButton>(buttons[i]);
+					if (EB)
+					{
+						//Deal with Explanation button here. We can load the sound and necessary things in here. 
+					}
+					else
+					{
+						AInvestConfirmButton* CB = Cast<AInvestConfirmButton>(buttons[i]);
+						if (CB)
+						{
+							//Deal with Investment here
+						}
+						else
+						{
+							AMenuButton* MB = Cast<AMenuButton>(buttons[i]);
+							if (MB)
+							{
+								//Deal with Menu Buttons here
+							}
+							else
+							{
+								//Something went wrong, or a regular button was pressed.
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

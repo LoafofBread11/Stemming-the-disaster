@@ -15,4 +15,7 @@ public:
 
 	UFUNCTION()
 	TMap<FString, int> createInvestmentData(FString mapName);
+
+	UFUNCTION()
+	TMap<FString, FString> createInvestmentCareerData(FString mapName);
 };
