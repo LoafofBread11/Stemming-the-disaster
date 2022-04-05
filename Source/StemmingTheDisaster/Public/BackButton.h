@@ -21,7 +21,4 @@ protected:
 
 public:
 	virtual void raiseFlag() override;
-
-	UPROPERTY(VisibleAnywhere)
-	USD_GameInstance* GI;
 };

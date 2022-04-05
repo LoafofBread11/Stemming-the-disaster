@@ -14,6 +14,5 @@ void ABackButton::BeginPlay()
 
 void ABackButton::raiseFlag()
 {
-	GI = Cast<USD_GameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
-	
+	flag = 1;
 }
