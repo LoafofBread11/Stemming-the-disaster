@@ -2,6 +2,7 @@
 
 
 #include "Narrator.h"
+#include "Sound/SoundCue.h"
 #include "Kismet/GameplayStatics.h"
 
 // Sets default values
@@ -17,6 +18,9 @@ ANarrator::ANarrator()
 	{
 		VisualMesh->SetStaticMesh(vmObj.Object);
 	}
+
+	explainClip = CreateDefaultSubobject<UAudioComponent>(TEXT("Explain Clip")); //Define voice clip component
+	explainClip->SetupAttachment(RootComponent); //Setup attachment
 }
 
 // Called when the game starts or when spawned
@@ -31,7 +35,15 @@ void ANarrator::BeginPlay()
 void ANarrator::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	if (GI->GetCurrentAction() == "EXPLAIN") //Check if the narrator is currently explaining something
+	{
+		voiceTimeRemaining -= DeltaTime; //Subtract the delta time from the voice clip time
+ 		if (voiceTimeRemaining <= 0.0f) //Check if the time has depleted
+		{
+			CreateExplainMenu(); //Create the explain menu
+			GI->SetCurrentAction("NARRATOR_EXPLAIN"); //Set the correct subaction
+		}
+	}
 }
 
 void ANarrator::StartTalk() {
@@ -110,6 +122,20 @@ void ANarrator::HandleFlags() {
 					if (EB)
 					{
 						//Deal with Explanation button here. We can load the sound and necessary things in here. 
+						FString code = EB->dialogueCode; //Get the code
+						FString location = "/Game/VoiceClips/" + code + "." + code; //Make the location string
+						USoundCue* cue = Cast<USoundCue>(StaticLoadObject(USoundCue::StaticClass(), NULL, *location)); //Attempt to load the voice clip
+						if (cue) //If the cue load was successful
+						{
+							explainClip->SetSound(cue);
+							FTimespan time = cue->GetDuration(); //Get the time of the cue
+							voiceTimeRemaining = time.GetTotalSeconds(); //Set the time that the voice clip will play
+							explainClip->Play(); //Play the Audio Component
+							GI->SetCurrentAction("EXPLAIN"); //Set action to explain, not narrator explain.
+							//Check for if a new clip needs to be loaded.
+							ClearMenu(); //Remove the buttons while the explanation plays
+						}
+						return;
 					}
 					else
 					{
@@ -117,32 +143,18 @@ void ANarrator::HandleFlags() {
 						if (CB)
 						{
 							//Deal with Investment here
-							
-							//Clear menu
-							ClearMenu();
-
-							//Gets current action from game instance
-							FString action = GI->GetCurrentAction();
-
-							//If the game instance is idle and ready to do something
-							if (action == "IDLE")
+							//Call make investment for the button's item.
+							//Will let us know if the investment is successful or not.
+							if (GI->MakeInvestment(CB->item))
 							{
-								//Set the current action to invest.
-								GI->SetCurrentAction("INVEST");
-
-								//Call make investment for the button's item.
-								//Will let us know if the investment is successful or not.
-								if (GI->MakeInvestment(CB->item))
-								{
-									//Investment was successful.
-								}
-								else
-								{
-									//Investment failed.
-								}
+								//Investment was successful.
+								ClearMenu(); //Clear menu
+								CreateInvestMenu(); //Remake the investment menu, now without the previous investment
 							}
-							//Sets current action back to idle then returns.
-							GI->SetCurrentAction("IDLE");
+							else
+							{
+								//Investment failed.
+							}
 							return;
 						}
 						else

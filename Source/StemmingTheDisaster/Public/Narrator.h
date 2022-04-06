@@ -11,6 +11,7 @@
 #include "InvestConfirmButton.h"
 #include "MenuButton.h"
 #include "SD_GameInstance.h"
+#include "Components/AudioComponent.h"
 #include "Narrator.generated.h"
 
 UCLASS()
@@ -65,4 +66,10 @@ public:
 
 	UPROPERTY(VisibleAnywhere)
 	USD_GameInstance* GI;
+
+	UPROPERTY(VisibleAnywhere)
+	UAudioComponent* explainClip;
+
+	UPROPERTY(VisibleAnywhere)
+	float voiceTimeRemaining = 0.0f;
 };
