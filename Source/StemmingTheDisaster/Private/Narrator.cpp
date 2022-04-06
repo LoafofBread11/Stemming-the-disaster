@@ -117,6 +117,33 @@ void ANarrator::HandleFlags() {
 						if (CB)
 						{
 							//Deal with Investment here
+							
+							//Clear menu
+							ClearMenu();
+
+							//Gets current action from game instance
+							FString action = GI->GetCurrentAction();
+
+							//If the game instance is idle and ready to do something
+							if (action == "IDLE")
+							{
+								//Set the current action to invest.
+								GI->SetCurrentAction("INVEST");
+
+								//Call make investment for the button's item.
+								//Will let us know if the investment is successful or not.
+								if (GI->MakeInvestment(CB->item))
+								{
+									//Investment was successful.
+								}
+								else
+								{
+									//Investment failed.
+								}
+							}
+							//Sets current action back to idle then returns.
+							GI->SetCurrentAction("IDLE");
+							return;
 						}
 						else
 						{
