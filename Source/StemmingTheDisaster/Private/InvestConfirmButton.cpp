@@ -6,6 +6,9 @@
 AInvestConfirmButton::AInvestConfirmButton() : AButtonMain()
 {
 	itemDesc = CreateDefaultSubobject<UTextRenderComponent>("Investment Name");
+	itemDesc->SetupAttachment(RootComponent); //Setup attachment to the rest of the button
+	itemDesc->SetRelativeLocationAndRotation(FVector(100.0f, 0.0f, 0.0f), FRotator(0.0f, 90.0f, 0.0f)); //Position text accordingly
+	itemDesc->SetHorizontalAlignment(EHTA_Left);
 }
 
 void AInvestConfirmButton::BeginPlay()

@@ -50,6 +50,9 @@ public:
 	UPROPERTY(VisibleAnywhere)
 	float normalScale = 1.0f;
 
+	UPROPERTY(VisibleAnywhere)
+	float normalScaleText = 1.0f;
+
 	UFUNCTION()
 	virtual void raiseFlag();
 
