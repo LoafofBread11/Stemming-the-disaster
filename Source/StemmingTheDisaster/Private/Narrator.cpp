@@ -47,8 +47,13 @@ void ANarrator::Tick(float DeltaTime)
 }
 
 void ANarrator::StartTalk() {
-	GI->SetCurrentAction("NARRATOR_MAIN");
-	CreateMainMenu();
+	FString test = GI->GetCurrentAction();
+
+	if (test == "IDLE") {
+		GI->SetCurrentAction("NARRATOR_MAIN");
+		CreateMainMenu();
+	}
+	
 }
 
 void ANarrator::EndTalk() {
@@ -64,11 +69,55 @@ void ANarrator::CreateMainMenu() {
 }
 
 void ANarrator::CreateTravelMenu() {
+	FVector myLoc = GetActorLocation();   // Get actor location and rotation to spawn button
+	FRotator myRot = GetActorRotation();
+	int i = 0;
 
+	AButtonMain* newBackButton = GetWorld()->SpawnActor<ABackButton>(ABackButton::StaticClass(), FVector(myLoc.X + 30.0f, myLoc.Y, myLoc.Z - 5.0f), myRot);   // Spawn newBackButton actor for ABackButton
+
+	newBackButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f));   // Modify newBackButton scale
+	newBackButton->setText(FText::FromString(TEXT("Back")));   // Set newBackButton text
+
+	buttons.Add(newBackButton);   // Add newBackButton to buttons array
+
+
+	for (i = 0; i < GI->travelableMaps.Num(); i++) {   // Iterate through travelableMaps array
+		AButtonMain* newButton = GetWorld()->SpawnActor<ADestinationButton>(ADestinationButton::StaticClass(), FVector(myLoc.X + 30.0f, myLoc.Y, myLoc.Z + (i*5.0f)), myRot);   // Spawn newButton actor for ADestinationButton
+		
+		newButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f));   // Modify newButton scale
+		newButton->setText(FText::FromString(GI->travelableMaps[i]));   // Set newButton text
+
+		ADestinationButton* DB = Cast<ADestinationButton>(newButton);   // Cast base button to destination
+		DB->mapName = GI->travelableMaps[i];   // Set mapName for DB
+
+		buttons.Add(newButton);   // Add newButton to buttons array
+	}
 }
 
 void ANarrator::CreateExplainMenu() {
+	FVector myLoc = GetActorLocation();   // Get actor location and rotation to spawn button
+	FRotator myRot = GetActorRotation();
+	int i = 0;
 
+	AButtonMain* newBackButton = GetWorld()->SpawnActor<ABackButton>(ABackButton::StaticClass(), FVector(myLoc.X + 30.0f, myLoc.Y, myLoc.Z - 5.0f), myRot);   // Spawn newBackButton actor for ABackButton
+
+	newBackButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f));   // Modify newBackButton scale
+	newBackButton->setText(FText::FromString(TEXT("Back")));   // Set newBackButton text
+
+	buttons.Add(newBackButton);   // Add newBackButton to buttons array
+
+
+	for (i = 0; i < GI->dialogueOptions.Num(); i++) {   // Iterate through dialogueOptions array
+		AButtonMain* newButton = GetWorld()->SpawnActor<AExplainButton>(AExplainButton::StaticClass(), FVector(myLoc.X + 30.0f, myLoc.Y, myLoc.Z + (i * 5.0f)), myRot);   // Spawn newButton actor for ADestinationButton
+
+		newButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f));   // Modify newButton scale
+		newButton->setText(FText::FromString(GI->dialogueOptions[i].Key));   // Set newButton text
+
+		AExplainButton* EB = Cast<AExplainButton>(newButton);   // Cast base button to explain
+		EB->dialogueCode = GI->dialogueOptions[i].Value;   // Set dialogueCode for EB
+
+		buttons.Add(newButton);   // Add newButton to buttons array
+	}
 }
 
 void ANarrator::ClearMenu() {
