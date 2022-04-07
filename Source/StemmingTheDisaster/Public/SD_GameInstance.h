@@ -82,7 +82,7 @@ class STEMMINGTHEDISASTER_API USD_GameInstance : public UGameInstance
 		void GenerateDialouge(FString dialouge, FString dialogueCode);
 
 		UFUNCTION()
-		TArray<FString> GetMaps();
+		TArray <FString> GetMaps();
 
 		UFUNCTION()
 		void ChangeMap(int selection);
