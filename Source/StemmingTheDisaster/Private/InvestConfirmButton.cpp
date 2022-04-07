@@ -14,6 +14,16 @@ AInvestConfirmButton::AInvestConfirmButton() : AButtonMain()
 void AInvestConfirmButton::BeginPlay()
 {
 	Super::BeginPlay();
+	itemDesc->SetRelativeScale3D(Text->GetRelativeScale3D()); //Make the 2 texts fields have parity with each other
+}
+
+void AInvestConfirmButton::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+	if (isPressed >= 0.0f)
+	{
+		itemDesc->SetWorldScale3D(FVector(normalScaleText, normalScaleText, normalScaleText));
+	}
 }
 
 void AInvestConfirmButton::raiseFlag()

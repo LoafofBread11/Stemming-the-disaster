@@ -31,6 +31,8 @@ class STEMMINGTHEDISASTER_API AInvestConfirmButton : public AButtonMain
 		//Function to raise the flag once the button is pressed.
 		virtual void raiseFlag() override;
 
+		virtual void Tick(float DeltaTime) override;
+
 		//Function to set the item's name.
 		void setItem(FString itemName);
 

@@ -21,9 +21,17 @@ void USD_GameInstance::EndSimulator()
 void USD_GameInstance::SetupMap(FString mapName)
 {
 	//Setup variables upon the switching of maps. Called by level blueprint
-	dialogueOptions = exDat.createExplainData(mapName);
-	investmentOptions = inDat.createInvestmentData(mapName);
-	investmentCareers = inDat.createInvestmentCareerData(mapName);
+	dialogueOptions = exDat.createExplainData(mapName); //Populate the dialogue options
+	investmentOptions = inDat.createInvestmentData(mapName); //Populate the investment options
+	for (int i = 0; i < alreadyInvested.Num(); i++)
+	{
+		if (investmentOptions.Contains(alreadyInvested[i])) //Check if it's been invested in
+		{
+			investmentOptions.Remove(alreadyInvested[i]); //Remove it if we find it
+			UE_LOG(LogTemp, Warning, TEXT("Removed an Element!"));
+		}
+	}
+	investmentCareers = inDat.createInvestmentCareerData(mapName); //Populate the careers associated with the investment options
 	return;
 }
 
