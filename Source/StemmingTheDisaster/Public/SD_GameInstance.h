@@ -121,4 +121,7 @@ class STEMMINGTHEDISASTER_API USD_GameInstance : public UGameInstance
 		UFUNCTION()
 		void scoreInteractable(FString career, int value);
 
+		UFUNCTION()
+		FString mapNameLookup(FString name);
+
 };

@@ -146,3 +146,10 @@ void USD_GameInstance::scoreInteractable(FString career, int value)
 		careerPathScores.Add(career, value);
 	}
 }
+
+FString USD_GameInstance::mapNameLookup(FString name)
+{
+	if (name == "Airplane")
+		return TEXT("Air Plane");
+	return TEXT(""); //If we get nothing, return nothing
+}

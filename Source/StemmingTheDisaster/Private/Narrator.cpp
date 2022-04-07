@@ -166,15 +166,15 @@ void ANarrator::HandleFlags() {
 								//delete already existing buttons
 								ClearMenu();
 								//compare FSRING to invest travel explain, compare then create menus
-								if (buttons[i]->textString == "INVEST")
+								if (buttons[i]->textString == "Invest")
 								{
 									CreateInvestMenu();
 								}
-								else if (buttons[i]->textString == "EXPLAIN")
+								else if (buttons[i]->textString == "Explain")
 								{
 									CreateExplainMenu();
 								}
-								else if (buttons[i]->textString == "TRAVEL")
+								else if (buttons[i]->textString == "Travel")
 								{
 									CreateTravelMenu();
 								}
