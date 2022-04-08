@@ -29,6 +29,9 @@ public:
 	UFUNCTION()
 	virtual void click();
 
+	UPROPERTY(EditAnywhere)
+	FString textString = "";
+
 	UFUNCTION()
 	void setText(FText text);
 
@@ -46,6 +49,9 @@ public:
 
 	UPROPERTY(VisibleAnywhere)
 	float normalScale = 1.0f;
+
+	UPROPERTY(VisibleAnywhere)
+	float normalScaleText = 1.0f;
 
 	UFUNCTION()
 	virtual void raiseFlag();

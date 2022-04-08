@@ -21,9 +21,19 @@ void USD_GameInstance::EndSimulator()
 void USD_GameInstance::SetupMap(FString mapName)
 {
 	//Setup variables upon the switching of maps. Called by level blueprint
-	dialogueOptions = exDat.createExplainData(mapName);
-	investmentOptions = inDat.createInvestmentData(mapName);
-	investmentCareers = inDat.createInvestmentCareerData(mapName);
+	dialogueOptions = exDat.createExplainData(mapName); //Populate the dialogue options
+	investmentOptions = inDat.createInvestmentData(mapName); //Populate the investment options
+	for (int i = 0; i < alreadyInvested.Num(); i++)
+	{
+		if (investmentOptions.Contains(alreadyInvested[i])) //Check if it's been invested in
+		{
+			investmentOptions.Remove(alreadyInvested[i]); //Remove it if we find it
+			UE_LOG(LogTemp, Warning, TEXT("Removed an Element!"));
+		}
+	}
+	investmentCareers = inDat.createInvestmentCareerData(mapName); //Populate the careers associated with the investment options
+
+	travelableMaps.Add("Airplane"); //Adding airplane to travelable maps in Sprint 2. Done here only because Start Simulator is not implemented / called yet.
 	return;
 }
 
@@ -69,7 +79,7 @@ void USD_GameInstance::GenerateDialouge(FString dialogue, FString dialogueCode)
 	return;
 }
 
-TArray<FString> USD_GameInstance::GetMaps()
+TArray <FString> USD_GameInstance::GetMaps()
 {
 	return travelableMaps;
 }
@@ -135,4 +145,11 @@ void USD_GameInstance::scoreInteractable(FString career, int value)
 	{
 		careerPathScores.Add(career, value);
 	}
+}
+
+FString USD_GameInstance::mapNameLookup(FString name)
+{
+	if (name == "Airplane")
+		return TEXT("Air Plane");
+	return TEXT(""); //If we get nothing, return nothing
 }

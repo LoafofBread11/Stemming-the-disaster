@@ -2,6 +2,7 @@
 
 
 #include "Narrator.h"
+#include "Sound/SoundCue.h"
 #include "Kismet/GameplayStatics.h"
 
 // Sets default values
@@ -17,6 +18,9 @@ ANarrator::ANarrator()
 	{
 		VisualMesh->SetStaticMesh(vmObj.Object);
 	}
+
+	explainClip = CreateDefaultSubobject<UAudioComponent>(TEXT("Explain Clip")); //Define voice clip component
+	explainClip->SetupAttachment(RootComponent); //Setup attachment
 }
 
 // Called when the game starts or when spawned
@@ -31,12 +35,25 @@ void ANarrator::BeginPlay()
 void ANarrator::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	if (GI->GetCurrentAction() == "EXPLAIN") //Check if the narrator is currently explaining something
+	{
+		voiceTimeRemaining -= DeltaTime; //Subtract the delta time from the voice clip time
+ 		if (voiceTimeRemaining <= 0.0f) //Check if the time has depleted
+		{
+			CreateExplainMenu(); //Create the explain menu
+			GI->SetCurrentAction("NARRATOR_EXPLAIN"); //Set the correct subaction
+		}
+	}
 }
 
 void ANarrator::StartTalk() {
-	GI->SetCurrentAction("NARRATOR_MAIN");
-	CreateMainMenu();
+	FString test = GI->GetCurrentAction();
+
+	if (test == "IDLE") {
+		GI->SetCurrentAction("NARRATOR_MAIN");
+		CreateMainMenu();
+	}
+	
 }
 
 void ANarrator::EndTalk() {
@@ -52,11 +69,55 @@ void ANarrator::CreateMainMenu() {
 }
 
 void ANarrator::CreateTravelMenu() {
+	FVector myLoc = GetActorLocation();   // Get actor location and rotation to spawn button
+	FRotator myRot = GetActorRotation();
+	int i = 0;
 
+	AButtonMain* newBackButton = GetWorld()->SpawnActor<ABackButton>(ABackButton::StaticClass(), FVector(myLoc.X + 30.0f, myLoc.Y, myLoc.Z - 5.0f), myRot);   // Spawn newBackButton actor for ABackButton
+
+	newBackButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f));   // Modify newBackButton scale
+	newBackButton->setText(FText::FromString(TEXT("Back")));   // Set newBackButton text
+
+	buttons.Add(newBackButton);   // Add newBackButton to buttons array
+
+
+	for (i = 0; i < GI->travelableMaps.Num(); i++) {   // Iterate through travelableMaps array
+		AButtonMain* newButton = GetWorld()->SpawnActor<ADestinationButton>(ADestinationButton::StaticClass(), FVector(myLoc.X + 30.0f, myLoc.Y, myLoc.Z + (i*5.0f)), myRot);   // Spawn newButton actor for ADestinationButton
+		
+		newButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f));   // Modify newButton scale
+		newButton->setText(FText::FromString(GI->travelableMaps[i]));   // Set newButton text
+
+		ADestinationButton* DB = Cast<ADestinationButton>(newButton);   // Cast base button to destination
+		DB->mapName = GI->travelableMaps[i];   // Set mapName for DB
+
+		buttons.Add(newButton);   // Add newButton to buttons array
+	}
 }
 
 void ANarrator::CreateExplainMenu() {
+	FVector myLoc = GetActorLocation();   // Get actor location and rotation to spawn button
+	FRotator myRot = GetActorRotation();
+	int i = 0;
 
+	AButtonMain* newBackButton = GetWorld()->SpawnActor<ABackButton>(ABackButton::StaticClass(), FVector(myLoc.X + 30.0f, myLoc.Y, myLoc.Z - 5.0f), myRot);   // Spawn newBackButton actor for ABackButton
+
+	newBackButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f));   // Modify newBackButton scale
+	newBackButton->setText(FText::FromString(TEXT("Back")));   // Set newBackButton text
+
+	buttons.Add(newBackButton);   // Add newBackButton to buttons array
+
+
+	for (i = 0; i < GI->dialogueOptions.Num(); i++) {   // Iterate through dialogueOptions array
+		AButtonMain* newButton = GetWorld()->SpawnActor<AExplainButton>(AExplainButton::StaticClass(), FVector(myLoc.X + 30.0f, myLoc.Y, myLoc.Z + (i * 5.0f)), myRot);   // Spawn newButton actor for ADestinationButton
+
+		newButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f));   // Modify newButton scale
+		newButton->setText(FText::FromString(GI->dialogueOptions[i].Key));   // Set newButton text
+
+		AExplainButton* EB = Cast<AExplainButton>(newButton);   // Cast base button to explain
+		EB->dialogueCode = GI->dialogueOptions[i].Value;   // Set dialogueCode for EB
+
+		buttons.Add(newButton);   // Add newButton to buttons array
+	}
 }
 
 void ANarrator::ClearMenu() {
@@ -74,10 +135,107 @@ void ANarrator::HandleFlags() {
 	{
 		if (buttons[i]->flag > 0)
 		{
-			if (i == 0)
+			ABackButton* BB = Cast<ABackButton>(buttons[i]);
+			if (BB)
 			{
-				ABackButton* castBackBut = Cast<ABackButton>(APlayerCharacter::Hitscan.GetActor());
-				
+				//Deal with Back Button Here
+				//clear menu
+				ClearMenu();
+				//call game instance and get current action save in FSTRING
+				FString temp = GI->GetCurrentAction();
+				//see if FSTRING = Narrator_main As scene and start talk, set to idel
+				if (temp == "NARRATOR_MAIN")
+				{
+					GI->SetCurrentAction("IDLE");
+				}
+				else
+				{
+					GI->SetCurrentAction("NARRATOR_MAIN");
+					CreateMainMenu();
+					//create main menu
+				}
+				// if not, set to narrator main and create main menu
+				//return out
+				return;
+			}
+			else
+			{
+				ADestinationButton* DB = Cast<ADestinationButton>(buttons[i]);
+				if (DB)
+				{
+					//Left in in case we decide to move the functionality of changing menus to the narrator, maybe for visual flair
+				}
+				else
+				{
+					AExplainButton* EB = Cast<AExplainButton>(buttons[i]);
+					if (EB)
+					{
+						//Deal with Explanation button here. We can load the sound and necessary things in here. 
+						FString code = EB->dialogueCode; //Get the code
+						FString location = "/Game/VoiceClips/" + code + "." + code; //Make the location string
+						USoundCue* cue = Cast<USoundCue>(StaticLoadObject(USoundCue::StaticClass(), NULL, *location)); //Attempt to load the voice clip
+						if (cue) //If the cue load was successful
+						{
+							explainClip->SetSound(cue);
+							FTimespan time = cue->GetDuration(); //Get the time of the cue
+							voiceTimeRemaining = time.GetTotalSeconds(); //Set the time that the voice clip will play
+							explainClip->Play(); //Play the Audio Component
+							GI->SetCurrentAction("EXPLAIN"); //Set action to explain, not narrator explain.
+							//Check for if a new clip needs to be loaded.
+							ClearMenu(); //Remove the buttons while the explanation plays
+						}
+						return;
+					}
+					else
+					{
+						AInvestConfirmButton* CB = Cast<AInvestConfirmButton>(buttons[i]);
+						if (CB)
+						{
+							//Deal with Investment here
+							//Call make investment for the button's item.
+							//Will let us know if the investment is successful or not.
+							if (GI->MakeInvestment(CB->item))
+							{
+								//Investment was successful.
+								ClearMenu(); //Clear menu
+								CreateInvestMenu(); //Remake the investment menu, now without the previous investment
+							}
+							else
+							{
+								//Investment failed.
+							}
+							return;
+						}
+						else
+						{
+							AMenuButton* MB = Cast<AMenuButton>(buttons[i]);
+							if (MB)
+							{
+								//Deal with Menu Buttons here
+								//delete already existing buttons
+								ClearMenu();
+								//compare FSRING to invest travel explain, compare then create menus
+								if (buttons[i]->textString == "Invest")
+								{
+									CreateInvestMenu();
+								}
+								else if (buttons[i]->textString == "Explain")
+								{
+									CreateExplainMenu();
+								}
+								else if (buttons[i]->textString == "Travel")
+								{
+									CreateTravelMenu();
+								}
+								return;
+							}
+							else
+							{
+								//Something went wrong, or a regular button was pressed.
+							}
+						}
+					}
+				}
 			}
 		}
 	}
