@@ -13,7 +13,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StemmingTheDisaster", "Inte
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Visualizers", "Visualizers", "{1CCEC849-CC72-4C59-8C36-2F7C38706D4C}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\..\Program Files\UE_4.27\Engine\Extras\VisualStudioDebugging\UE4.natvis = ..\..\..\..\..\Program Files\UE_4.27\Engine\Extras\VisualStudioDebugging\UE4.natvis
+		..\..\..\..\..\..\Program Files\Epic Games\UE_4.27\Engine\Extras\VisualStudioDebugging\UE4.natvis = ..\..\..\..\..\..\Program Files\Epic Games\UE_4.27\Engine\Extras\VisualStudioDebugging\UE4.natvis
 	EndProjectSection
 EndProject
 Global
@@ -28,6 +28,10 @@ Global
 		Development|Win64 = Development|Win64
 		Shipping|Win32 = Shipping|Win32
 		Shipping|Win64 = Shipping|Win64
+	EndGlobalSection
+	# Visual Assist Section
+	GlobalSection(44630d46-96b5-488c-8df926e21db8c1a3) = preSolution
+		ueSolution=true
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{4F987303-57E4-4BE7-A226-774CD197F913}.DebugGame Editor|Win32.ActiveCfg = BuiltWithUnrealBuildTool|Win32
@@ -65,11 +69,5 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4F987303-57E4-4BE7-A226-774CD197F913} = {94A6C6F3-99B3-346E-9557-ABF9D4064DBD}
 		{26894347-888D-4B42-859D-24C224E4AC58} = {8E2F6A87-1826-34F4-940C-CC23A48F9FE4}
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {0E91B7E5-79C0-4A29-9AD7-605B8C5C4462}
-	EndGlobalSection
-	GlobalSection(44630d46-96b5-488c-8df926e21db8c1a3) = preSolution
-		ueSolution = true
 	EndGlobalSection
 EndGlobal
