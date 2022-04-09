@@ -19,5 +19,4 @@ void AExplainButton::raiseFlag(){
 
 void AExplainButton::click() {
 	Super::click();//call base click
-	GI->SetCurrentAction("EXPLAIN"); //Set to Explain, may be removed in future and done in Narrator to avoid giving button a copy of the game instance.
 }

@@ -16,6 +16,7 @@ AButtonMain::AButtonMain()
 		visualMesh->SetStaticMesh(ButtonMain.Object);
 	}
 	RootComponent = visualMesh;
+	visualMesh->bCastDynamicShadow = false;
 
 	Text = CreateDefaultSubobject<UTextRenderComponent>(TEXT("Text"));
 	Text->SetupAttachment(RootComponent);
