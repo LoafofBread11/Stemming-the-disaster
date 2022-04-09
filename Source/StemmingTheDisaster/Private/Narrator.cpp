@@ -63,6 +63,32 @@ void ANarrator::EndTalk() {
 
 void ANarrator::CreateInvestMenu() {
 	GI->SetCurrentAction("NARRATOR_INVEST");
+	FVector myLoc = GetActorLocation();
+	FRotator myRot = GetActorRotation();
+	myRot.Yaw *= 4.0f;
+
+	AButtonMain* newBackButton = GetWorld()->SpawnActor<ABackButton>(ABackButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, myLoc.Z - 15.0f), myRot);   // Spawn newBackButton actor for ABackButton
+	newBackButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f));   // Modify newBackButton scale
+	newBackButton->setScale();
+	newBackButton->setText(FText::FromString(TEXT("Back")));   // Set newBackButton text
+
+	buttons.Add(newBackButton);   // Add newBackButton to buttons array
+
+	for (auto It = GI->investmentOptions.CreateConstIterator(); It; ++It)
+	{
+		float spawnHeight = 0.0f;
+		AButtonMain* newButton = GetWorld()->SpawnActor<AInvestConfirmButton>(AInvestConfirmButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, myLoc.Z + 15.0f + (It.Value() + spawnHeight)), myRot);
+		newButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f));   // Modify newButton scale
+		newButton->setScale();
+		FString cost = "$" + FString::FromInt(It.Value());
+		newButton->setText(FText::FromString(cost));
+		
+		AInvestConfirmButton* IB = Cast<AInvestConfirmButton>(newButton);
+		IB->itemDesc->SetText(It.Key());
+
+		buttons.Add(newButton);
+		spawnHeight += 30.0f;
+	}
 }
 
 // Creates invest, travel, explain, menu, and back Buttons
