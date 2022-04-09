@@ -61,36 +61,46 @@ void ANarrator::EndTalk() {
 }
 
 void ANarrator::CreateInvestMenu() {
-
+	
 }
 
-// Creates invest, travel, explain, and back Buttons
+// Creates invest, travel, explain, menu, and back Buttons
 void ANarrator::CreateMainMenu() {
 	FVector myLoc = GetActorLocation(); // Stores the actors location and rotation
 	FRotator myRot = GetActorRotation();
 	myRot.Yaw = myRot.Yaw * 4.0f; // Sets myRot to turn around since buttons were spawning facing the narrator, not player
 
-	AButtonMain* newBackButton = GetWorld()->SpawnActor<ABackButton>(ABackButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, myLoc.Z + 25.0f), myRot); // spawns backbutton
+	AButtonMain* newBackButton = GetWorld()->SpawnActor<ABackButton>(ABackButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, myLoc.Z + 45.0f), myRot); // spawns backbutton
 	newBackButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f)); // Reduces scale
+	newBackButton->setScale();
 	newBackButton->setText(FText::FromString("Back"));
 
-	AButtonMain* newInvestButton = GetWorld()->SpawnActor<AInvestConfirmButton>(AInvestConfirmButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, myLoc.Z - 5.0f), myRot); // spawns InvestButton
+	AButtonMain* newInvestButton = GetWorld()->SpawnActor<AInvestConfirmButton>(AInvestConfirmButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, myLoc.Z + 15.0f), myRot); // spawns InvestButton
 	newInvestButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f)); // Reduces scale
+	newInvestButton->setScale();
 	newInvestButton->setText(FText::FromString("Invest"));
 
-	AButtonMain* newExplainButton = GetWorld()->SpawnActor<AExplainButton>(AExplainButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, myLoc.Z - 35.0f), myRot); // Spawns ExplainButton
+	AButtonMain* newExplainButton = GetWorld()->SpawnActor<AExplainButton>(AExplainButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, myLoc.Z - 15.0f), myRot); // Spawns ExplainButton
 	newExplainButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f)); // Reduces scale
+	newExplainButton->setScale();
 	newExplainButton->setText(FText::FromString("Explain"));
 
-	AButtonMain* newTravelButton = GetWorld()->SpawnActor<ADestinationButton>(ADestinationButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, myLoc.Z - 65.0f), myRot); // Spawns TravelButton
+	AButtonMain* newTravelButton = GetWorld()->SpawnActor<ADestinationButton>(ADestinationButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, myLoc.Z - 45.0f), myRot); // Spawns TravelButton
 	newTravelButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f)); // Reduces scale
+	newTravelButton->setScale();
 	newTravelButton->setText(FText::FromString("Travel"));
+
+	AButtonMain* newMenuButton = GetWorld()->SpawnActor<AMenuButton>(AMenuButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, myLoc.Z - 75.0f), myRot); // Spawns MenuButton
+	newMenuButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f)); // Reduces scale
+	newMenuButton->setScale();
+	newMenuButton->setText(FText::FromString("Menu"));
 
 	// Adds all buttons to the buttons[] array
 	buttons.Add(newBackButton);
 	buttons.Add(newInvestButton);
 	buttons.Add(newExplainButton);
 	buttons.Add(newTravelButton);
+	buttons.Add(newMenuButton);
 }
 
 void ANarrator::CreateTravelMenu() {

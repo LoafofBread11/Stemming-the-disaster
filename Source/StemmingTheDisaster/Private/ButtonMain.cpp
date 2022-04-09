@@ -84,6 +84,13 @@ void AButtonMain::setText(FText text)
 	textString = text.ToString(); //Convert the text to a string so we can store an work with it
 }
 
+void AButtonMain::setScale()
+{
+	myScale = GetActorScale3D();
+	normalScale = myScale.Y;
+	normalScaleText = (Text->GetRelativeScale3D().Y * normalScale);
+}
+
 void AButtonMain::raiseFlag()
 {
 	//Raise your flags here

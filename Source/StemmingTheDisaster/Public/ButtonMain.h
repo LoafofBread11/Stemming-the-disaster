@@ -35,6 +35,9 @@ public:
 	UFUNCTION()
 	void setText(FText text);
 
+	UFUNCTION()
+	void setScale();
+
 	UPROPERTY(VisibleAnywhere)
 	UStaticMeshComponent* visualMesh;
 
