@@ -74,17 +74,18 @@ void ANarrator::CreateInvestMenu() {
 
 	buttons.Add(newBackButton);   // Add newBackButton to buttons array
 
+	float spawnHeight = 0.0f;
 	for (auto It = GI->investmentOptions.CreateConstIterator(); It; ++It)
 	{
-		float spawnHeight = 0.0f;
-		AButtonMain* newButton = GetWorld()->SpawnActor<AInvestConfirmButton>(AInvestConfirmButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, myLoc.Z + 15.0f + (It.Value() + spawnHeight)), myRot);
-		newButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f));   // Modify newButton scale
+		AButtonMain* newButton = GetWorld()->SpawnActor<AInvestConfirmButton>(AInvestConfirmButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, myLoc.Z + 15.0f + spawnHeight), myRot);
+		newButton->SetActorScale3D(FVector(0.375f, 0.25f, 0.25f));   // Modify newButton scale
 		newButton->setScale();
 		FString cost = "$" + FString::FromInt(It.Value());
 		newButton->setText(FText::FromString(cost));
 		
 		AInvestConfirmButton* IB = Cast<AInvestConfirmButton>(newButton);
 		IB->itemDesc->SetText(It.Key());
+		IB->item = It.Key();
 
 		buttons.Add(newButton);
 		spawnHeight += 30.0f;
