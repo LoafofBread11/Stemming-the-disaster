@@ -72,4 +72,7 @@ public:
 
 	UPROPERTY(VisibleAnywhere)
 	float voiceTimeRemaining = 0.0f;
+
+	UFUNCTION()
+	void dialogueLookup(int code);
 };

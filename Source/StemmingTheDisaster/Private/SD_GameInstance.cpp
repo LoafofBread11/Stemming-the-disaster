@@ -75,7 +75,7 @@ TArray<TPair <FString, FString>> USD_GameInstance::GetDialouge()
 
 void USD_GameInstance::GenerateDialouge(FString dialogue, FString dialogueCode)
 {
-	//dialogueOptions.Add(TPair<FString, FString>("", ""));
+	dialogueOptions.Add(TPair<FString, FString>(dialogue, dialogueCode));
 	return;
 }
 

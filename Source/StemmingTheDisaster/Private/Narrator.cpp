@@ -4,6 +4,7 @@
 #include "Narrator.h"
 #include "Sound/SoundCue.h"
 #include "Kismet/GameplayStatics.h"
+#include "Misc/DefaultValueHelper.h"
 
 // Sets default values
 ANarrator::ANarrator()
@@ -245,7 +246,17 @@ void ANarrator::HandleFlags() {
 							voiceTimeRemaining = cue->GetDuration(); //Set the time that the voice clip will play
 							explainClip->Play(); //Play the Audio Component
 							GI->SetCurrentAction("EXPLAIN"); //Set action to explain, not narrator explain.
-							//Check for if a new clip needs to be loaded.
+							if (code.Len() >= 5 && code[0] == 'T')
+							{
+								FString dCode = code.Mid(2, 3);
+								if (dCode.IsNumeric())
+								{
+									int x;
+									FDefaultValueHelper::ParseInt(dCode, x);
+									dialogueLookup(x);
+								}
+								
+							}
 							ClearMenu(); //Remove the buttons while the explanation plays
 						}
 						return;
@@ -304,4 +315,14 @@ void ANarrator::HandleFlags() {
 			}
 		}
 	}
+}
+
+void ANarrator::dialogueLookup(int code)
+{
+	/*
+	switch (code)
+	{
+		//Depending on the code, GI->GenerateDialouge("", "");
+	}
+	*/
 }
