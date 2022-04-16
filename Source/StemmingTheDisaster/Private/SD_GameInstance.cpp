@@ -34,6 +34,10 @@ void USD_GameInstance::SetupMap(FString mapName)
 	investmentCareers = inDat.createInvestmentCareerData(mapName); //Populate the careers associated with the investment options
 
 	travelableMaps.Add("Airplane"); //Adding airplane to travelable maps in Sprint 2. Done here only because Start Simulator is not implemented / called yet.
+	if (mapName == "Results")
+		currentAction = "RESULTS";
+	else
+		currentAction = "IDLE";
 	return;
 }
 

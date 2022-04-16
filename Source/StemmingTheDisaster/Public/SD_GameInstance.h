@@ -49,7 +49,7 @@ class STEMMINGTHEDISASTER_API USD_GameInstance : public UGameInstance
 		TArray<FString> alreadyInvested;
 
 		UPROPERTY(VisibleAnywhere)
-		float remainingTime = 1200.0f; //amount of time remaining
+			float remainingTime = 1200.0f; //amount of time remaining
 
 		UPROPERTY(VisibleAnywhere)
 		int remainingCurrency = 1000000; //amount of currency remaining 

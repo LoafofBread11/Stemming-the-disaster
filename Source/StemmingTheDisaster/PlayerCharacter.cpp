@@ -116,14 +116,21 @@ void APlayerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	GI = Cast<USD_GameInstance>(UGameplayStatics::GetGameInstance(GetWorld())); //Get and cast Game Instance
-	GI->SetCurrentAction("IDLE");
 	if (GI->getInVR()) //If we are in VR
 	{
 		FVector loc = GetActorLocation(); //Get location of actor
 		loc.Z += 150; //Raise location by 150 units
 		SetActorLocation(loc); //Set the location
-		//if(GEngine)
-		//	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, TEXT("In VR"));
+		UE_LOG(LogTemp, Warning, TEXT("%s"), *GI->GetCurrentAction());
+		if (GI->GetCurrentAction() == "RESULTS") //If we're in the results room
+		{
+			valueWidget->SetRelativeScale3D(FVector(0.0f)); //Hide the components anyway
+			reticleWidget->SetRelativeScale3D(FVector(0.0f));
+			lAtWidget->SetRelativeScale3D(FVector(0.0f));
+			captionWidget->SetRelativeScale3D(FVector(0.0f));
+			interactableName->SetRelativeScale3D(FVector(0.0f));
+			interactableText->SetRelativeScale3D(FVector(0.0f));
+		}
 	}
 	else
 	{
@@ -180,13 +187,32 @@ void APlayerCharacter::Tick(float DeltaTime)
 		lookingAtText = "";
 	}
 
+	FString current = GI->GetCurrentAction();
+	if (current == "RESULTS" || current == "DONE")
+		done = true;
+
 	if (!done) //If not done yet
 	{
 		float time = GI->getRemainingTime(); //Get the remaining time
 		time -= DeltaTime; //Subtract the delta time from it
 		GI->setRemainingTime(time); //Set the new time
 		if (time <= 0.0f) //If no more time remains
+		{
 			done = true; //Then we are done
+			GI->SetCurrentAction("DONE"); //Sets current action to done
+			GI->setRemainingTime(3.0f); //Allow 3 seconds of done time
+		}
+	}
+	else if (GI->GetCurrentAction() == "DONE")
+	{
+		float time = GI->getRemainingTime(); //Get the remaining time
+		time -= DeltaTime; //Subtract the delta time from it
+		GI->setRemainingTime(time); //Set the new time
+		if (time <= 0.0f) //If no more time remains
+		{
+			GI->SetCurrentAction("RESULTS");
+			UGameplayStatics::OpenLevel((UObject*)GI, TEXT("ResultsMap"));//Go to the results map
+		}
 	}
 
 }

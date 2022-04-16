@@ -46,6 +46,14 @@ void ANarrator::Tick(float DeltaTime)
 			GI->SetCurrentAction("NARRATOR_EXPLAIN"); //Set the correct subaction
 		}
 	}
+	if (GI->GetCurrentAction() == "DONE")
+	{
+		if (explainClip->IsPlaying())
+			explainClip->Stop(); //Stop sounds
+		if (buttons.Num() > 0)
+			ClearMenu(); //Kill the menu if it exists
+
+	}
 }
 
 void ANarrator::StartTalk() {
@@ -63,6 +71,8 @@ void ANarrator::EndTalk() {
 }
 
 void ANarrator::CreateInvestMenu() {
+	if (GI->GetCurrentAction() == "DONE")
+		return; //Kill the action if the simulation is done
 	GI->SetCurrentAction("NARRATOR_INVEST");
 	FVector myLoc = GetActorLocation();
 	FRotator myRot = GetActorRotation();
@@ -95,6 +105,8 @@ void ANarrator::CreateInvestMenu() {
 
 // Creates invest, travel, explain, menu, and back Buttons
 void ANarrator::CreateMainMenu() {
+	if (GI->GetCurrentAction() == "DONE")
+		return; //Kill the action if the simulation is done
 	FVector myLoc = GetActorLocation(); // Stores the actors location and rotation
 	FRotator myRot = GetActorRotation();
 	myRot.Yaw = myRot.Yaw * 4.0f; // Sets myRot to turn around since buttons were spawning facing the narrator, not player
@@ -127,6 +139,8 @@ void ANarrator::CreateMainMenu() {
 }
 
 void ANarrator::CreateTravelMenu() {
+	if (GI->GetCurrentAction() == "DONE")
+		return; //Kill the action if the simulation is done
 	GI->SetCurrentAction("NARRATOR_TRAVEL");
 	FVector myLoc = GetActorLocation();   // Get actor location and rotation to spawn button
 	FRotator myRot = GetActorRotation();
@@ -157,6 +171,8 @@ void ANarrator::CreateTravelMenu() {
 }
 
 void ANarrator::CreateExplainMenu() {
+	if (GI->GetCurrentAction() == "DONE")
+		return; //Kill the action if the simulation is done
 	GI->SetCurrentAction("NARRATOR_EXPLAIN");
 	FVector myLoc = GetActorLocation();   // Get actor location and rotation to spawn button
 	FRotator myRot = GetActorRotation();
