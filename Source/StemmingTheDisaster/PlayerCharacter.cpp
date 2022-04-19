@@ -188,7 +188,7 @@ void APlayerCharacter::Tick(float DeltaTime)
 	}
 
 	FString current = GI->GetCurrentAction();
-	if (current == "RESULTS" || current == "DONE")
+	if (current == "RESULTS" || current == "DONE" || current == "START")
 		done = true;
 
 	if (!done) //If not done yet

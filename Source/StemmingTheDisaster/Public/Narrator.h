@@ -75,4 +75,10 @@ public:
 
 	UFUNCTION()
 	void dialogueLookup(int code);
+
+	UPROPERTY(VisibleAnywhere)
+	float baseZ = 0.0f;
+
+	UPROPERTY(VisibleAnywhere)
+		float timeCounter = 0.0f;
 };

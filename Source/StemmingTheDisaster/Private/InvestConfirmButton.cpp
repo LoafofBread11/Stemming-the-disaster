@@ -15,6 +15,8 @@ void AInvestConfirmButton::BeginPlay()
 {
 	Super::BeginPlay();
 	itemDesc->SetRelativeScale3D(Text->GetRelativeScale3D()); //Make the 2 texts fields have parity with each other
+	ButtonVisProp->SetVectorParameterValue(FName(TEXT("ButtonColor")), FLinearColor(0.6f, 0.44f, .04f, 1.0f));
+	visualMesh->SetMaterial(0, ButtonVisProp);
 }
 
 void AInvestConfirmButton::Tick(float DeltaTime)

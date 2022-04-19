@@ -11,6 +11,8 @@ AExplainButton::AExplainButton() : AButtonMain() {
 void AExplainButton::BeginPlay() {
 	Super::BeginPlay();
 	GI = Cast<USD_GameInstance>(UGameplayStatics::GetGameInstance(GetWorld())); //Get and cast Game Instance
+	ButtonVisProp->SetVectorParameterValue(FName(TEXT("ButtonColor")), FLinearColor(0.3f, 0.11f, .52f, 1.0f));
+	visualMesh->SetMaterial(0, ButtonVisProp);
 }
 
 void AExplainButton::raiseFlag(){

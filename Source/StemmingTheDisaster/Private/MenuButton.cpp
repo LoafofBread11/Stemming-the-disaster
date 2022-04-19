@@ -10,6 +10,8 @@ AMenuButton::AMenuButton() : AButtonMain()
 void AMenuButton::BeginPlay()
 {
 	Super::BeginPlay();
+	ButtonVisProp->SetVectorParameterValue(FName(TEXT("ButtonColor")), FLinearColor(0.11f, 0.31f, .04f, 1.0f));
+	visualMesh->SetMaterial(0, ButtonVisProp);
 }
 
 void AMenuButton::raiseFlag()
