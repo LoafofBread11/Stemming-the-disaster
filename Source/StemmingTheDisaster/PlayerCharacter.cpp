@@ -122,7 +122,7 @@ void APlayerCharacter::BeginPlay()
 		loc.Z += 150; //Raise location by 150 units
 		SetActorLocation(loc); //Set the location
 		UE_LOG(LogTemp, Warning, TEXT("%s"), *GI->GetCurrentAction());
-		if (GI->GetCurrentAction() == "RESULTS") //If we're in the results room
+		if (GI->GetCurrentAction() == "RESULTS" || GI->GetCurrentAction() == "START") //If we're in the results room
 		{
 			valueWidget->SetRelativeScale3D(FVector(0.0f)); //Hide the components anyway
 			reticleWidget->SetRelativeScale3D(FVector(0.0f));
