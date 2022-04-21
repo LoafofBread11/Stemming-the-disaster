@@ -6,6 +6,7 @@
 USD_GameInstance::USD_GameInstance()
 {
 	travelableMaps.Add("Airplane"); //Adding airplane to travelable maps in Sprint 2. Done here only because Start Simulator is not implemented / called yet.
+	travelableMaps.Add("RescueStation");
 }
 
 void USD_GameInstance::StartSimulator()
@@ -156,5 +157,7 @@ FString USD_GameInstance::mapNameLookup(FString name)
 {
 	if (name == "Airplane")
 		return TEXT("Air Plane");
+	else if (name == "RescueStation")
+		return TEXT("Rescue Station");
 	return TEXT(""); //If we get nothing, return nothing
 }

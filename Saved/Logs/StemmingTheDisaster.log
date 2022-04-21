@@ -1778,3 +1778,830 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2022.04.21-19.13.08:066][390]Cmd: SELECT NONE
 [2022.04.21-19.13.08:745][470]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
 [2022.04.21-19.13.14:242][980]Cmd: SELECT NONE
+[2022.04.21-19.18.14:623][618]Candidate modules for hot reload:
+[2022.04.21-19.18.14:624][618]  StemmingTheDisaster
+[2022.04.21-19.18.14:624][618]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=StemmingTheDisaster,4264 StemmingTheDisasterEditor Win64 Development -Project="C:/Users/chanc/OneDrive/Documents/GitHub/Stemming-the-disaster/StemmingTheDisaster.uproject" "C:/Users/chanc/OneDrive/Documents/GitHub/Stemming-the-disaster/StemmingTheDisaster.uproject"  -IgnoreJunk]
+[2022.04.21-19.18.14:627][618]Warning: Starting HotReload took  0.0s.
+[2022.04.21-19.18.17:838][959]CompilerResultsLog: New page: Compilation - Apr 21, 2022, 9:18:17 AM
+[2022.04.21-19.18.17:838][959]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster).
+[2022.04.21-19.18.17:838][959]CompilerResultsLog: Building StemmingTheDisasterEditor...
+[2022.04.21-19.18.17:838][959]CompilerResultsLog: Using Visual Studio 2019 14.29.30136 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.04.21-19.18.17:838][959]CompilerResultsLog: Building 4 actions with 24 processes...
+[2022.04.21-19.18.17:838][959]CompilerResultsLog:   [1/4] SD_GameInstance.cpp
+[2022.04.21-19.18.17:838][959]CompilerResultsLog:   [2/4] UE4Editor-StemmingTheDisaster-4264.lib
+[2022.04.21-19.18.17:838][959]CompilerResultsLog:      Creating library C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Intermediate\Build\Win64\UE4Editor\Development\StemmingTheDisaster\UE4Editor-StemmingTheDisaster-4264.lib and object C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Intermediate\Build\Win64\UE4Editor\Development\StemmingTheDisaster\UE4Editor-StemmingTheDisaster-4264.exp
+[2022.04.21-19.18.17:839][959]CompilerResultsLog:   [3/4] UE4Editor-StemmingTheDisaster-4264.dll
+[2022.04.21-19.18.17:839][959]CompilerResultsLog:      Creating library C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Intermediate\Build\Win64\UE4Editor\Development\StemmingTheDisaster\UE4Editor-StemmingTheDisaster-4264.suppressed.lib and object C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Intermediate\Build\Win64\UE4Editor\Development\StemmingTheDisaster\UE4Editor-StemmingTheDisaster-4264.suppressed.exp
+[2022.04.21-19.18.17:839][959]CompilerResultsLog:   [4/4] StemmingTheDisasterEditor.target
+[2022.04.21-19.18.17:839][959]CompilerResultsLog: Total time in Parallel executor: 2.07 seconds
+[2022.04.21-19.18.17:839][959]CompilerResultsLog: Total execution time: 3.09 seconds
+[2022.04.21-19.18.17:839][959]LogMainFrame: MainFrame: Module compiling took 3.222 seconds
+[2022.04.21-19.18.17:928][959]LogHotReload: Re-instancing SD_GameInstance after hot-reload.
+[2022.04.21-19.18.17:948][959]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'StemmingTheDisaster' in 0.0004 seconds. Added 12 classes and 3 folders.
+[2022.04.21-19.18.17:957][959]Display: HotReload successful (39 functions remapped  0 scriptstructs remapped)
+[2022.04.21-19.18.18:026][959]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0136 seconds. Added 3834 classes and 931 folders.
+[2022.04.21-19.18.18:033][959]Display: HotReload took  3.4s.
+[2022.04.21-19.18.20:006][146]LogTemp: Repeating last play command: Selected Viewport
+[2022.04.21-19.18.20:015][146]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.04.21-19.18.20:015][146]PIE: New page: PIE session: RescueStation (Apr 21, 2022, 9:18:20 AM)
+[2022.04.21-19.18.20:051][146]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.18.20:054][146]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003826s)
+[2022.04.21-19.18.20:055][146]LogAIModule: Creating AISystem for world RescueStation
+[2022.04.21-19.18.20:056][146]LogPlayLevel: PIE: World Init took: (0.001154s)
+[2022.04.21-19.18.20:056][146]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RescueStation.RescueStation to /Game/Maps/UEDPIE_0_RescueStation.RescueStation (0.005168s)
+[2022.04.21-19.18.20:129][146]LogUObjectHash: Compacting FUObjectHashTables data took   3.23ms
+[2022.04.21-19.18.20:130][146]LogAudio: Display: Creating Audio Device:                 Id: 5, Scope: Unique, Realtime: True
+[2022.04.21-19.18.20:130][146]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.04.21-19.18.20:130][146]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.04.21-19.18.20:130][146]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.04.21-19.18.20:130][146]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.04.21-19.18.20:130][146]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.04.21-19.18.20:130][146]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.04.21-19.18.20:130][146]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.04.21-19.18.20:130][146]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.04.21-19.18.20:130][146]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.04.21-19.18.20:130][146]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.04.21-19.18.20:130][146]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.04.21-19.18.20:130][146]LogAudioMixer: Display: Initializing audio mixer.
+[2022.04.21-19.18.20:135][146]LogAudioMixer: Display: 0: FrontLeft
+[2022.04.21-19.18.20:135][146]LogAudioMixer: Display: 1: FrontRight
+[2022.04.21-19.18.20:144][146]LogAudioMixer: Display: Using Audio Device Speakers (High Definition Audio Device)
+[2022.04.21-19.18.20:144][146]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.04.21-19.18.20:145][146]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.04.21-19.18.20:145][146]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.04.21-19.18.20:145][146]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.04.21-19.18.20:145][146]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.04.21-19.18.20:145][146]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.04.21-19.18.20:147][146]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.04.21-19.18.20:147][146]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.04.21-19.18.20:147][146]LogInit: FAudioDevice initialized.
+[2022.04.21-19.18.20:147][146]LogAudio: Display: Audio Device (ID: 5) registered with world 'RescueStation'.
+[2022.04.21-19.18.20:155][146]LogLoad: Game class is 'GameModeBase'
+[2022.04.21-19.18.20:157][146]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RescueStation.RescueStation up for play (max tick rate 0) at 2022.04.21-14.18.20
+[2022.04.21-19.18.20:157][146]LogWorld: Bringing up level for play took: 0.001035
+[2022.04.21-19.18.20:157][146]LogOnline: OSS: Creating online subsystem instance for: :Context_15
+[2022.04.21-19.18.20:161][146]PIE: Server logged in
+[2022.04.21-19.18.20:162][146]PIE: Play in editor total start time 0.149 seconds.
+[2022.04.21-19.18.25:318][755]LogNet: Browse: /Game/Maps/Airplane
+[2022.04.21-19.18.25:318][755]LogLoad: LoadMap: /Game/Maps/Airplane
+[2022.04.21-19.18.25:318][755]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.18.25:319][755]LogWorld: UWorld::CleanupWorld for RescueStation, bSessionEnded=true, bCleanupResources=true
+[2022.04.21-19.18.25:319][755]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.18.25:365][755]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.04.21-19.18.25:402][755]LogUObjectHash: Compacting FUObjectHashTables data took   2.88ms
+[2022.04.21-19.18.25:431][755]LogAudio: Display: Audio Device (ID: 5) registered with world 'Airplane'.
+[2022.04.21-19.18.25:432][755]LogAIModule: Creating AISystem for world Airplane
+[2022.04.21-19.18.25:432][755]LogLoad: Game class is 'GameModeBase'
+[2022.04.21-19.18.25:434][755]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Airplane.Airplane up for play (max tick rate 0) at 2022.04.21-14.18.25
+[2022.04.21-19.18.25:434][755]LogWorld: Bringing up level for play took: 0.001605
+[2022.04.21-19.18.25:436][755]LogLoad: Took 0.118458 seconds to LoadMap(/Game/Maps/Airplane)
+[2022.04.21-19.18.25:437][755]LogTemp: Warning: Made it here
+[2022.04.21-19.18.27:762][ 22]LogNet: Browse: /Game/Maps/Sprint1VerticalSlice
+[2022.04.21-19.18.27:762][ 22]LogLoad: LoadMap: /Game/Maps/Sprint1VerticalSlice
+[2022.04.21-19.18.27:762][ 22]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Airplane
+[2022.04.21-19.18.27:763][ 22]LogWorld: UWorld::CleanupWorld for Airplane, bSessionEnded=true, bCleanupResources=true
+[2022.04.21-19.18.27:763][ 22]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.18.27:816][ 22]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.04.21-19.18.27:819][ 22]LogUObjectHash: Compacting FUObjectHashTables data took   1.93ms
+[2022.04.21-19.18.27:836][ 22]LogAudio: Display: Audio Device (ID: 5) registered with world 'Sprint1VerticalSlice'.
+[2022.04.21-19.18.27:837][ 22]LogAIModule: Creating AISystem for world Sprint1VerticalSlice
+[2022.04.21-19.18.27:838][ 22]LogLoad: Game class is 'GameModeBase'
+[2022.04.21-19.18.27:839][ 22]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Sprint1VerticalSlice.Sprint1VerticalSlice up for play (max tick rate 0) at 2022.04.21-14.18.27
+[2022.04.21-19.18.27:840][ 22]LogWorld: Bringing up level for play took: 0.001462
+[2022.04.21-19.18.27:842][ 22]LogLoad: Took 0.079796 seconds to LoadMap(/Game/Maps/Sprint1VerticalSlice)
+[2022.04.21-19.18.31:869][493]LogNet: Browse: /Game/Maps/RescueStation
+[2022.04.21-19.18.31:869][493]LogLoad: LoadMap: /Game/Maps/RescueStation
+[2022.04.21-19.18.31:869][493]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Sprint1VerticalSlice
+[2022.04.21-19.18.31:870][493]LogWorld: UWorld::CleanupWorld for Sprint1VerticalSlice, bSessionEnded=true, bCleanupResources=true
+[2022.04.21-19.18.31:870][493]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.18.31:916][493]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.04.21-19.18.31:920][493]LogUObjectHash: Compacting FUObjectHashTables data took   2.19ms
+[2022.04.21-19.18.31:921][493]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.18.31:925][493]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003849s)
+[2022.04.21-19.18.31:926][493]LogAIModule: Creating AISystem for world RescueStation
+[2022.04.21-19.18.31:926][493]LogPlayLevel: PIE: World Init took: (0.001185s)
+[2022.04.21-19.18.31:927][493]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RescueStation.RescueStation to /Game/Maps/UEDPIE_0_RescueStation.RescueStation (0.005488s)
+[2022.04.21-19.18.31:927][493]LogAudio: Display: Audio Device (ID: 5) registered with world 'RescueStation'.
+[2022.04.21-19.18.31:927][493]LogLoad: Game class is 'GameModeBase'
+[2022.04.21-19.18.31:927][493]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RescueStation.RescueStation up for play (max tick rate 0) at 2022.04.21-14.18.31
+[2022.04.21-19.18.31:928][493]LogWorld: Bringing up level for play took: 0.000646
+[2022.04.21-19.18.31:930][493]LogLoad: Took 0.061068 seconds to LoadMap(/Game/Maps/UEDPIE_0_RescueStation)
+[2022.04.21-19.18.40:112][470]LogNet: Browse: /Game/Maps/Airplane
+[2022.04.21-19.18.40:112][470]LogLoad: LoadMap: /Game/Maps/Airplane
+[2022.04.21-19.18.40:112][470]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.18.40:113][470]LogWorld: UWorld::CleanupWorld for RescueStation, bSessionEnded=true, bCleanupResources=true
+[2022.04.21-19.18.40:113][470]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.18.40:176][470]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.04.21-19.18.40:180][470]LogUObjectHash: Compacting FUObjectHashTables data took   1.96ms
+[2022.04.21-19.18.40:196][470]LogAudio: Display: Audio Device (ID: 5) registered with world 'Airplane'.
+[2022.04.21-19.18.40:196][470]LogAIModule: Creating AISystem for world Airplane
+[2022.04.21-19.18.40:197][470]LogLoad: Game class is 'GameModeBase'
+[2022.04.21-19.18.40:198][470]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Airplane.Airplane up for play (max tick rate 0) at 2022.04.21-14.18.40
+[2022.04.21-19.18.40:199][470]LogWorld: Bringing up level for play took: 0.001546
+[2022.04.21-19.18.40:201][470]LogLoad: Took 0.089425 seconds to LoadMap(/Game/Maps/Airplane)
+[2022.04.21-19.18.40:201][470]LogTemp: Warning: Made it here
+[2022.04.21-19.18.42:552][747]LogNet: Browse: /Game/Maps/Sprint1VerticalSlice
+[2022.04.21-19.18.42:552][747]LogLoad: LoadMap: /Game/Maps/Sprint1VerticalSlice
+[2022.04.21-19.18.42:552][747]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Airplane
+[2022.04.21-19.18.42:553][747]LogWorld: UWorld::CleanupWorld for Airplane, bSessionEnded=true, bCleanupResources=true
+[2022.04.21-19.18.42:553][747]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.18.42:606][747]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.04.21-19.18.42:610][747]LogUObjectHash: Compacting FUObjectHashTables data took   2.17ms
+[2022.04.21-19.18.42:625][747]LogAudio: Display: Audio Device (ID: 5) registered with world 'Sprint1VerticalSlice'.
+[2022.04.21-19.18.42:626][747]LogAIModule: Creating AISystem for world Sprint1VerticalSlice
+[2022.04.21-19.18.42:626][747]LogLoad: Game class is 'GameModeBase'
+[2022.04.21-19.18.42:628][747]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Sprint1VerticalSlice.Sprint1VerticalSlice up for play (max tick rate 0) at 2022.04.21-14.18.42
+[2022.04.21-19.18.42:629][747]LogWorld: Bringing up level for play took: 0.001706
+[2022.04.21-19.18.42:631][747]LogLoad: Took 0.078985 seconds to LoadMap(/Game/Maps/Sprint1VerticalSlice)
+[2022.04.21-19.18.47:863][370]LogNet: Browse: /Game/Maps/Airplane
+[2022.04.21-19.18.47:863][370]LogLoad: LoadMap: /Game/Maps/Airplane
+[2022.04.21-19.18.47:863][370]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Sprint1VerticalSlice
+[2022.04.21-19.18.47:864][370]LogWorld: UWorld::CleanupWorld for Sprint1VerticalSlice, bSessionEnded=true, bCleanupResources=true
+[2022.04.21-19.18.47:864][370]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.18.47:917][370]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.04.21-19.18.47:921][370]LogUObjectHash: Compacting FUObjectHashTables data took   1.99ms
+[2022.04.21-19.18.47:937][370]LogAudio: Display: Audio Device (ID: 5) registered with world 'Airplane'.
+[2022.04.21-19.18.47:938][370]LogAIModule: Creating AISystem for world Airplane
+[2022.04.21-19.18.47:938][370]LogLoad: Game class is 'GameModeBase'
+[2022.04.21-19.18.47:940][370]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Airplane.Airplane up for play (max tick rate 0) at 2022.04.21-14.18.47
+[2022.04.21-19.18.47:940][370]LogWorld: Bringing up level for play took: 0.001597
+[2022.04.21-19.18.47:942][370]LogLoad: Took 0.079434 seconds to LoadMap(/Game/Maps/Airplane)
+[2022.04.21-19.18.47:943][370]LogTemp: Warning: Made it here
+[2022.04.21-19.18.50:306][649]LogNet: Browse: /Game/Maps/Sprint1VerticalSlice
+[2022.04.21-19.18.50:307][649]LogLoad: LoadMap: /Game/Maps/Sprint1VerticalSlice
+[2022.04.21-19.18.50:307][649]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Airplane
+[2022.04.21-19.18.50:307][649]LogWorld: UWorld::CleanupWorld for Airplane, bSessionEnded=true, bCleanupResources=true
+[2022.04.21-19.18.50:308][649]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.18.50:366][649]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.04.21-19.18.50:369][649]LogUObjectHash: Compacting FUObjectHashTables data took   1.99ms
+[2022.04.21-19.18.50:383][649]LogAudio: Display: Audio Device (ID: 5) registered with world 'Sprint1VerticalSlice'.
+[2022.04.21-19.18.50:384][649]LogAIModule: Creating AISystem for world Sprint1VerticalSlice
+[2022.04.21-19.18.50:385][649]LogLoad: Game class is 'GameModeBase'
+[2022.04.21-19.18.50:386][649]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Sprint1VerticalSlice.Sprint1VerticalSlice up for play (max tick rate 0) at 2022.04.21-14.18.50
+[2022.04.21-19.18.50:386][649]LogWorld: Bringing up level for play took: 0.001381
+[2022.04.21-19.18.50:389][649]LogLoad: Took 0.082269 seconds to LoadMap(/Game/Maps/Sprint1VerticalSlice)
+[2022.04.21-19.18.58:997][677]LogNet: Browse: /Game/Maps/RescueStation
+[2022.04.21-19.18.58:997][677]LogLoad: LoadMap: /Game/Maps/RescueStation
+[2022.04.21-19.18.58:997][677]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Sprint1VerticalSlice
+[2022.04.21-19.18.58:998][677]LogWorld: UWorld::CleanupWorld for Sprint1VerticalSlice, bSessionEnded=true, bCleanupResources=true
+[2022.04.21-19.18.58:998][677]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.18.59:056][677]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.04.21-19.18.59:061][677]LogUObjectHash: Compacting FUObjectHashTables data took   2.01ms
+[2022.04.21-19.18.59:062][677]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.18.59:066][677]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003610s)
+[2022.04.21-19.18.59:067][677]LogAIModule: Creating AISystem for world RescueStation
+[2022.04.21-19.18.59:067][677]LogPlayLevel: PIE: World Init took: (0.001188s)
+[2022.04.21-19.18.59:067][677]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RescueStation.RescueStation to /Game/Maps/UEDPIE_0_RescueStation.RescueStation (0.004936s)
+[2022.04.21-19.18.59:067][677]LogAudio: Display: Audio Device (ID: 5) registered with world 'RescueStation'.
+[2022.04.21-19.18.59:067][677]LogLoad: Game class is 'GameModeBase'
+[2022.04.21-19.18.59:068][677]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RescueStation.RescueStation up for play (max tick rate 0) at 2022.04.21-14.18.59
+[2022.04.21-19.18.59:068][677]LogWorld: Bringing up level for play took: 0.000662
+[2022.04.21-19.18.59:071][677]LogLoad: Took 0.073781 seconds to LoadMap(/Game/Maps/UEDPIE_0_RescueStation)
+[2022.04.21-19.19.02:261][ 51]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.04.21-19.19.02:261][ 51]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.19.02:262][ 51]LogWorld: UWorld::CleanupWorld for RescueStation, bSessionEnded=true, bCleanupResources=true
+[2022.04.21-19.19.02:262][ 51]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.19.02:276][ 51]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.04.21-19.19.02:281][ 51]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.19.02:295][ 51]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.04.21-19.19.02:296][ 51]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.04.21-19.19.02:298][ 51]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.04.21-19.19.02:304][ 51]LogUObjectHash: Compacting FUObjectHashTables data took   2.09ms
+[2022.04.21-19.19.02:334][ 52]LogPlayLevel: Display: Destroying online subsystem :Context_15
+[2022.04.21-19.19.04:954][346]LogUObjectHash: Compacting FUObjectHashTables data took   2.00ms
+[2022.04.21-19.19.04:975][346]LogSavePackage: Moving '../../../../../../Users/chanc/OneDrive/Documents/GitHub/Stemming-the-disaster/Saved/RescueStationB066033D4E9FC3B188D901B822F263B6.tmp' to '../../../../../../Users/chanc/OneDrive/Documents/GitHub/Stemming-the-disaster/Content/Maps/RescueStation.umap'
+[2022.04.21-19.19.04:998][346]AssetCheck: New page: Asset Save: RescueStation
+[2022.04.21-19.19.04:998][346]LogContentValidation: Display: Validating World /Game/Maps/RescueStation.RescueStation
+[2022.04.21-19.20.44:735][151]Candidate modules for hot reload:
+[2022.04.21-19.20.44:735][151]  StemmingTheDisaster
+[2022.04.21-19.20.44:735][151]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=StemmingTheDisaster,1589 StemmingTheDisasterEditor Win64 Development -Project="C:/Users/chanc/OneDrive/Documents/GitHub/Stemming-the-disaster/StemmingTheDisaster.uproject" "C:/Users/chanc/OneDrive/Documents/GitHub/Stemming-the-disaster/StemmingTheDisaster.uproject"  -IgnoreJunk]
+[2022.04.21-19.20.44:738][151]Warning: Starting HotReload took  0.0s.
+[2022.04.21-19.20.47:886][477]CompilerResultsLog: New page: Compilation - Apr 21, 2022, 9:20:47 AM
+[2022.04.21-19.20.47:887][477]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster).
+[2022.04.21-19.20.47:887][477]CompilerResultsLog: Building StemmingTheDisasterEditor...
+[2022.04.21-19.20.47:887][477]CompilerResultsLog: Using Visual Studio 2019 14.29.30136 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.04.21-19.20.47:887][477]CompilerResultsLog: Building 4 actions with 24 processes...
+[2022.04.21-19.20.47:887][477]CompilerResultsLog:   [1/4] SD_GameInstance.cpp
+[2022.04.21-19.20.47:887][477]CompilerResultsLog:   [2/4] UE4Editor-StemmingTheDisaster-1589.lib
+[2022.04.21-19.20.47:887][477]CompilerResultsLog:      Creating library C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Intermediate\Build\Win64\UE4Editor\Development\StemmingTheDisaster\UE4Editor-StemmingTheDisaster-1589.lib and object C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Intermediate\Build\Win64\UE4Editor\Development\StemmingTheDisaster\UE4Editor-StemmingTheDisaster-1589.exp
+[2022.04.21-19.20.47:887][477]CompilerResultsLog:   [3/4] UE4Editor-StemmingTheDisaster-1589.dll
+[2022.04.21-19.20.47:887][477]CompilerResultsLog:      Creating library C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Intermediate\Build\Win64\UE4Editor\Development\StemmingTheDisaster\UE4Editor-StemmingTheDisaster-1589.suppressed.lib and object C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Intermediate\Build\Win64\UE4Editor\Development\StemmingTheDisaster\UE4Editor-StemmingTheDisaster-1589.suppressed.exp
+[2022.04.21-19.20.47:887][477]CompilerResultsLog:   [4/4] StemmingTheDisasterEditor.target
+[2022.04.21-19.20.47:887][477]CompilerResultsLog: Total time in Parallel executor: 2.09 seconds
+[2022.04.21-19.20.47:887][477]CompilerResultsLog: Total execution time: 3.04 seconds
+[2022.04.21-19.20.47:887][477]LogMainFrame: MainFrame: Module compiling took 3.159 seconds
+[2022.04.21-19.20.47:966][477]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'StemmingTheDisaster' in 0.0004 seconds. Added 12 classes and 3 folders.
+[2022.04.21-19.20.47:976][477]Display: HotReload successful (39 functions remapped  0 scriptstructs remapped)
+[2022.04.21-19.20.48:048][477]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0172 seconds. Added 3834 classes and 931 folders.
+[2022.04.21-19.20.48:057][477]Display: HotReload took  3.3s.
+[2022.04.21-19.20.49:360][588]LogTemp: Repeating last play command: Selected Viewport
+[2022.04.21-19.20.49:367][588]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.04.21-19.20.49:368][588]PIE: New page: PIE session: RescueStation (Apr 21, 2022, 9:20:49 AM)
+[2022.04.21-19.20.49:400][588]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.20.49:404][588]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003599s)
+[2022.04.21-19.20.49:405][588]LogAIModule: Creating AISystem for world RescueStation
+[2022.04.21-19.20.49:405][588]LogPlayLevel: PIE: World Init took: (0.001149s)
+[2022.04.21-19.20.49:405][588]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RescueStation.RescueStation to /Game/Maps/UEDPIE_0_RescueStation.RescueStation (0.004900s)
+[2022.04.21-19.20.49:473][588]LogUObjectHash: Compacting FUObjectHashTables data took   3.35ms
+[2022.04.21-19.20.49:474][588]LogAudio: Display: Creating Audio Device:                 Id: 6, Scope: Unique, Realtime: True
+[2022.04.21-19.20.49:474][588]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.04.21-19.20.49:474][588]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.04.21-19.20.49:474][588]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.04.21-19.20.49:474][588]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.04.21-19.20.49:474][588]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.04.21-19.20.49:474][588]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.04.21-19.20.49:474][588]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.04.21-19.20.49:474][588]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.04.21-19.20.49:475][588]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.04.21-19.20.49:475][588]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.04.21-19.20.49:475][588]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.04.21-19.20.49:475][588]LogAudioMixer: Display: Initializing audio mixer.
+[2022.04.21-19.20.49:479][588]LogAudioMixer: Display: 0: FrontLeft
+[2022.04.21-19.20.49:479][588]LogAudioMixer: Display: 1: FrontRight
+[2022.04.21-19.20.49:489][588]LogAudioMixer: Display: Using Audio Device Speakers (High Definition Audio Device)
+[2022.04.21-19.20.49:490][588]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.04.21-19.20.49:490][588]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.04.21-19.20.49:490][588]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.04.21-19.20.49:490][588]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.04.21-19.20.49:490][588]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.04.21-19.20.49:490][588]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.04.21-19.20.49:492][588]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.04.21-19.20.49:492][588]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.04.21-19.20.49:492][588]LogInit: FAudioDevice initialized.
+[2022.04.21-19.20.49:492][588]LogAudio: Display: Audio Device (ID: 6) registered with world 'RescueStation'.
+[2022.04.21-19.20.49:501][588]LogLoad: Game class is 'GameModeBase'
+[2022.04.21-19.20.49:503][588]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RescueStation.RescueStation up for play (max tick rate 0) at 2022.04.21-14.20.49
+[2022.04.21-19.20.49:503][588]LogWorld: Bringing up level for play took: 0.000990
+[2022.04.21-19.20.49:503][588]LogOnline: OSS: Creating online subsystem instance for: :Context_16
+[2022.04.21-19.20.49:507][588]PIE: Server logged in
+[2022.04.21-19.20.49:508][588]PIE: Play in editor total start time 0.142 seconds.
+[2022.04.21-19.20.54:252][150]LogNet: Browse: /Game/Maps/Airplane
+[2022.04.21-19.20.54:252][150]LogLoad: LoadMap: /Game/Maps/Airplane
+[2022.04.21-19.20.54:252][150]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.20.54:253][150]LogWorld: UWorld::CleanupWorld for RescueStation, bSessionEnded=true, bCleanupResources=true
+[2022.04.21-19.20.54:253][150]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.20.54:305][150]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.04.21-19.20.54:345][150]LogUObjectHash: Compacting FUObjectHashTables data took   2.77ms
+[2022.04.21-19.20.54:372][150]LogAudio: Display: Audio Device (ID: 6) registered with world 'Airplane'.
+[2022.04.21-19.20.54:373][150]LogAIModule: Creating AISystem for world Airplane
+[2022.04.21-19.20.54:374][150]LogLoad: Game class is 'GameModeBase'
+[2022.04.21-19.20.54:376][150]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Airplane.Airplane up for play (max tick rate 0) at 2022.04.21-14.20.54
+[2022.04.21-19.20.54:376][150]LogWorld: Bringing up level for play took: 0.001729
+[2022.04.21-19.20.54:378][150]LogLoad: Took 0.126140 seconds to LoadMap(/Game/Maps/Airplane)
+[2022.04.21-19.20.54:379][150]LogTemp: Warning: Made it here
+[2022.04.21-19.20.56:701][411]LogNet: Browse: /Game/Maps/Sprint1VerticalSlice
+[2022.04.21-19.20.56:701][411]LogLoad: LoadMap: /Game/Maps/Sprint1VerticalSlice
+[2022.04.21-19.20.56:701][411]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Airplane
+[2022.04.21-19.20.56:702][411]LogWorld: UWorld::CleanupWorld for Airplane, bSessionEnded=true, bCleanupResources=true
+[2022.04.21-19.20.56:702][411]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.20.56:747][411]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.04.21-19.20.56:751][411]LogUObjectHash: Compacting FUObjectHashTables data took   2.15ms
+[2022.04.21-19.20.56:767][411]LogAudio: Display: Audio Device (ID: 6) registered with world 'Sprint1VerticalSlice'.
+[2022.04.21-19.20.56:768][411]LogAIModule: Creating AISystem for world Sprint1VerticalSlice
+[2022.04.21-19.20.56:769][411]LogLoad: Game class is 'GameModeBase'
+[2022.04.21-19.20.56:771][411]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Sprint1VerticalSlice.Sprint1VerticalSlice up for play (max tick rate 0) at 2022.04.21-14.20.56
+[2022.04.21-19.20.56:771][411]LogWorld: Bringing up level for play took: 0.001766
+[2022.04.21-19.20.56:773][411]LogLoad: Took 0.072138 seconds to LoadMap(/Game/Maps/Sprint1VerticalSlice)
+[2022.04.21-19.21.00:372][828]LogNet: Browse: /Game/Maps/RescueStation
+[2022.04.21-19.21.00:372][828]LogLoad: LoadMap: /Game/Maps/RescueStation
+[2022.04.21-19.21.00:372][828]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Sprint1VerticalSlice
+[2022.04.21-19.21.00:373][828]LogWorld: UWorld::CleanupWorld for Sprint1VerticalSlice, bSessionEnded=true, bCleanupResources=true
+[2022.04.21-19.21.00:373][828]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.21.00:436][828]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.04.21-19.21.00:440][828]LogUObjectHash: Compacting FUObjectHashTables data took   2.05ms
+[2022.04.21-19.21.00:441][828]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.21.00:445][828]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003891s)
+[2022.04.21-19.21.00:446][828]LogAIModule: Creating AISystem for world RescueStation
+[2022.04.21-19.21.00:446][828]LogPlayLevel: PIE: World Init took: (0.001142s)
+[2022.04.21-19.21.00:446][828]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RescueStation.RescueStation to /Game/Maps/UEDPIE_0_RescueStation.RescueStation (0.005407s)
+[2022.04.21-19.21.00:446][828]LogAudio: Display: Audio Device (ID: 6) registered with world 'RescueStation'.
+[2022.04.21-19.21.00:446][828]LogLoad: Game class is 'GameModeBase'
+[2022.04.21-19.21.00:447][828]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RescueStation.RescueStation up for play (max tick rate 0) at 2022.04.21-14.21.00
+[2022.04.21-19.21.00:447][828]LogWorld: Bringing up level for play took: 0.000620
+[2022.04.21-19.21.00:450][828]LogLoad: Took 0.078545 seconds to LoadMap(/Game/Maps/UEDPIE_0_RescueStation)
+[2022.04.21-19.21.03:432][174]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.04.21-19.21.03:432][174]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.21.03:432][174]LogWorld: UWorld::CleanupWorld for RescueStation, bSessionEnded=true, bCleanupResources=true
+[2022.04.21-19.21.03:432][174]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.21.03:446][174]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.04.21-19.21.03:451][174]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.21.03:467][174]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.04.21-19.21.03:467][174]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.04.21-19.21.03:469][174]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.04.21-19.21.03:472][174]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.04.21-19.21.03:475][174]LogUObjectHash: Compacting FUObjectHashTables data took   2.09ms
+[2022.04.21-19.21.03:504][175]LogPlayLevel: Display: Destroying online subsystem :Context_16
+[2022.04.21-19.21.36:243][691]Candidate modules for hot reload:
+[2022.04.21-19.21.36:243][691]  StemmingTheDisaster
+[2022.04.21-19.21.36:243][691]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=StemmingTheDisaster,1472 StemmingTheDisasterEditor Win64 Development -Project="C:/Users/chanc/OneDrive/Documents/GitHub/Stemming-the-disaster/StemmingTheDisaster.uproject" "C:/Users/chanc/OneDrive/Documents/GitHub/Stemming-the-disaster/StemmingTheDisaster.uproject"  -IgnoreJunk]
+[2022.04.21-19.21.36:246][691]Warning: Starting HotReload took  0.0s.
+[2022.04.21-19.21.39:568][ 40]CompilerResultsLog: New page: Compilation - Apr 21, 2022, 9:21:39 AM
+[2022.04.21-19.21.39:569][ 40]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster).
+[2022.04.21-19.21.39:569][ 40]CompilerResultsLog: Building StemmingTheDisasterEditor...
+[2022.04.21-19.21.39:569][ 40]CompilerResultsLog: Using Visual Studio 2019 14.29.30136 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.04.21-19.21.39:569][ 40]CompilerResultsLog: Building 4 actions with 24 processes...
+[2022.04.21-19.21.39:569][ 40]CompilerResultsLog:   [1/4] SD_GameInstance.cpp
+[2022.04.21-19.21.39:569][ 40]CompilerResultsLog:   [2/4] UE4Editor-StemmingTheDisaster-1472.lib
+[2022.04.21-19.21.39:569][ 40]CompilerResultsLog:      Creating library C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Intermediate\Build\Win64\UE4Editor\Development\StemmingTheDisaster\UE4Editor-StemmingTheDisaster-1472.lib and object C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Intermediate\Build\Win64\UE4Editor\Development\StemmingTheDisaster\UE4Editor-StemmingTheDisaster-1472.exp
+[2022.04.21-19.21.39:569][ 40]CompilerResultsLog:   [3/4] UE4Editor-StemmingTheDisaster-1472.dll
+[2022.04.21-19.21.39:569][ 40]CompilerResultsLog:      Creating library C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Intermediate\Build\Win64\UE4Editor\Development\StemmingTheDisaster\UE4Editor-StemmingTheDisaster-1472.suppressed.lib and object C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Intermediate\Build\Win64\UE4Editor\Development\StemmingTheDisaster\UE4Editor-StemmingTheDisaster-1472.suppressed.exp
+[2022.04.21-19.21.39:569][ 40]CompilerResultsLog:   [4/4] StemmingTheDisasterEditor.target
+[2022.04.21-19.21.39:569][ 40]CompilerResultsLog: Total time in Parallel executor: 2.25 seconds
+[2022.04.21-19.21.39:569][ 40]CompilerResultsLog: Total execution time: 3.22 seconds
+[2022.04.21-19.21.39:569][ 40]LogMainFrame: MainFrame: Module compiling took 3.333 seconds
+[2022.04.21-19.21.39:663][ 40]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'StemmingTheDisaster' in 0.0004 seconds. Added 12 classes and 3 folders.
+[2022.04.21-19.21.39:672][ 40]Display: HotReload successful (39 functions remapped  0 scriptstructs remapped)
+[2022.04.21-19.21.39:739][ 40]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0149 seconds. Added 3834 classes and 931 folders.
+[2022.04.21-19.21.39:747][ 40]Display: HotReload took  3.5s.
+[2022.04.21-19.21.41:351][189]LogTemp: Repeating last play command: Selected Viewport
+[2022.04.21-19.21.41:359][189]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.04.21-19.21.41:359][189]PIE: New page: PIE session: RescueStation (Apr 21, 2022, 9:21:41 AM)
+[2022.04.21-19.21.41:391][189]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.21.41:395][189]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003660s)
+[2022.04.21-19.21.41:396][189]LogAIModule: Creating AISystem for world RescueStation
+[2022.04.21-19.21.41:396][189]LogPlayLevel: PIE: World Init took: (0.001219s)
+[2022.04.21-19.21.41:396][189]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RescueStation.RescueStation to /Game/Maps/UEDPIE_0_RescueStation.RescueStation (0.005038s)
+[2022.04.21-19.21.41:466][189]LogUObjectHash: Compacting FUObjectHashTables data took   3.42ms
+[2022.04.21-19.21.41:467][189]LogAudio: Display: Creating Audio Device:                 Id: 7, Scope: Unique, Realtime: True
+[2022.04.21-19.21.41:467][189]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.04.21-19.21.41:467][189]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.04.21-19.21.41:467][189]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.04.21-19.21.41:467][189]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.04.21-19.21.41:467][189]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.04.21-19.21.41:467][189]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.04.21-19.21.41:467][189]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.04.21-19.21.41:467][189]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.04.21-19.21.41:468][189]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.04.21-19.21.41:468][189]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.04.21-19.21.41:468][189]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.04.21-19.21.41:468][189]LogAudioMixer: Display: Initializing audio mixer.
+[2022.04.21-19.21.41:472][189]LogAudioMixer: Display: 0: FrontLeft
+[2022.04.21-19.21.41:472][189]LogAudioMixer: Display: 1: FrontRight
+[2022.04.21-19.21.41:482][189]LogAudioMixer: Display: Using Audio Device Speakers (High Definition Audio Device)
+[2022.04.21-19.21.41:482][189]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.04.21-19.21.41:482][189]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.04.21-19.21.41:482][189]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.04.21-19.21.41:482][189]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.04.21-19.21.41:483][189]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.04.21-19.21.41:483][189]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.04.21-19.21.41:484][189]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.04.21-19.21.41:484][189]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.04.21-19.21.41:484][189]LogInit: FAudioDevice initialized.
+[2022.04.21-19.21.41:484][189]LogAudio: Display: Audio Device (ID: 7) registered with world 'RescueStation'.
+[2022.04.21-19.21.41:494][189]LogLoad: Game class is 'GameModeBase'
+[2022.04.21-19.21.41:495][189]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RescueStation.RescueStation up for play (max tick rate 0) at 2022.04.21-14.21.41
+[2022.04.21-19.21.41:495][189]LogWorld: Bringing up level for play took: 0.000991
+[2022.04.21-19.21.41:495][189]LogOnline: OSS: Creating online subsystem instance for: :Context_17
+[2022.04.21-19.21.41:499][189]PIE: Server logged in
+[2022.04.21-19.21.41:500][189]PIE: Play in editor total start time 0.142 seconds.
+[2022.04.21-19.21.44:832][576]LogNet: Browse: /Game/Maps/RescueStation
+[2022.04.21-19.21.44:832][576]LogLoad: LoadMap: /Game/Maps/RescueStation
+[2022.04.21-19.21.44:832][576]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.21.44:833][576]LogWorld: UWorld::CleanupWorld for RescueStation, bSessionEnded=true, bCleanupResources=true
+[2022.04.21-19.21.44:833][576]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.21.44:896][576]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.04.21-19.21.44:902][576]LogUObjectHash: Compacting FUObjectHashTables data took   2.85ms
+[2022.04.21-19.21.44:904][576]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.21.44:908][576]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004135s)
+[2022.04.21-19.21.44:909][576]LogAIModule: Creating AISystem for world RescueStation
+[2022.04.21-19.21.44:910][576]LogPlayLevel: PIE: World Init took: (0.001296s)
+[2022.04.21-19.21.44:910][576]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RescueStation.RescueStation to /Game/Maps/UEDPIE_0_RescueStation.RescueStation (0.005928s)
+[2022.04.21-19.21.44:910][576]LogAudio: Display: Audio Device (ID: 7) registered with world 'RescueStation'.
+[2022.04.21-19.21.44:910][576]LogLoad: Game class is 'GameModeBase'
+[2022.04.21-19.21.44:911][576]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RescueStation.RescueStation up for play (max tick rate 0) at 2022.04.21-14.21.44
+[2022.04.21-19.21.44:911][576]LogWorld: Bringing up level for play took: 0.000990
+[2022.04.21-19.21.44:915][576]LogLoad: Took 0.082546 seconds to LoadMap(/Game/Maps/UEDPIE_0_RescueStation)
+[2022.04.21-19.21.47:907][925]LogNet: Browse: /Game/Maps/Airplane
+[2022.04.21-19.21.47:907][925]LogLoad: LoadMap: /Game/Maps/Airplane
+[2022.04.21-19.21.47:907][925]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.21.47:908][925]LogWorld: UWorld::CleanupWorld for RescueStation, bSessionEnded=true, bCleanupResources=true
+[2022.04.21-19.21.47:908][925]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.21.47:945][925]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.04.21-19.21.47:948][925]LogUObjectHash: Compacting FUObjectHashTables data took   1.82ms
+[2022.04.21-19.21.47:965][925]LogAudio: Display: Audio Device (ID: 7) registered with world 'Airplane'.
+[2022.04.21-19.21.47:966][925]LogAIModule: Creating AISystem for world Airplane
+[2022.04.21-19.21.47:966][925]LogLoad: Game class is 'GameModeBase'
+[2022.04.21-19.21.47:968][925]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Airplane.Airplane up for play (max tick rate 0) at 2022.04.21-14.21.47
+[2022.04.21-19.21.47:968][925]LogWorld: Bringing up level for play took: 0.001560
+[2022.04.21-19.21.47:970][925]LogLoad: Took 0.063374 seconds to LoadMap(/Game/Maps/Airplane)
+[2022.04.21-19.21.47:971][925]LogTemp: Warning: Made it here
+[2022.04.21-19.21.50:348][193]LogNet: Browse: /Game/Maps/Sprint1VerticalSlice
+[2022.04.21-19.21.50:348][193]LogLoad: LoadMap: /Game/Maps/Sprint1VerticalSlice
+[2022.04.21-19.21.50:348][193]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Airplane
+[2022.04.21-19.21.50:349][193]LogWorld: UWorld::CleanupWorld for Airplane, bSessionEnded=true, bCleanupResources=true
+[2022.04.21-19.21.50:349][193]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.21.50:395][193]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.04.21-19.21.50:398][193]LogUObjectHash: Compacting FUObjectHashTables data took   1.96ms
+[2022.04.21-19.21.50:413][193]LogAudio: Display: Audio Device (ID: 7) registered with world 'Sprint1VerticalSlice'.
+[2022.04.21-19.21.50:414][193]LogAIModule: Creating AISystem for world Sprint1VerticalSlice
+[2022.04.21-19.21.50:415][193]LogLoad: Game class is 'GameModeBase'
+[2022.04.21-19.21.50:416][193]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Sprint1VerticalSlice.Sprint1VerticalSlice up for play (max tick rate 0) at 2022.04.21-14.21.50
+[2022.04.21-19.21.50:416][193]LogWorld: Bringing up level for play took: 0.001384
+[2022.04.21-19.21.50:419][193]LogLoad: Took 0.070587 seconds to LoadMap(/Game/Maps/Sprint1VerticalSlice)
+[2022.04.21-19.21.53:475][552]LogNet: Browse: /Game/Maps/RescueStation
+[2022.04.21-19.21.53:475][552]LogLoad: LoadMap: /Game/Maps/RescueStation
+[2022.04.21-19.21.53:475][552]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Sprint1VerticalSlice
+[2022.04.21-19.21.53:476][552]LogWorld: UWorld::CleanupWorld for Sprint1VerticalSlice, bSessionEnded=true, bCleanupResources=true
+[2022.04.21-19.21.53:476][552]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.21.53:537][552]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.04.21-19.21.53:540][552]LogUObjectHash: Compacting FUObjectHashTables data took   2.13ms
+[2022.04.21-19.21.53:542][552]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.21.53:546][552]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003784s)
+[2022.04.21-19.21.53:547][552]LogAIModule: Creating AISystem for world RescueStation
+[2022.04.21-19.21.53:547][552]LogPlayLevel: PIE: World Init took: (0.001078s)
+[2022.04.21-19.21.53:547][552]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RescueStation.RescueStation to /Game/Maps/UEDPIE_0_RescueStation.RescueStation (0.005269s)
+[2022.04.21-19.21.53:547][552]LogAudio: Display: Audio Device (ID: 7) registered with world 'RescueStation'.
+[2022.04.21-19.21.53:547][552]LogLoad: Game class is 'GameModeBase'
+[2022.04.21-19.21.53:548][552]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RescueStation.RescueStation up for play (max tick rate 0) at 2022.04.21-14.21.53
+[2022.04.21-19.21.53:548][552]LogWorld: Bringing up level for play took: 0.000635
+[2022.04.21-19.21.53:551][552]LogLoad: Took 0.074700 seconds to LoadMap(/Game/Maps/UEDPIE_0_RescueStation)
+[2022.04.21-19.21.53:881][584]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.04.21-19.21.53:881][584]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.21.53:882][584]LogWorld: UWorld::CleanupWorld for RescueStation, bSessionEnded=true, bCleanupResources=true
+[2022.04.21-19.21.53:882][584]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.21.53:891][584]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.04.21-19.21.53:895][584]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.21.53:912][584]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.04.21-19.21.53:912][584]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.04.21-19.21.53:913][584]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.04.21-19.21.53:916][584]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.04.21-19.21.53:919][584]LogUObjectHash: Compacting FUObjectHashTables data took   2.03ms
+[2022.04.21-19.21.53:977][586]LogPlayLevel: Display: Destroying online subsystem :Context_17
+[2022.04.21-19.22.06:394][889]Candidate modules for hot reload:
+[2022.04.21-19.22.06:394][889]  StemmingTheDisaster
+[2022.04.21-19.22.06:394][889]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=StemmingTheDisaster,5470 StemmingTheDisasterEditor Win64 Development -Project="C:/Users/chanc/OneDrive/Documents/GitHub/Stemming-the-disaster/StemmingTheDisaster.uproject" "C:/Users/chanc/OneDrive/Documents/GitHub/Stemming-the-disaster/StemmingTheDisaster.uproject"  -IgnoreJunk]
+[2022.04.21-19.22.06:397][889]Warning: Starting HotReload took  0.0s.
+[2022.04.21-19.22.08:416][ 84]CompilerResultsLog: New page: Compilation - Apr 21, 2022, 9:22:08 AM
+[2022.04.21-19.22.08:416][ 84]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster).
+[2022.04.21-19.22.08:416][ 84]CompilerResultsLog: Building StemmingTheDisasterEditor...
+[2022.04.21-19.22.08:416][ 84]CompilerResultsLog: Using Visual Studio 2019 14.29.30136 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.04.21-19.22.08:416][ 84]CompilerResultsLog: Building 4 actions with 24 processes...
+[2022.04.21-19.22.08:416][ 84]CompilerResultsLog:   [1/4] SD_GameInstance.cpp
+[2022.04.21-19.22.08:416][ 84]CompilerResultsLog:    C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Source\StemmingTheDisaster\Private\SD_GameInstance.cpp(163)  : error C4715: 'USD_GameInstance::mapNameLookup': not all control paths return a value
+[2022.04.21-19.22.08:416][ 84]LogMainFrame: MainFrame: Module compiling took 2.029 seconds
+[2022.04.21-19.22.08:432][ 84]Warning: HotReload failed, recompile failed
+[2022.04.21-19.22.39:746][742]Candidate modules for hot reload:
+[2022.04.21-19.22.39:746][742]  StemmingTheDisaster
+[2022.04.21-19.22.39:746][742]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=StemmingTheDisaster,1571 StemmingTheDisasterEditor Win64 Development -Project="C:/Users/chanc/OneDrive/Documents/GitHub/Stemming-the-disaster/StemmingTheDisaster.uproject" "C:/Users/chanc/OneDrive/Documents/GitHub/Stemming-the-disaster/StemmingTheDisaster.uproject"  -IgnoreJunk]
+[2022.04.21-19.22.39:750][742]Warning: Starting HotReload took  0.0s.
+[2022.04.21-19.22.41:858][947]CompilerResultsLog: New page: Compilation - Apr 21, 2022, 9:22:41 AM
+[2022.04.21-19.22.41:858][947]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster).
+[2022.04.21-19.22.41:858][947]CompilerResultsLog: Building StemmingTheDisasterEditor...
+[2022.04.21-19.22.41:858][947]CompilerResultsLog: Using Visual Studio 2019 14.29.30136 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.04.21-19.22.41:858][947]CompilerResultsLog: Building 4 actions with 24 processes...
+[2022.04.21-19.22.41:858][947]CompilerResultsLog:   [1/4] SD_GameInstance.cpp
+[2022.04.21-19.22.41:858][947]CompilerResultsLog:    C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Source\StemmingTheDisaster\Private\SD_GameInstance.cpp(164)  : error C4715: 'USD_GameInstance::mapNameLookup': not all control paths return a value
+[2022.04.21-19.22.41:858][947]LogMainFrame: MainFrame: Module compiling took 2.119 seconds
+[2022.04.21-19.22.41:858][947]Warning: HotReload failed, recompile failed
+[2022.04.21-19.23.37:550][462]Candidate modules for hot reload:
+[2022.04.21-19.23.37:550][462]  StemmingTheDisaster
+[2022.04.21-19.23.37:550][462]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=StemmingTheDisaster,4299 StemmingTheDisasterEditor Win64 Development -Project="C:/Users/chanc/OneDrive/Documents/GitHub/Stemming-the-disaster/StemmingTheDisaster.uproject" "C:/Users/chanc/OneDrive/Documents/GitHub/Stemming-the-disaster/StemmingTheDisaster.uproject"  -IgnoreJunk]
+[2022.04.21-19.23.37:553][462]Warning: Starting HotReload took  0.0s.
+[2022.04.21-19.23.40:696][788]CompilerResultsLog: New page: Compilation - Apr 21, 2022, 9:23:40 AM
+[2022.04.21-19.23.40:696][788]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster).
+[2022.04.21-19.23.40:696][788]CompilerResultsLog: Building StemmingTheDisasterEditor...
+[2022.04.21-19.23.40:696][788]CompilerResultsLog: Using Visual Studio 2019 14.29.30136 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.04.21-19.23.40:696][788]CompilerResultsLog: Building 4 actions with 24 processes...
+[2022.04.21-19.23.40:696][788]CompilerResultsLog:   [1/4] SD_GameInstance.cpp
+[2022.04.21-19.23.40:696][788]CompilerResultsLog:   [2/4] UE4Editor-StemmingTheDisaster-4299.lib
+[2022.04.21-19.23.40:696][788]CompilerResultsLog:      Creating library C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Intermediate\Build\Win64\UE4Editor\Development\StemmingTheDisaster\UE4Editor-StemmingTheDisaster-4299.lib and object C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Intermediate\Build\Win64\UE4Editor\Development\StemmingTheDisaster\UE4Editor-StemmingTheDisaster-4299.exp
+[2022.04.21-19.23.40:696][788]CompilerResultsLog:   [3/4] UE4Editor-StemmingTheDisaster-4299.dll
+[2022.04.21-19.23.40:696][788]CompilerResultsLog:      Creating library C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Intermediate\Build\Win64\UE4Editor\Development\StemmingTheDisaster\UE4Editor-StemmingTheDisaster-4299.suppressed.lib and object C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Intermediate\Build\Win64\UE4Editor\Development\StemmingTheDisaster\UE4Editor-StemmingTheDisaster-4299.suppressed.exp
+[2022.04.21-19.23.40:696][788]CompilerResultsLog:   [4/4] StemmingTheDisasterEditor.target
+[2022.04.21-19.23.40:696][788]CompilerResultsLog: Total time in Parallel executor: 2.08 seconds
+[2022.04.21-19.23.40:696][788]CompilerResultsLog: Total execution time: 3.03 seconds
+[2022.04.21-19.23.40:696][788]LogMainFrame: MainFrame: Module compiling took 3.153 seconds
+[2022.04.21-19.23.40:770][788]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'StemmingTheDisaster' in 0.0004 seconds. Added 12 classes and 3 folders.
+[2022.04.21-19.23.40:779][788]Display: HotReload successful (39 functions remapped  0 scriptstructs remapped)
+[2022.04.21-19.23.40:850][788]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0151 seconds. Added 3834 classes and 931 folders.
+[2022.04.21-19.23.40:858][788]Display: HotReload took  3.3s.
+[2022.04.21-19.23.42:450][926]LogTemp: Repeating last play command: Selected Viewport
+[2022.04.21-19.23.42:458][926]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.04.21-19.23.42:458][926]PIE: New page: PIE session: RescueStation (Apr 21, 2022, 9:23:42 AM)
+[2022.04.21-19.23.42:480][926]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.23.42:484][926]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003793s)
+[2022.04.21-19.23.42:485][926]LogAIModule: Creating AISystem for world RescueStation
+[2022.04.21-19.23.42:485][926]LogPlayLevel: PIE: World Init took: (0.001197s)
+[2022.04.21-19.23.42:485][926]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RescueStation.RescueStation to /Game/Maps/UEDPIE_0_RescueStation.RescueStation (0.005143s)
+[2022.04.21-19.23.42:551][926]LogUObjectHash: Compacting FUObjectHashTables data took   3.41ms
+[2022.04.21-19.23.42:552][926]LogAudio: Display: Creating Audio Device:                 Id: 8, Scope: Unique, Realtime: True
+[2022.04.21-19.23.42:552][926]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.04.21-19.23.42:552][926]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.04.21-19.23.42:552][926]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.04.21-19.23.42:552][926]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.04.21-19.23.42:552][926]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.04.21-19.23.42:552][926]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.04.21-19.23.42:552][926]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.04.21-19.23.42:552][926]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.04.21-19.23.42:553][926]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.04.21-19.23.42:553][926]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.04.21-19.23.42:553][926]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.04.21-19.23.42:553][926]LogAudioMixer: Display: Initializing audio mixer.
+[2022.04.21-19.23.42:557][926]LogAudioMixer: Display: 0: FrontLeft
+[2022.04.21-19.23.42:557][926]LogAudioMixer: Display: 1: FrontRight
+[2022.04.21-19.23.42:567][926]LogAudioMixer: Display: Using Audio Device Speakers (High Definition Audio Device)
+[2022.04.21-19.23.42:567][926]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.04.21-19.23.42:567][926]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.04.21-19.23.42:567][926]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.04.21-19.23.42:568][926]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.04.21-19.23.42:568][926]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.04.21-19.23.42:568][926]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.04.21-19.23.42:570][926]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.04.21-19.23.42:570][926]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.04.21-19.23.42:570][926]LogInit: FAudioDevice initialized.
+[2022.04.21-19.23.42:570][926]LogAudio: Display: Audio Device (ID: 8) registered with world 'RescueStation'.
+[2022.04.21-19.23.42:577][926]LogLoad: Game class is 'GameModeBase'
+[2022.04.21-19.23.42:579][926]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RescueStation.RescueStation up for play (max tick rate 0) at 2022.04.21-14.23.42
+[2022.04.21-19.23.42:579][926]LogWorld: Bringing up level for play took: 0.001008
+[2022.04.21-19.23.42:579][926]LogOnline: OSS: Creating online subsystem instance for: :Context_18
+[2022.04.21-19.23.42:584][926]PIE: Server logged in
+[2022.04.21-19.23.42:585][926]PIE: Play in editor total start time 0.128 seconds.
+[2022.04.21-19.23.49:312][711]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.04.21-19.23.49:312][711]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.23.49:312][711]LogWorld: UWorld::CleanupWorld for RescueStation, bSessionEnded=true, bCleanupResources=true
+[2022.04.21-19.23.49:312][711]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.23.49:324][711]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.04.21-19.23.49:329][711]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.23.49:343][711]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.04.21-19.23.49:355][711]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.04.21-19.23.49:356][711]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.04.21-19.23.49:359][711]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.04.21-19.23.49:388][711]LogUObjectHash: Compacting FUObjectHashTables data took   2.80ms
+[2022.04.21-19.23.49:417][712]LogPlayLevel: Display: Destroying online subsystem :Context_18
+[2022.04.21-19.23.59:465][104]LogSlate: Window 'Message Log' being destroyed
+[2022.04.21-19.23.59:474][104]LogSlate: Window 'Message Log' being destroyed
+[2022.04.21-19.24.00:270][195]Candidate modules for hot reload:
+[2022.04.21-19.24.00:270][195]  StemmingTheDisaster
+[2022.04.21-19.24.00:271][195]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=StemmingTheDisaster,0176 StemmingTheDisasterEditor Win64 Development -Project="C:/Users/chanc/OneDrive/Documents/GitHub/Stemming-the-disaster/StemmingTheDisaster.uproject" "C:/Users/chanc/OneDrive/Documents/GitHub/Stemming-the-disaster/StemmingTheDisaster.uproject"  -IgnoreJunk]
+[2022.04.21-19.24.00:274][195]Warning: Starting HotReload took  0.0s.
+[2022.04.21-19.24.03:522][526]CompilerResultsLog: New page: Compilation - Apr 21, 2022, 9:24:03 AM
+[2022.04.21-19.24.03:522][526]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster).
+[2022.04.21-19.24.03:522][526]CompilerResultsLog: Building StemmingTheDisasterEditor...
+[2022.04.21-19.24.03:522][526]CompilerResultsLog: Using Visual Studio 2019 14.29.30136 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.04.21-19.24.03:522][526]CompilerResultsLog: Building 4 actions with 24 processes...
+[2022.04.21-19.24.03:522][526]CompilerResultsLog:   [1/4] SD_GameInstance.cpp
+[2022.04.21-19.24.03:522][526]CompilerResultsLog:   [2/4] UE4Editor-StemmingTheDisaster-0176.lib
+[2022.04.21-19.24.03:522][526]CompilerResultsLog:      Creating library C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Intermediate\Build\Win64\UE4Editor\Development\StemmingTheDisaster\UE4Editor-StemmingTheDisaster-0176.lib and object C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Intermediate\Build\Win64\UE4Editor\Development\StemmingTheDisaster\UE4Editor-StemmingTheDisaster-0176.exp
+[2022.04.21-19.24.03:522][526]CompilerResultsLog:   [3/4] UE4Editor-StemmingTheDisaster-0176.dll
+[2022.04.21-19.24.03:522][526]CompilerResultsLog:      Creating library C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Intermediate\Build\Win64\UE4Editor\Development\StemmingTheDisaster\UE4Editor-StemmingTheDisaster-0176.suppressed.lib and object C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Intermediate\Build\Win64\UE4Editor\Development\StemmingTheDisaster\UE4Editor-StemmingTheDisaster-0176.suppressed.exp
+[2022.04.21-19.24.03:522][526]CompilerResultsLog:   [4/4] StemmingTheDisasterEditor.target
+[2022.04.21-19.24.03:522][526]CompilerResultsLog: Total time in Parallel executor: 2.17 seconds
+[2022.04.21-19.24.03:522][526]CompilerResultsLog: Total execution time: 3.13 seconds
+[2022.04.21-19.24.03:522][526]LogMainFrame: MainFrame: Module compiling took 3.258 seconds
+[2022.04.21-19.24.03:598][526]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'StemmingTheDisaster' in 0.0004 seconds. Added 12 classes and 3 folders.
+[2022.04.21-19.24.03:607][526]Display: HotReload successful (39 functions remapped  0 scriptstructs remapped)
+[2022.04.21-19.24.03:677][526]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0151 seconds. Added 3834 classes and 931 folders.
+[2022.04.21-19.24.03:684][526]Display: HotReload took  3.4s.
+[2022.04.21-19.24.04:559][588]LogTemp: Repeating last play command: Selected Viewport
+[2022.04.21-19.24.04:566][588]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.04.21-19.24.04:566][588]PIE: New page: PIE session: RescueStation (Apr 21, 2022, 9:24:04 AM)
+[2022.04.21-19.24.04:601][588]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.24.04:604][588]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003692s)
+[2022.04.21-19.24.04:605][588]LogAIModule: Creating AISystem for world RescueStation
+[2022.04.21-19.24.04:606][588]LogPlayLevel: PIE: World Init took: (0.001189s)
+[2022.04.21-19.24.04:606][588]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RescueStation.RescueStation to /Game/Maps/UEDPIE_0_RescueStation.RescueStation (0.005042s)
+[2022.04.21-19.24.04:673][588]LogUObjectHash: Compacting FUObjectHashTables data took   3.46ms
+[2022.04.21-19.24.04:674][588]LogAudio: Display: Creating Audio Device:                 Id: 9, Scope: Unique, Realtime: True
+[2022.04.21-19.24.04:674][588]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.04.21-19.24.04:674][588]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.04.21-19.24.04:674][588]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.04.21-19.24.04:674][588]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.04.21-19.24.04:674][588]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.04.21-19.24.04:674][588]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.04.21-19.24.04:674][588]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.04.21-19.24.04:674][588]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.04.21-19.24.04:675][588]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.04.21-19.24.04:675][588]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.04.21-19.24.04:675][588]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.04.21-19.24.04:675][588]LogAudioMixer: Display: Initializing audio mixer.
+[2022.04.21-19.24.04:679][588]LogAudioMixer: Display: 0: FrontLeft
+[2022.04.21-19.24.04:679][588]LogAudioMixer: Display: 1: FrontRight
+[2022.04.21-19.24.04:689][588]LogAudioMixer: Display: Using Audio Device Speakers (High Definition Audio Device)
+[2022.04.21-19.24.04:689][588]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.04.21-19.24.04:689][588]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.04.21-19.24.04:689][588]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.04.21-19.24.04:690][588]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.04.21-19.24.04:690][588]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.04.21-19.24.04:690][588]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.04.21-19.24.04:691][588]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.04.21-19.24.04:691][588]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.04.21-19.24.04:692][588]LogInit: FAudioDevice initialized.
+[2022.04.21-19.24.04:692][588]LogAudio: Display: Audio Device (ID: 9) registered with world 'RescueStation'.
+[2022.04.21-19.24.04:701][588]LogLoad: Game class is 'GameModeBase'
+[2022.04.21-19.24.04:702][588]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RescueStation.RescueStation up for play (max tick rate 0) at 2022.04.21-14.24.04
+[2022.04.21-19.24.04:702][588]LogWorld: Bringing up level for play took: 0.001008
+[2022.04.21-19.24.04:703][588]LogOnline: OSS: Creating online subsystem instance for: :Context_19
+[2022.04.21-19.24.04:707][588]PIE: Server logged in
+[2022.04.21-19.24.04:708][588]PIE: Play in editor total start time 0.143 seconds.
+[2022.04.21-19.24.10:139][226]LogNet: Browse: /Game/Maps/RescueStation
+[2022.04.21-19.24.10:139][226]LogLoad: LoadMap: /Game/Maps/RescueStation
+[2022.04.21-19.24.10:139][226]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.24.10:140][226]LogWorld: UWorld::CleanupWorld for RescueStation, bSessionEnded=true, bCleanupResources=true
+[2022.04.21-19.24.10:140][226]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.24.10:194][226]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.04.21-19.24.10:236][226]LogUObjectHash: Compacting FUObjectHashTables data took   2.22ms
+[2022.04.21-19.24.10:237][226]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.24.10:241][226]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003709s)
+[2022.04.21-19.24.10:242][226]LogAIModule: Creating AISystem for world RescueStation
+[2022.04.21-19.24.10:242][226]LogPlayLevel: PIE: World Init took: (0.001193s)
+[2022.04.21-19.24.10:242][226]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RescueStation.RescueStation to /Game/Maps/UEDPIE_0_RescueStation.RescueStation (0.005073s)
+[2022.04.21-19.24.10:242][226]LogAudio: Display: Audio Device (ID: 9) registered with world 'RescueStation'.
+[2022.04.21-19.24.10:242][226]LogLoad: Game class is 'GameModeBase'
+[2022.04.21-19.24.10:243][226]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RescueStation.RescueStation up for play (max tick rate 0) at 2022.04.21-14.24.10
+[2022.04.21-19.24.10:243][226]LogWorld: Bringing up level for play took: 0.000666
+[2022.04.21-19.24.10:246][226]LogLoad: Took 0.106895 seconds to LoadMap(/Game/Maps/UEDPIE_0_RescueStation)
+[2022.04.21-19.24.11:801][399]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.04.21-19.24.11:801][399]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.24.11:802][399]LogWorld: UWorld::CleanupWorld for RescueStation, bSessionEnded=true, bCleanupResources=true
+[2022.04.21-19.24.11:802][399]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.24.11:813][399]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.04.21-19.24.11:817][399]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.24.11:830][399]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.04.21-19.24.11:831][399]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.04.21-19.24.11:832][399]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.04.21-19.24.11:839][399]LogUObjectHash: Compacting FUObjectHashTables data took   1.98ms
+[2022.04.21-19.24.11:866][400]LogPlayLevel: Display: Destroying online subsystem :Context_19
+[2022.04.21-19.24.19:994][646]Candidate modules for hot reload:
+[2022.04.21-19.24.19:994][646]  StemmingTheDisaster
+[2022.04.21-19.24.19:995][646]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=StemmingTheDisaster,0995 StemmingTheDisasterEditor Win64 Development -Project="C:/Users/chanc/OneDrive/Documents/GitHub/Stemming-the-disaster/StemmingTheDisaster.uproject" "C:/Users/chanc/OneDrive/Documents/GitHub/Stemming-the-disaster/StemmingTheDisaster.uproject"  -IgnoreJunk]
+[2022.04.21-19.24.19:998][646]Warning: Starting HotReload took  0.0s.
+[2022.04.21-19.24.23:088][968]CompilerResultsLog: New page: Compilation - Apr 21, 2022, 9:24:23 AM
+[2022.04.21-19.24.23:088][968]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster).
+[2022.04.21-19.24.23:088][968]CompilerResultsLog: Building StemmingTheDisasterEditor...
+[2022.04.21-19.24.23:088][968]CompilerResultsLog: Using Visual Studio 2019 14.29.30136 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.04.21-19.24.23:089][968]CompilerResultsLog: Building 4 actions with 24 processes...
+[2022.04.21-19.24.23:089][968]CompilerResultsLog:   [1/4] SD_GameInstance.cpp
+[2022.04.21-19.24.23:089][968]CompilerResultsLog:   [2/4] UE4Editor-StemmingTheDisaster-0995.lib
+[2022.04.21-19.24.23:089][968]CompilerResultsLog:      Creating library C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Intermediate\Build\Win64\UE4Editor\Development\StemmingTheDisaster\UE4Editor-StemmingTheDisaster-0995.lib and object C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Intermediate\Build\Win64\UE4Editor\Development\StemmingTheDisaster\UE4Editor-StemmingTheDisaster-0995.exp
+[2022.04.21-19.24.23:089][968]CompilerResultsLog:   [3/4] UE4Editor-StemmingTheDisaster-0995.dll
+[2022.04.21-19.24.23:089][968]CompilerResultsLog:      Creating library C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Intermediate\Build\Win64\UE4Editor\Development\StemmingTheDisaster\UE4Editor-StemmingTheDisaster-0995.suppressed.lib and object C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Intermediate\Build\Win64\UE4Editor\Development\StemmingTheDisaster\UE4Editor-StemmingTheDisaster-0995.suppressed.exp
+[2022.04.21-19.24.23:089][968]CompilerResultsLog:   [4/4] StemmingTheDisasterEditor.target
+[2022.04.21-19.24.23:089][968]CompilerResultsLog: Total time in Parallel executor: 2.06 seconds
+[2022.04.21-19.24.23:089][968]CompilerResultsLog: Total execution time: 2.98 seconds
+[2022.04.21-19.24.23:089][968]LogMainFrame: MainFrame: Module compiling took 3.101 seconds
+[2022.04.21-19.24.23:162][968]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'StemmingTheDisaster' in 0.0004 seconds. Added 12 classes and 3 folders.
+[2022.04.21-19.24.23:171][968]Display: HotReload successful (39 functions remapped  0 scriptstructs remapped)
+[2022.04.21-19.24.23:238][968]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0144 seconds. Added 3834 classes and 931 folders.
+[2022.04.21-19.24.23:244][968]Display: HotReload took  3.3s.
+[2022.04.21-19.24.24:744][ 97]LogTemp: Repeating last play command: Selected Viewport
+[2022.04.21-19.24.24:751][ 97]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.04.21-19.24.24:751][ 97]PIE: New page: PIE session: RescueStation (Apr 21, 2022, 9:24:24 AM)
+[2022.04.21-19.24.24:781][ 97]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.24.24:785][ 97]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003841s)
+[2022.04.21-19.24.24:786][ 97]LogAIModule: Creating AISystem for world RescueStation
+[2022.04.21-19.24.24:786][ 97]LogPlayLevel: PIE: World Init took: (0.001154s)
+[2022.04.21-19.24.24:786][ 97]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RescueStation.RescueStation to /Game/Maps/UEDPIE_0_RescueStation.RescueStation (0.005162s)
+[2022.04.21-19.24.24:853][ 97]LogUObjectHash: Compacting FUObjectHashTables data took   3.43ms
+[2022.04.21-19.24.24:854][ 97]LogAudio: Display: Creating Audio Device:                 Id: 10, Scope: Unique, Realtime: True
+[2022.04.21-19.24.24:854][ 97]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.04.21-19.24.24:854][ 97]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.04.21-19.24.24:854][ 97]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.04.21-19.24.24:854][ 97]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.04.21-19.24.24:854][ 97]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.04.21-19.24.24:854][ 97]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.04.21-19.24.24:854][ 97]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.04.21-19.24.24:854][ 97]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.04.21-19.24.24:855][ 97]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.04.21-19.24.24:855][ 97]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.04.21-19.24.24:855][ 97]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.04.21-19.24.24:855][ 97]LogAudioMixer: Display: Initializing audio mixer.
+[2022.04.21-19.24.24:859][ 97]LogAudioMixer: Display: 0: FrontLeft
+[2022.04.21-19.24.24:859][ 97]LogAudioMixer: Display: 1: FrontRight
+[2022.04.21-19.24.24:868][ 97]LogAudioMixer: Display: Using Audio Device Speakers (High Definition Audio Device)
+[2022.04.21-19.24.24:869][ 97]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.04.21-19.24.24:869][ 97]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.04.21-19.24.24:869][ 97]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.04.21-19.24.24:869][ 97]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.04.21-19.24.24:869][ 97]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.04.21-19.24.24:869][ 97]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.04.21-19.24.24:871][ 97]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.04.21-19.24.24:871][ 97]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.04.21-19.24.24:871][ 97]LogInit: FAudioDevice initialized.
+[2022.04.21-19.24.24:871][ 97]LogAudio: Display: Audio Device (ID: 10) registered with world 'RescueStation'.
+[2022.04.21-19.24.24:880][ 97]LogLoad: Game class is 'GameModeBase'
+[2022.04.21-19.24.24:882][ 97]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RescueStation.RescueStation up for play (max tick rate 0) at 2022.04.21-14.24.24
+[2022.04.21-19.24.24:882][ 97]LogWorld: Bringing up level for play took: 0.001026
+[2022.04.21-19.24.24:882][ 97]LogOnline: OSS: Creating online subsystem instance for: :Context_20
+[2022.04.21-19.24.24:886][ 97]PIE: Server logged in
+[2022.04.21-19.24.24:887][ 97]PIE: Play in editor total start time 0.138 seconds.
+[2022.04.21-19.24.28:051][470]LogNet: Browse: /Game/Maps/RescueStation
+[2022.04.21-19.24.28:051][470]LogLoad: LoadMap: /Game/Maps/RescueStation
+[2022.04.21-19.24.28:051][470]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.24.28:052][470]LogWorld: UWorld::CleanupWorld for RescueStation, bSessionEnded=true, bCleanupResources=true
+[2022.04.21-19.24.28:052][470]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.24.28:115][470]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.04.21-19.24.28:157][470]LogUObjectHash: Compacting FUObjectHashTables data took   2.23ms
+[2022.04.21-19.24.28:158][470]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.24.28:162][470]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003641s)
+[2022.04.21-19.24.28:163][470]LogAIModule: Creating AISystem for world RescueStation
+[2022.04.21-19.24.28:163][470]LogPlayLevel: PIE: World Init took: (0.001207s)
+[2022.04.21-19.24.28:163][470]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RescueStation.RescueStation to /Game/Maps/UEDPIE_0_RescueStation.RescueStation (0.004997s)
+[2022.04.21-19.24.28:163][470]LogAudio: Display: Audio Device (ID: 10) registered with world 'RescueStation'.
+[2022.04.21-19.24.28:163][470]LogLoad: Game class is 'GameModeBase'
+[2022.04.21-19.24.28:165][470]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RescueStation.RescueStation up for play (max tick rate 0) at 2022.04.21-14.24.28
+[2022.04.21-19.24.28:165][470]LogWorld: Bringing up level for play took: 0.001010
+[2022.04.21-19.24.28:168][470]LogLoad: Took 0.116843 seconds to LoadMap(/Game/Maps/UEDPIE_0_RescueStation)
+[2022.04.21-19.24.42:132][118]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.04.21-19.24.42:132][118]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.24.42:132][118]LogWorld: UWorld::CleanupWorld for RescueStation, bSessionEnded=true, bCleanupResources=true
+[2022.04.21-19.24.42:132][118]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.24.42:147][118]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.04.21-19.24.42:152][118]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.24.42:167][118]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.04.21-19.24.42:168][118]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.04.21-19.24.42:170][118]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.04.21-19.24.42:177][118]LogUObjectHash: Compacting FUObjectHashTables data took   2.22ms
+[2022.04.21-19.24.42:207][119]LogPlayLevel: Display: Destroying online subsystem :Context_20
+[2022.04.21-19.25.58:687][635]Candidate modules for hot reload:
+[2022.04.21-19.25.58:687][635]  StemmingTheDisaster
+[2022.04.21-19.25.58:687][635]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=StemmingTheDisaster,0910 StemmingTheDisasterEditor Win64 Development -Project="C:/Users/chanc/OneDrive/Documents/GitHub/Stemming-the-disaster/StemmingTheDisaster.uproject" "C:/Users/chanc/OneDrive/Documents/GitHub/Stemming-the-disaster/StemmingTheDisaster.uproject"  -IgnoreJunk]
+[2022.04.21-19.25.58:690][635]Warning: Starting HotReload took  0.0s.
+[2022.04.21-19.26.02:835][ 82]CompilerResultsLog: New page: Compilation - Apr 21, 2022, 9:26:02 AM
+[2022.04.21-19.26.02:835][ 82]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster).
+[2022.04.21-19.26.02:835][ 82]CompilerResultsLog: Building StemmingTheDisasterEditor...
+[2022.04.21-19.26.02:835][ 82]CompilerResultsLog: Using Visual Studio 2019 14.29.30136 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.04.21-19.26.02:835][ 82]CompilerResultsLog: Building 5 actions with 24 processes...
+[2022.04.21-19.26.02:835][ 82]CompilerResultsLog:   [1/5] SD_GameInstance.cpp
+[2022.04.21-19.26.02:835][ 82]CompilerResultsLog:   [2/5] Narrator.cpp
+[2022.04.21-19.26.02:835][ 82]CompilerResultsLog:   C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Source\StemmingTheDisaster\Private\Narrator.cpp(125): warning C4996: 'UTextRenderComponent::SetText': Passing text as FString is deprecated, please use FText instead (likely via a LOCTEXT). Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2022.04.21-19.26.02:835][ 82]CompilerResultsLog:   [3/5] UE4Editor-StemmingTheDisaster-0910.lib
+[2022.04.21-19.26.02:835][ 82]CompilerResultsLog:      Creating library C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Intermediate\Build\Win64\UE4Editor\Development\StemmingTheDisaster\UE4Editor-StemmingTheDisaster-0910.lib and object C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Intermediate\Build\Win64\UE4Editor\Development\StemmingTheDisaster\UE4Editor-StemmingTheDisaster-0910.exp
+[2022.04.21-19.26.02:835][ 82]CompilerResultsLog:   [4/5] UE4Editor-StemmingTheDisaster-0910.dll
+[2022.04.21-19.26.02:835][ 82]CompilerResultsLog:      Creating library C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Intermediate\Build\Win64\UE4Editor\Development\StemmingTheDisaster\UE4Editor-StemmingTheDisaster-0910.suppressed.lib and object C:\Users\chanc\OneDrive\Documents\GitHub\Stemming-the-disaster\Intermediate\Build\Win64\UE4Editor\Development\StemmingTheDisaster\UE4Editor-StemmingTheDisaster-0910.suppressed.exp
+[2022.04.21-19.26.02:836][ 82]CompilerResultsLog:   [5/5] StemmingTheDisasterEditor.target
+[2022.04.21-19.26.02:836][ 82]CompilerResultsLog: Total time in Parallel executor: 2.90 seconds
+[2022.04.21-19.26.02:836][ 82]CompilerResultsLog: Total execution time: 4.04 seconds
+[2022.04.21-19.26.02:836][ 82]LogMainFrame: MainFrame: Module compiling took 4.156 seconds
+[2022.04.21-19.26.02:911][ 82]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'StemmingTheDisaster' in 0.0004 seconds. Added 12 classes and 3 folders.
+[2022.04.21-19.26.02:920][ 82]Display: HotReload successful (39 functions remapped  0 scriptstructs remapped)
+[2022.04.21-19.26.02:986][ 82]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0144 seconds. Added 3834 classes and 931 folders.
+[2022.04.21-19.26.02:992][ 82]Display: HotReload took  4.3s.
+[2022.04.21-19.26.03:796][136]LogTemp: Repeating last play command: Selected Viewport
+[2022.04.21-19.26.03:804][136]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.04.21-19.26.03:804][136]PIE: New page: PIE session: RescueStation (Apr 21, 2022, 9:26:03 AM)
+[2022.04.21-19.26.03:831][136]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.26.03:834][136]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003690s)
+[2022.04.21-19.26.03:835][136]LogAIModule: Creating AISystem for world RescueStation
+[2022.04.21-19.26.03:836][136]LogPlayLevel: PIE: World Init took: (0.001157s)
+[2022.04.21-19.26.03:836][136]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RescueStation.RescueStation to /Game/Maps/UEDPIE_0_RescueStation.RescueStation (0.005019s)
+[2022.04.21-19.26.03:904][136]LogUObjectHash: Compacting FUObjectHashTables data took   3.35ms
+[2022.04.21-19.26.03:905][136]LogAudio: Display: Creating Audio Device:                 Id: 11, Scope: Unique, Realtime: True
+[2022.04.21-19.26.03:905][136]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.04.21-19.26.03:905][136]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.04.21-19.26.03:905][136]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.04.21-19.26.03:905][136]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.04.21-19.26.03:905][136]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.04.21-19.26.03:905][136]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.04.21-19.26.03:905][136]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.04.21-19.26.03:905][136]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.04.21-19.26.03:905][136]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.04.21-19.26.03:905][136]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.04.21-19.26.03:905][136]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.04.21-19.26.03:905][136]LogAudioMixer: Display: Initializing audio mixer.
+[2022.04.21-19.26.03:910][136]LogAudioMixer: Display: 0: FrontLeft
+[2022.04.21-19.26.03:910][136]LogAudioMixer: Display: 1: FrontRight
+[2022.04.21-19.26.03:921][136]LogAudioMixer: Display: Using Audio Device Speakers (High Definition Audio Device)
+[2022.04.21-19.26.03:922][136]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.04.21-19.26.03:922][136]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.04.21-19.26.03:922][136]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.04.21-19.26.03:922][136]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.04.21-19.26.03:922][136]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.04.21-19.26.03:922][136]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.04.21-19.26.03:924][136]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.04.21-19.26.03:924][136]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.04.21-19.26.03:924][136]LogInit: FAudioDevice initialized.
+[2022.04.21-19.26.03:924][136]LogAudio: Display: Audio Device (ID: 11) registered with world 'RescueStation'.
+[2022.04.21-19.26.03:931][136]LogLoad: Game class is 'GameModeBase'
+[2022.04.21-19.26.03:932][136]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RescueStation.RescueStation up for play (max tick rate 0) at 2022.04.21-14.26.03
+[2022.04.21-19.26.03:932][136]LogWorld: Bringing up level for play took: 0.001035
+[2022.04.21-19.26.03:932][136]LogOnline: OSS: Creating online subsystem instance for: :Context_21
+[2022.04.21-19.26.03:937][136]PIE: Server logged in
+[2022.04.21-19.26.03:938][136]PIE: Play in editor total start time 0.135 seconds.
+[2022.04.21-19.26.09:829][837]LogNet: Browse: /Game/Maps/RescueStation
+[2022.04.21-19.26.09:829][837]LogLoad: LoadMap: /Game/Maps/RescueStation
+[2022.04.21-19.26.09:830][837]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.26.09:830][837]LogWorld: UWorld::CleanupWorld for RescueStation, bSessionEnded=true, bCleanupResources=true
+[2022.04.21-19.26.09:831][837]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.26.09:894][837]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.04.21-19.26.09:934][837]LogUObjectHash: Compacting FUObjectHashTables data took   2.71ms
+[2022.04.21-19.26.09:936][837]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.26.09:940][837]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003793s)
+[2022.04.21-19.26.09:941][837]LogAIModule: Creating AISystem for world RescueStation
+[2022.04.21-19.26.09:941][837]LogPlayLevel: PIE: World Init took: (0.001219s)
+[2022.04.21-19.26.09:941][837]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RescueStation.RescueStation to /Game/Maps/UEDPIE_0_RescueStation.RescueStation (0.005416s)
+[2022.04.21-19.26.09:941][837]LogAudio: Display: Audio Device (ID: 11) registered with world 'RescueStation'.
+[2022.04.21-19.26.09:941][837]LogLoad: Game class is 'GameModeBase'
+[2022.04.21-19.26.09:942][837]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RescueStation.RescueStation up for play (max tick rate 0) at 2022.04.21-14.26.09
+[2022.04.21-19.26.09:943][837]LogWorld: Bringing up level for play took: 0.000639
+[2022.04.21-19.26.09:945][837]LogLoad: Took 0.115702 seconds to LoadMap(/Game/Maps/UEDPIE_0_RescueStation)
+[2022.04.21-19.26.10:412][879]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.04.21-19.26.10:412][879]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_RescueStation
+[2022.04.21-19.26.10:413][879]LogWorld: UWorld::CleanupWorld for RescueStation, bSessionEnded=true, bCleanupResources=true
+[2022.04.21-19.26.10:413][879]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.26.10:423][879]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.04.21-19.26.10:427][879]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.21-19.26.10:440][879]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.04.21-19.26.10:441][879]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.04.21-19.26.10:442][879]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.04.21-19.26.10:450][879]LogUObjectHash: Compacting FUObjectHashTables data took   1.98ms
+[2022.04.21-19.26.10:479][880]LogPlayLevel: Display: Destroying online subsystem :Context_21

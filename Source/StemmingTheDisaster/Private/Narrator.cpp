@@ -186,7 +186,7 @@ void ANarrator::CreateTravelMenu() {
 	for (i = 0; i < GI->travelableMaps.Num(); i++) {   // Iterate through travelableMaps array
 		AButtonMain* newButton = GetWorld()->SpawnActor<ADestinationButton>(ADestinationButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, baseZ + 15.0f + (i * 30.0f)), myRot);   // Spawn newButton actor for ADestinationButton
 		
-		newButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f));   // Modify newButton scale
+		newButton->SetActorScale3D(FVector(0.375f, 0.25f, 0.25f));   // Modify newButton scale
 		newButton->setScale();
 		newButton->setText(FText::FromString(GI->mapNameLookup(GI->travelableMaps[i])));   // Set newButton text
 
