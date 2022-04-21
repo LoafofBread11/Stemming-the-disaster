@@ -1,6 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
+#include "FadeOutTravelCube.h"
 #include "SD_GameInstance.h"
 
 USD_GameInstance::USD_GameInstance()
@@ -89,8 +89,11 @@ TArray <FString> USD_GameInstance::GetMaps()
 	return travelableMaps;
 }
 
-void USD_GameInstance::ChangeMap(int selection)
+void USD_GameInstance::ChangeMap(FString name)
 {
+	AFadeOutTravelCube* newCube = GetWorld()->SpawnActor<AFadeOutTravelCube>(AFadeOutTravelCube::StaticClass(), FVector(0.0f, 0.0f, 80.0f), FRotator(0.0f)); //Spawn the travel cube
+	newCube->mapName = name;
+	SetCurrentAction("TRAVELING"); //Ensure no actions can occur while we are traveling
 	return;
 }
 

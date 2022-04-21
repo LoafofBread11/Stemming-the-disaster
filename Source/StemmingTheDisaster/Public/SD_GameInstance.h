@@ -85,7 +85,7 @@ class STEMMINGTHEDISASTER_API USD_GameInstance : public UGameInstance
 		TArray <FString> GetMaps();
 
 		UFUNCTION()
-		void ChangeMap(int selection);
+		void ChangeMap(FString name);
 
 		UFUNCTION(BlueprintCallable)
 		FString GetCurrentAction();
