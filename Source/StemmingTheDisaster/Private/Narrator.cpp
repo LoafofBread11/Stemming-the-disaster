@@ -47,7 +47,7 @@ void ANarrator::Tick(float DeltaTime)
 			GI->SetCurrentAction("NARRATOR_EXPLAIN"); //Set the correct subaction
 		}
 	}
-	if (GI->GetCurrentAction() == "START")
+	if (GI->GetCurrentAction() == "START") //If we're in the start sequence
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Made it here"));
 		GI->SetCurrentAction("START_EXPLAIN");
@@ -60,35 +60,34 @@ void ANarrator::Tick(float DeltaTime)
 			explainClip->Play(); //Play the Audio Component
 		}
 	}
-	if (GI->GetCurrentAction() == "START_EXPLAIN")
+	if (GI->GetCurrentAction() == "START_EXPLAIN") //If we're in the start explanation sequence
 	{
 		voiceTimeRemaining -= DeltaTime; //Subtract the delta time from the voice clip time
 		if (voiceTimeRemaining <= 0.0f) //Check if the time has depleted
 		{
-			GI->SetCurrentAction("IDLE"); //Set the correct subaction
-			UGameplayStatics::OpenLevel((UObject*)GI, TEXT("Sprint1VerticalSlice")); //Go to the first map, the sim begins now
+			GI->ChangeMap("Sprint1VerticalSlice"); //Change map to an arbitrary map, will depend on what simulation is being played in the future
 		}
 	}
-	if (GI->GetCurrentAction() == "DONE")
+	if (GI->GetCurrentAction() == "DONE") //If the simulation is over (And we are not yet in the results)
 	{
-		if (explainClip->IsPlaying())
+		if (explainClip->IsPlaying()) //Check if sounds are playing
 			explainClip->Stop(); //Stop sounds
 		if (buttons.Num() > 0)
 			ClearMenu(); //Kill the menu if it exists
 	}
 
-	timeCounter += DeltaTime;
-	FVector myLoc = GetActorLocation();
-	myLoc.Z = baseZ + (FMath::Abs(FMath::Cos(timeCounter * .5)) * 5.0f);
-	SetActorLocation(myLoc);
+	timeCounter += DeltaTime; //Increase time counter by Delta time
+	FVector myLoc = GetActorLocation(); //Get location of the narrator
+	myLoc.Z = baseZ + (FMath::Abs(FMath::Cos(timeCounter * .5)) * 5.0f); //Change Narrator's Z to be on an absolute sine wave of the time counter, then multiplied by 5
+	SetActorLocation(myLoc); //Set the location
 }
 
 void ANarrator::StartTalk() {
 	FString test = GI->GetCurrentAction();
 
-	if (test == "IDLE") {
-		GI->SetCurrentAction("NARRATOR_MAIN");
-		CreateMainMenu();
+	if (test == "IDLE") { //If in idle state
+		GI->SetCurrentAction("NARRATOR_MAIN"); //Set the appropriate action (Starting conversation results in going to the main menu
+		CreateMainMenu(); //Create the main menu
 	}
 	
 }
@@ -107,7 +106,7 @@ void ANarrator::CreateInvestMenu() {
 
 	AButtonMain* newBackButton = GetWorld()->SpawnActor<ABackButton>(ABackButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, baseZ - 15.0f), myRot);   // Spawn newBackButton actor for ABackButton
 	newBackButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f));   // Modify newBackButton scale
-	newBackButton->setScale();
+	newBackButton->setScale(); //Normalize scale within the button
 	newBackButton->setText(FText::FromString(TEXT("Back")));   // Set newBackButton text
 
 	buttons.Add(newBackButton);   // Add newBackButton to buttons array
@@ -117,7 +116,7 @@ void ANarrator::CreateInvestMenu() {
 	{
 		AButtonMain* newButton = GetWorld()->SpawnActor<AInvestConfirmButton>(AInvestConfirmButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, baseZ + 15.0f + spawnHeight), myRot);
 		newButton->SetActorScale3D(FVector(0.375f, 0.25f, 0.25f));   // Modify newButton scale
-		newButton->setScale();
+		newButton->setScale(); //Normalize scale within the button
 		FString cost = "$" + FString::FromInt(It.Value());
 		newButton->setText(FText::FromString(cost));
 		
@@ -140,22 +139,22 @@ void ANarrator::CreateMainMenu() {
 
 	AButtonMain* newBackButton = GetWorld()->SpawnActor<ABackButton>(ABackButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, baseZ - 15.0f), myRot); // spawns backbutton
 	newBackButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f)); // Reduces scale
-	newBackButton->setScale();
+	newBackButton->setScale(); //Normalize scale within the button
 	newBackButton->setText(FText::FromString("Back"));
 
 	AButtonMain* newInvestButton = GetWorld()->SpawnActor<AMenuButton>(AMenuButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, baseZ + 75.0f), myRot); // spawns InvestButton
 	newInvestButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f)); // Reduces scale
-	newInvestButton->setScale();
+	newInvestButton->setScale(); //Normalize scale within the button
 	newInvestButton->setText(FText::FromString("Invest"));
 
 	AButtonMain* newExplainButton = GetWorld()->SpawnActor<AMenuButton>(AMenuButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, baseZ + 45.0f), myRot); // Spawns ExplainButton
 	newExplainButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f)); // Reduces scale
-	newExplainButton->setScale();
+	newExplainButton->setScale(); //Normalize scale within the button
 	newExplainButton->setText(FText::FromString("Explain"));
 
 	AButtonMain* newTravelButton = GetWorld()->SpawnActor<AMenuButton>(AMenuButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, baseZ + 15.0f), myRot); // Spawns TravelButton
 	newTravelButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f)); // Reduces scale
-	newTravelButton->setScale();
+	newTravelButton->setScale(); //Normalize scale within the button
 	newTravelButton->setText(FText::FromString("Travel"));
 
 	// Adds all buttons to the buttons[] array
@@ -177,7 +176,7 @@ void ANarrator::CreateTravelMenu() {
 	AButtonMain* newBackButton = GetWorld()->SpawnActor<ABackButton>(ABackButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, baseZ - 15.0f), myRot);   // Spawn newBackButton actor for ABackButton
 
 	newBackButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f));   // Modify newBackButton scale
-	newBackButton->setScale();
+	newBackButton->setScale(); //Normalize scale within the button
 	newBackButton->setText(FText::FromString(TEXT("Back")));   // Set newBackButton text
 
 	buttons.Add(newBackButton);   // Add newBackButton to buttons array
@@ -187,7 +186,7 @@ void ANarrator::CreateTravelMenu() {
 		AButtonMain* newButton = GetWorld()->SpawnActor<ADestinationButton>(ADestinationButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, baseZ + 15.0f + (i * 30.0f)), myRot);   // Spawn newButton actor for ADestinationButton
 		
 		newButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f));   // Modify newButton scale
-		newButton->setScale();
+		newButton->setScale(); //Normalize scale within the button
 		newButton->setText(FText::FromString(GI->mapNameLookup(GI->travelableMaps[i])));   // Set newButton text
 
 		ADestinationButton* DB = Cast<ADestinationButton>(newButton);   // Cast base button to destination

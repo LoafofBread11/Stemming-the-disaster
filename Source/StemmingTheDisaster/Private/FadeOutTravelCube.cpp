@@ -15,6 +15,7 @@ AFadeOutTravelCube::AFadeOutTravelCube()
 	{
 		cube->SetStaticMesh(cubeObj.Object); //Set the static mesh
 	}
+	cube->SetRelativeScale3D(FVector(.5f, .5f, .5f)); //Shrink the cube to the camera
 	RootComponent = cube; //Set the cube as the root component
 
 }
@@ -42,6 +43,5 @@ void AFadeOutTravelCube::Tick(float DeltaTime)
 		if(GI->GetCurrentAction() != "DONE")
 			UGameplayStatics::OpenLevel((UObject*)GI, FName(mapName));
 	}
-
 }
 

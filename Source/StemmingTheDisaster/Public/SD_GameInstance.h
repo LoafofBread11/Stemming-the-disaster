@@ -124,4 +124,7 @@ class STEMMINGTHEDISASTER_API USD_GameInstance : public UGameInstance
 		UFUNCTION()
 		FString mapNameLookup(FString name);
 
+		UPROPERTY(EditAnywhere)
+		FVector spawnLoc;
+
 };

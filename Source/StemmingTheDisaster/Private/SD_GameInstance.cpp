@@ -33,12 +33,19 @@ void USD_GameInstance::SetupMap(FString mapName)
 	}
 	investmentCareers = inDat.createInvestmentCareerData(mapName); //Populate the careers associated with the investment options
 
+	//Set current action based on what map is loaded in
 	if (mapName == "Results")
 		currentAction = "RESULTS";
 	else if (mapName == "StartMap" || mapName == "Airplane") //If we're in the start map or the airplane
 		currentAction = "START";
 	else
 		currentAction = "IDLE";
+
+	//Set the spawn location, used for transitions
+	if (mapName == "Results" || mapName == "StartMap" || mapName == "S1VerticalSlice")
+		spawnLoc = FVector(0.0f, 0.0f, 6.25f);
+	else if (mapName == "Airplane")
+		spawnLoc = FVector(-210.0f, -200.0f, 15.0f);
 	return;
 }
 
@@ -91,9 +98,14 @@ TArray <FString> USD_GameInstance::GetMaps()
 
 void USD_GameInstance::ChangeMap(FString name)
 {
-	AFadeOutTravelCube* newCube = GetWorld()->SpawnActor<AFadeOutTravelCube>(AFadeOutTravelCube::StaticClass(), FVector(0.0f, 0.0f, 80.0f), FRotator(0.0f)); //Spawn the travel cube
+	if (!inVR) //If not in VR
+		spawnLoc.Z += 125; //Increase the height of the box to be at the camera height
+
+	AFadeOutTravelCube* newCube = GetWorld()->SpawnActor<AFadeOutTravelCube>(AFadeOutTravelCube::StaticClass(), spawnLoc, FRotator(0.0f)); //Spawn the travel cube
 	newCube->mapName = name;
 	SetCurrentAction("TRAVELING"); //Ensure no actions can occur while we are traveling
+	if (!inVR) //If not in VR
+		spawnLoc.Z -= 125; //Reset the camera height
 	return;
 }
 
