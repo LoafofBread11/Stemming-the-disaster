@@ -8,8 +8,20 @@ USD_GameInstance::USD_GameInstance()
 	travelableMaps.Add("Airplane"); //Adding airplane to travelable maps in Sprint 2. Done here only because Start Simulator is not implemented / called yet.
 }
 
-void USD_GameInstance::StartSimulator()
+void USD_GameInstance::StartSimulator(FString dis)
 {
+	//Clear / Reset all of the default values
+	remainingTime = 1200.0f; //Reset Time
+	dialogueOptions.Empty(); //Empty the Dialogue Options
+	investmentOptions.Empty(); //Empty the investment options
+	investmentCareers.Empty(); //Empty the investment's associated careers
+	travelableMaps.Empty(); //Empty the travelable maps
+	careerPathScores.Empty(); //Empty the scores
+	results.Empty(); //Empty the results
+	if (dis == "Harvey")
+	{
+		//Add the maps that we can travel to here
+	}
 	return;
 }
 
@@ -57,10 +69,10 @@ TMap<FString, int> USD_GameInstance::GetInvestments()
 
 bool USD_GameInstance::MakeInvestment(FString item)
 {
-	int *invest = investmentOptions.Find(item);
-	if (invest != nullptr) //basically, if the item was an investment option...
+	int *invest = investmentOptions.Find(item); //Try to find the associated investment
+	if (invest != nullptr) //If the investment exists
 	{	
-		int cost = *invest; //storing the cost of the item
+		int cost = *invest; //store the cost of the item
 		if (cost <= remainingCurrency) //See if there is enough funds
 		{
 			remainingCurrency = remainingCurrency - cost; //Subtract the currency
@@ -82,18 +94,18 @@ bool USD_GameInstance::MakeInvestment(FString item)
 
 TArray<TPair <FString, FString>> USD_GameInstance::GetDialouge()
 {
-	return dialogueOptions;
+	return dialogueOptions; //Return the dialogue options so that they can be displayed in menus
 }
 
 void USD_GameInstance::GenerateDialouge(FString dialogue, FString dialogueCode)
 {
-	dialogueOptions.Add(TPair<FString, FString>(dialogue, dialogueCode));
+	dialogueOptions.Add(TPair<FString, FString>(dialogue, dialogueCode)); //Add a new dialogue option to the list of dialogue option
 	return;
 }
 
 TArray <FString> USD_GameInstance::GetMaps()
 {
-	return travelableMaps;
+	return travelableMaps; //Return a list of maps that can be traveled to.
 }
 
 void USD_GameInstance::ChangeMap(FString name)
@@ -159,7 +171,7 @@ void USD_GameInstance::scoreInteractable(FString career, int value)
 		int scoreSum = *result + value;
 		careerPathScores.Remove(career);
 		careerPathScores.Add(career, scoreSum);
-		UE_LOG(LogTemp, Warning, TEXT("Value changed: map value has a value of %d"), scoreSum);
+		UE_LOG(LogTemp, Warning, TEXT("Value changed: career %s has a value of %d"), *career, scoreSum);
 	}
 	else
 	{
@@ -169,7 +181,8 @@ void USD_GameInstance::scoreInteractable(FString career, int value)
 
 FString USD_GameInstance::mapNameLookup(FString name)
 {
+	//Compare the sent in name to different names to see if a match is given. Some maps may already be human readable.
 	if (name == "Airplane")
 		return TEXT("Air Plane");
-	return TEXT(""); //If we get nothing, return nothing
+	return name; //If nothing was found, simply return what was sent.
 }

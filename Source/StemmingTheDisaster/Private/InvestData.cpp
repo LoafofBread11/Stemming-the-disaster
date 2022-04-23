@@ -27,6 +27,10 @@ TMap<FString, int> InvestData::createInvestmentData(FString mapName)
 TMap<FString, FString> InvestData::createInvestmentCareerData(FString mapName)
 {
 	TMap<FString, FString> retMap;
+	if (mapName == "S1VerticalSlice")
+	{
+		retMap.Add(TPair<FString, FString>("Valid Option", "TestCareer"));
+	}
 
 	return retMap;
 }

@@ -125,7 +125,7 @@ void APlayerCharacter::BeginPlay()
 		if (GI->GetCurrentAction() == "RESULTS" || GI->GetCurrentAction() == "START") //If we're in the results room
 		{
 			valueWidget->SetRelativeScale3D(FVector(0.0f)); //Hide the components anyway
-			reticleWidget->SetRelativeScale3D(FVector(0.0f));
+			//Don't hide the reticle, it is still useful
 			lAtWidget->SetRelativeScale3D(FVector(0.0f));
 			captionWidget->SetRelativeScale3D(FVector(0.0f));
 			interactableName->SetRelativeScale3D(FVector(0.0f));
