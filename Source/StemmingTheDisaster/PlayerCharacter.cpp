@@ -157,22 +157,22 @@ void APlayerCharacter::Tick(float DeltaTime)
 			AInteractable* collideInt = Cast<AInteractable>(OutHit.GetActor()); //Attempt to cast the object to an interactable
 			if (collideInt) //If successful
 			{
-				lookingAtText = collideInt->textName;
+				lookingAtText = collideInt->textName; //Set the text to the interactable
 			}
 			else
 			{
-				ANarrator* collideNar = Cast<ANarrator>(OutHit.GetActor());
-				if (collideNar)
+				ANarrator* collideNar = Cast<ANarrator>(OutHit.GetActor()); //Cast to the narrator
+				if (collideNar) //If successful
 				{
-					lookingAtText = "Narrator";
+					lookingAtText = "Narrator"; //Set text to Narrator
 				}
 				else
 				{
 					lookingAtText = ""; //Set looking at text to nothing, then check rest of conditions
-					AButtonMain* collideBut = Cast<AButtonMain>(OutHit.GetActor());
-					if (collideBut)
+					AButtonMain* collideBut = Cast<AButtonMain>(OutHit.GetActor()); //Check if looking at button
+					if (collideBut) //If successful
 					{
-						collideBut->isHighlighted = 1.0f;
+						collideBut->isHighlighted = 1.0f; //Highlight the button
 					}
 				}
 			}
@@ -201,6 +201,7 @@ void APlayerCharacter::Tick(float DeltaTime)
 			done = true; //Then we are done
 			GI->SetCurrentAction("DONE"); //Sets current action to done
 			GI->setRemainingTime(3.0f); //Allow 3 seconds of done time
+			GI->EndSimulator(); //Calculate the results
 		}
 	}
 	else if (GI->GetCurrentAction() == "DONE")

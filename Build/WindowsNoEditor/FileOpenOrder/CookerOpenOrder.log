@@ -249,14 +249,14 @@
 "C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/VoiceClips/TestVoice.uexp" 248
 "C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/VoiceClips/F_test.uasset" 249
 "C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/VoiceClips/F_test.uexp" 250
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Opacity/CameraDepthFade.uasset" 251
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Opacity/CameraDepthFade.uexp" 252
-"../../../Engine/Content/EngineMaterials/T_Default_Material_Grid_N.uasset" 253
-"../../../Engine/Content/EngineMaterials/T_Default_Material_Grid_N.uexp" 254
-"../../../Engine/Content/EngineMaterials/T_Default_Material_Grid_N.ubulk" 255
-"../../../Engine/Content/EngineMaterials/T_Default_Material_Grid_M.uasset" 256
-"../../../Engine/Content/EngineMaterials/T_Default_Material_Grid_M.uexp" 257
-"../../../Engine/Content/EngineMaterials/T_Default_Material_Grid_M.ubulk" 258
+"../../../Engine/Content/EngineMaterials/T_Default_Material_Grid_N.uasset" 251
+"../../../Engine/Content/EngineMaterials/T_Default_Material_Grid_N.uexp" 252
+"../../../Engine/Content/EngineMaterials/T_Default_Material_Grid_N.ubulk" 253
+"../../../Engine/Content/EngineMaterials/T_Default_Material_Grid_M.uasset" 254
+"../../../Engine/Content/EngineMaterials/T_Default_Material_Grid_M.uexp" 255
+"../../../Engine/Content/EngineMaterials/T_Default_Material_Grid_M.ubulk" 256
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Opacity/CameraDepthFade.uasset" 257
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Opacity/CameraDepthFade.uexp" 258
 "../../../Engine/Content/EngineMaterials/WorldGridMaterial.uasset" 259
 "../../../Engine/Content/EngineMaterials/WorldGridMaterial.uexp" 260
 "../../../Engine/Content/ArtTools/RenderToTexture/Meshes/S_1_Unit_Plane.uasset" 261
@@ -603,27 +603,27 @@
 "../../../Engine/Plugins/2D/Paper2D/Content/OpaqueUnlitSpriteMaterial.uexp" 602
 "../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components.uasset" 603
 "../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components.uexp" 604
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackInteger3.uasset" 605
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackInteger3.uexp" 606
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackDirection.uasset" 607
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackDirection.uexp" 608
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/game_wind_noise.uasset" 609
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/game_wind_noise.uexp" 610
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/game_wind_noise.ubulk" 611
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/SafeNormalize.uasset" 612
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/SafeNormalize.uexp" 613
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeWindMotion.uasset" 614
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeWindMotion.uexp" 615
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBranchMotion.uasset" 616
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBranchMotion.uexp" 617
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ObjectLocalBounds.uasset" 618
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ObjectLocalBounds.uexp" 619
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/UVs/BoundingBoxBased_0-1_UVW.uasset" 620
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/UVs/BoundingBoxBased_0-1_UVW.uexp" 621
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/VectorLength.uasset" 622
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/VectorLength.uexp" 623
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectScale.uasset" 624
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectScale.uexp" 625
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/VectorLength.uasset" 605
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/VectorLength.uexp" 606
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectScale.uasset" 607
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectScale.uexp" 608
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ObjectLocalBounds.uasset" 609
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ObjectLocalBounds.uexp" 610
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackInteger3.uasset" 611
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackInteger3.uexp" 612
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackDirection.uasset" 613
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackDirection.uexp" 614
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/game_wind_noise.uasset" 615
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/game_wind_noise.uexp" 616
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/game_wind_noise.ubulk" 617
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/SafeNormalize.uasset" 618
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/SafeNormalize.uexp" 619
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeWindMotion.uasset" 620
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeWindMotion.uexp" 621
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBranchMotion.uasset" 622
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBranchMotion.uexp" 623
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/UVs/BoundingBoxBased_0-1_UVW.uasset" 624
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/UVs/BoundingBoxBased_0-1_UVW.uexp" 625
 "../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeWind.uasset" 626
 "../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeWind.uexp" 627
 "../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBillboard.uasset" 628
@@ -852,64 +852,64 @@
 "C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/Airplane_BuiltData.ubulk" 851
 "C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StaticMeshes/PlaneDoor_DoorFrame.uasset" 852
 "C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StaticMeshes/PlaneDoor_DoorFrame.uexp" 853
-"../../../Engine/Content/EditorBlueprintResources/StandardMacros.uasset" 854
-"../../../Engine/Content/EditorBlueprintResources/StandardMacros.uexp" 855
-"../../../Engine/Content/EngineSky/SM_SkySphere.uasset" 856
-"../../../Engine/Content/EngineSky/SM_SkySphere.uexp" 857
-"../../../Engine/Content/EngineSky/C_Sky_Zenith_Color.uasset" 858
-"../../../Engine/Content/EngineSky/C_Sky_Zenith_Color.uexp" 859
-"../../../Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset" 860
-"../../../Engine/Content/EngineSky/C_Sky_Horizon_Color.uexp" 861
-"../../../Engine/Content/EngineSky/C_Sky_Cloud_Color.uasset" 862
-"../../../Engine/Content/EngineSky/C_Sky_Cloud_Color.uexp" 863
+"../../../Engine/Content/EngineSky/SM_SkySphere.uasset" 854
+"../../../Engine/Content/EngineSky/SM_SkySphere.uexp" 855
+"../../../Engine/Content/EngineSky/C_Sky_Zenith_Color.uasset" 856
+"../../../Engine/Content/EngineSky/C_Sky_Zenith_Color.uexp" 857
+"../../../Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset" 858
+"../../../Engine/Content/EngineSky/C_Sky_Horizon_Color.uexp" 859
+"../../../Engine/Content/EngineSky/C_Sky_Cloud_Color.uasset" 860
+"../../../Engine/Content/EngineSky/C_Sky_Cloud_Color.uexp" 861
+"../../../Engine/Content/EditorBlueprintResources/StandardMacros.uasset" 862
+"../../../Engine/Content/EditorBlueprintResources/StandardMacros.uexp" 863
 "../../../Engine/Content/EngineSky/BP_Sky_Sphere.uasset" 864
 "../../../Engine/Content/EngineSky/BP_Sky_Sphere.uexp" 865
 "C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/Airplane.uexp" 866
 "C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/Airplane.umap" 867
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset" 868
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uexp" 869
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/ResultsMap.uexp" 870
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/ResultsMap.umap" 871
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Shapes/Shape_Sphere.uasset" 872
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Shapes/Shape_Sphere.uexp" 873
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Shapes/Shape_Cube.uasset" 874
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Shapes/Shape_Cube.uexp" 875
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Shapes/Shape_Cone.uasset" 876
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Shapes/Shape_Cone.uexp" 877
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset" 878
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Panels_N.uexp" 879
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Panels_N.ubulk" 880
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset" 881
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Panels_D.uexp" 882
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Panels_D.ubulk" 883
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Concrete_Panels.uasset" 884
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Concrete_Panels.uexp" 885
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset" 886
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_New_N.uexp" 887
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset" 888
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_New_M.uexp" 889
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset" 890
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_New_D.uexp" 891
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_New_D.ubulk" 892
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Brick_Clay_New.uasset" 893
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Brick_Clay_New.uexp" 894
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/Sprint1VerticalSlice_BuiltData.uasset" 895
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/Sprint1VerticalSlice_BuiltData.uexp" 896
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/Sprint1VerticalSlice_BuiltData.ubulk" 897
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/Sprint1VerticalSlice.uexp" 898
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/Sprint1VerticalSlice.umap" 899
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/StartMapVR_BuiltData.uasset" 900
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/StartMapVR_BuiltData.uexp" 901
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/StartMapVR_BuiltData.ubulk" 902
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/StartMapVR.uexp" 903
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/StartMapVR.umap" 904
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/InitMap.uexp" 905
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/InitMap.umap" 906
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/StartMap_BuiltData.uasset" 907
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/StartMap_BuiltData.uexp" 908
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/StartMap_BuiltData.ubulk" 909
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/StartMap.uexp" 910
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/StartMap.umap" 911
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/InitMap.uexp" 868
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/InitMap.umap" 869
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset" 870
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uexp" 871
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/ResultsMap.uexp" 872
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/ResultsMap.umap" 873
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Shapes/Shape_Sphere.uasset" 874
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Shapes/Shape_Sphere.uexp" 875
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Shapes/Shape_Cube.uasset" 876
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Shapes/Shape_Cube.uexp" 877
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Shapes/Shape_Cone.uasset" 878
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Shapes/Shape_Cone.uexp" 879
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset" 880
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Panels_N.uexp" 881
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Panels_N.ubulk" 882
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset" 883
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Panels_D.uexp" 884
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Panels_D.ubulk" 885
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Concrete_Panels.uasset" 886
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Concrete_Panels.uexp" 887
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset" 888
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_New_N.uexp" 889
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset" 890
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_New_M.uexp" 891
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset" 892
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_New_D.uexp" 893
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_New_D.ubulk" 894
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Brick_Clay_New.uasset" 895
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Brick_Clay_New.uexp" 896
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/Sprint1VerticalSlice_BuiltData.uasset" 897
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/Sprint1VerticalSlice_BuiltData.uexp" 898
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/Sprint1VerticalSlice_BuiltData.ubulk" 899
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/Sprint1VerticalSlice.uexp" 900
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/Sprint1VerticalSlice.umap" 901
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/StartMap_BuiltData.uasset" 902
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/StartMap_BuiltData.uexp" 903
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/StartMap_BuiltData.ubulk" 904
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/StartMap.uexp" 905
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/StartMap.umap" 906
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/StartMapVR_BuiltData.uasset" 907
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/StartMapVR_BuiltData.uexp" 908
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/StartMapVR_BuiltData.ubulk" 909
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/StartMapVR.uexp" 910
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/Maps/StartMapVR.umap" 911
 "../../../Engine/Content/EditorMeshes/ColorCalibrator/M_GreyBall.uasset" 912
 "../../../Engine/Content/EditorMeshes/ColorCalibrator/M_GreyBall.uexp" 913
 "../../../Engine/Content/EditorMeshes/ColorCalibrator/Color_checker.uasset" 914
@@ -996,336 +996,336 @@
 "C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Architecture/Floor_400x400.uexp" 995
 "C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Maps/Minimal_Default.uexp" 996
 "C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Maps/Minimal_Default.umap" 997
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Metal_Chrome.uasset" 998
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Metal_Chrome.uexp" 999
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Moss_N.uasset" 1000
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Moss_N.uexp" 1001
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Moss_N.ubulk" 1002
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_ground_Moss_D.uasset" 1003
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_ground_Moss_D.uexp" 1004
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_ground_Moss_D.ubulk" 1005
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Ground_Moss.uasset" 1006
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Ground_Moss.uexp" 1007
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset" 1008
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Gravel_N.uexp" 1009
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Gravel_N.ubulk" 1010
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset" 1011
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Gravel_D.uexp" 1012
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Gravel_D.ubulk" 1013
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Ground_Gravel.uasset" 1014
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Ground_Gravel.uexp" 1015
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Grass_N.uasset" 1016
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Grass_N.uexp" 1017
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Grass_N.ubulk" 1018
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Grass_D.uasset" 1019
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Grass_D.uexp" 1020
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Grass_D.ubulk" 1021
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Ground_Grass.uasset" 1022
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Ground_Grass.uexp" 1023
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset" 1024
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uexp" 1025
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.ubulk" 1026
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset" 1027
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Tiles_N.uexp" 1028
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Tiles_N.ubulk" 1029
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset" 1030
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Tiles_M.uexp" 1031
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Tiles_M.ubulk" 1032
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset" 1033
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Tiles_D.uexp" 1034
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Tiles_D.ubulk" 1035
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Concrete_Tiles.uasset" 1036
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Concrete_Tiles.uexp" 1037
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Metal_Rust_N.uasset" 1038
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Metal_Rust_N.uexp" 1039
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Metal_Rust_N.ubulk" 1040
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset" 1041
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Grime_D.uexp" 1042
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Grime_D.ubulk" 1043
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Concrete_Grime.uasset" 1044
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Concrete_Grime.uexp" 1045
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset" 1046
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uexp" 1047
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.ubulk" 1048
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset" 1049
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uexp" 1050
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.ubulk" 1051
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset" 1052
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uexp" 1053
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.ubulk" 1054
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset" 1055
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uexp" 1056
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.ubulk" 1057
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Gradinet_01.uasset" 1058
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Gradinet_01.uexp" 1059
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Gradinet_01.ubulk" 1060
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset" 1061
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_CobbleStone_Smooth.uexp" 1062
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset" 1063
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uexp" 1064
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Rough_N.ubulk" 1065
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset" 1066
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uexp" 1067
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Rough_D.ubulk" 1068
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset" 1069
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_CobbleStone_Rough.uexp" 1070
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset" 1071
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uexp" 1072
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.ubulk" 1073
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset" 1074
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uexp" 1075
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.ubulk" 1076
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset" 1077
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uexp" 1078
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.ubulk" 1079
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset" 1080
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_CobbleStone_Pebble.uexp" 1081
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset" 1082
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uexp" 1083
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.ubulk" 1084
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset" 1085
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ceramic_Tile_N.uexp" 1086
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ceramic_Tile_N.ubulk" 1087
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset" 1088
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ceramic_Tile_M.uexp" 1089
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ceramic_Tile_M.ubulk" 1090
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset" 1091
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uexp" 1092
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset" 1093
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uexp" 1094
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.ubulk" 1095
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset" 1096
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uexp" 1097
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.ubulk" 1098
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset" 1099
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uexp" 1100
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.ubulk" 1101
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset" 1102
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uexp" 1103
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset" 1104
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uexp" 1105
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.ubulk" 1106
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset" 1107
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uexp" 1108
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.ubulk" 1109
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset" 1110
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Brick_Cut_Stone.uexp" 1111
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset" 1112
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uexp" 1113
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Old_N.ubulk" 1114
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset" 1115
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uexp" 1116
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Old_D.ubulk" 1117
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset" 1118
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Brick_Clay_Old.uexp" 1119
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset" 1120
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uexp" 1121
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.ubulk" 1122
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset" 1123
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uexp" 1124
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.ubulk" 1125
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset" 1126
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uexp" 1127
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.ubulk" 1128
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset" 1129
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uexp" 1130
-"../../../Engine/Content/Functions/Engine_MaterialFunctions03/Procedurals/ComputeFilterWidth.uasset" 1131
-"../../../Engine/Content/Functions/Engine_MaterialFunctions03/Procedurals/ComputeFilterWidth.uexp" 1132
-"../../../Engine/Content/EngineMaterials/AntiAliasedTextMaterialTranslucent.uasset" 1133
-"../../../Engine/Content/EngineMaterials/AntiAliasedTextMaterialTranslucent.uexp" 1134
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Maps/StarterMap_BuiltData.uasset" 1135
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Maps/StarterMap_BuiltData.uexp" 1136
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Maps/StarterMap_BuiltData.ubulk" 1137
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset" 1138
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Poured_N.uexp" 1139
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Poured_N.ubulk" 1140
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset" 1141
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Poured_D.uexp" 1142
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Poured_D.ubulk" 1143
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Concrete_Poured.uasset" 1144
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Concrete_Poured.uexp" 1145
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Lamp_N.uasset" 1146
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Lamp_N.uexp" 1147
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Lamp_N.ubulk" 1148
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Lamp_M.uasset" 1149
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Lamp_M.uexp" 1150
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Lamp_M.ubulk" 1151
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/Materials/M_Lamp.uasset" 1152
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/Materials/M_Lamp.uexp" 1153
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_Lamp_Wall.uasset" 1154
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_Lamp_Wall.uexp" 1155
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset" 1156
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Blueprints/Blueprint_WallSconce.uexp" 1157
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/P_Steam_Lit.uasset" 1158
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/P_Steam_Lit.uexp" 1159
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Audio/Steam01_Cue.uasset" 1160
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Audio/Steam01_Cue.uexp" 1161
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset" 1162
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uexp" 1163
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Spark_Core.uasset" 1164
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Spark_Core.uexp" 1165
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Spark_Core.ubulk" 1166
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/Materials/M_Spark.uasset" 1167
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/Materials/M_Spark.uexp" 1168
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset" 1169
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uexp" 1170
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/P_Sparks.uasset" 1171
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/P_Sparks.uexp" 1172
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset" 1173
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Audio/Fire_Sparks01_Cue.uexp" 1174
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset" 1175
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uexp" 1176
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/P_Smoke.uasset" 1177
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/P_Smoke.uexp" 1178
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Audio/Smoke01_Cue.uasset" 1179
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Audio/Smoke01_Cue.uexp" 1180
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset" 1181
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uexp" 1182
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Water_N.uasset" 1183
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Water_N.uexp" 1184
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Water_N.ubulk" 1185
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset" 1186
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uexp" 1187
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset" 1188
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Fire_Tiled_D.uexp" 1189
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Fire_Tiled_D.ubulk" 1190
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Fire_SubUV.uasset" 1191
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Fire_SubUV.uexp" 1192
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Fire_SubUV.ubulk" 1193
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset" 1194
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uexp" 1195
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/P_Fire.uasset" 1196
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/P_Fire.uexp" 1197
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Audio/Fire01_Cue.uasset" 1198
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Audio/Fire01_Cue.uexp" 1199
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset" 1200
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uexp" 1201
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset" 1202
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_Lamp_Ceiling.uexp" 1203
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" 1204
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uexp" 1205
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Audio/Starter_Music_Cue.uasset" 1206
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Audio/Starter_Music_Cue.uexp" 1207
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Audio/Collapse_Cue.uasset" 1208
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Audio/Collapse_Cue.uexp" 1209
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset" 1210
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Shapes/Shape_QuadPyramid.uexp" 1211
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Frame_N.uasset" 1212
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Frame_N.uexp" 1213
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Frame_N.ubulk" 1214
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Frame_M.uasset" 1215
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Frame_M.uexp" 1216
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Frame_M.ubulk" 1217
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/Materials/M_Frame.uasset" 1218
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/Materials/M_Frame.uexp" 1219
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_WindowFrame.uasset" 1220
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_WindowFrame.uexp" 1221
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_PillarFrame300.uasset" 1222
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_PillarFrame300.uexp" 1223
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_PillarFrame.uasset" 1224
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_PillarFrame.uexp" 1225
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_GlassWindow.uasset" 1226
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_GlassWindow.uexp" 1227
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_DoorFrame.uasset" 1228
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_DoorFrame.uexp" 1229
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_CornerFrame.uasset" 1230
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_CornerFrame.uexp" 1231
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/MaterialSphere.uasset" 1232
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/MaterialSphere.uexp" 1233
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Dust_Particle_D.uasset" 1234
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Dust_Particle_D.uexp" 1235
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Dust_Particle_D.ubulk" 1236
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset" 1237
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/Materials/M_Dust_Particle.uexp" 1238
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/P_Ambient_Dust.uasset" 1239
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/P_Ambient_Dust.uexp" 1240
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Wood_Pine_N.uasset" 1241
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Wood_Pine_N.uexp" 1242
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Wood_Pine_N.ubulk" 1243
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Wood_Pine_D.uasset" 1244
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Wood_Pine_D.uexp" 1245
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Wood_Pine_D.ubulk" 1246
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Wood_Pine.uasset" 1247
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Wood_Pine.uexp" 1248
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Opacity/AlphaOffset.uasset" 1249
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Opacity/AlphaOffset.uexp" 1250
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset" 1251
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uexp" 1252
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Water_M.uasset" 1253
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Water_M.uexp" 1254
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Water_M.ubulk" 1255
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Water_Ocean.uasset" 1256
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Water_Ocean.uexp" 1257
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Water_Lake.uasset" 1258
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Water_Lake.uexp" 1259
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Panel_N.uasset" 1260
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Panel_N.uexp" 1261
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Panel_N.ubulk" 1262
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Panel_M.uasset" 1263
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Panel_M.uexp" 1264
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Panel_M.ubulk" 1265
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Metal_Steel_D.uasset" 1266
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Metal_Steel_D.uexp" 1267
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Metal_Steel_D.ubulk" 1268
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Tech_Panel.uasset" 1269
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Tech_Panel.uexp" 1270
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset" 1271
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uexp" 1272
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.ubulk" 1273
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset" 1274
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uexp" 1275
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.ubulk" 1276
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset" 1277
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uexp" 1278
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset" 1279
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Tech_Hex_Tile.uexp" 1280
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Dot_N.uasset" 1281
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Dot_N.uexp" 1282
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Dot_N.ubulk" 1283
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Dot_M.uasset" 1284
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Dot_M.uexp" 1285
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Dot_M.ubulk" 1286
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Single_Tile_N.uasset" 1287
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Single_Tile_N.uexp" 1288
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Single_Tile_N.ubulk" 1289
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Checker_Noise_M.uasset" 1290
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Checker_Noise_M.uexp" 1291
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Checker_Noise_M.ubulk" 1292
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset" 1293
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Tech_Checker_Dot.uexp" 1294
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Slate_N.uasset" 1295
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Slate_N.uexp" 1296
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Slate_N.ubulk" 1297
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Slate_D.uasset" 1298
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Slate_D.uexp" 1299
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Slate_D.ubulk" 1300
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Rock_Slate.uasset" 1301
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Rock_Slate.uexp" 1302
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset" 1303
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Sandstone_N.uexp" 1304
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Sandstone_N.ubulk" 1305
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset" 1306
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Sandstone_D.uexp" 1307
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Sandstone_D.ubulk" 1308
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Rock_Sandstone.uasset" 1309
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Rock_Sandstone.uexp" 1310
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset" 1311
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Rock_Marble_Polished.uexp" 1312
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset" 1313
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Basalt_N.uexp" 1314
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Basalt_N.ubulk" 1315
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Rock_Basalt.uasset" 1316
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Rock_Basalt.uexp" 1317
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Metal_Steel_N.uasset" 1318
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Metal_Steel_N.uexp" 1319
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Metal_Steel_N.ubulk" 1320
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Metal_Steel.uasset" 1321
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Metal_Steel.uexp" 1322
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Metal_Rust_D.uasset" 1323
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Metal_Rust_D.uexp" 1324
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Metal_Rust_D.ubulk" 1325
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Metal_Rust.uasset" 1326
-"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Metal_Rust.uexp" 1327
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset" 998
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Shapes/Shape_QuadPyramid.uexp" 999
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Frame_N.uasset" 1000
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Frame_N.uexp" 1001
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Frame_N.ubulk" 1002
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Frame_M.uasset" 1003
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Frame_M.uexp" 1004
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Frame_M.ubulk" 1005
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/Materials/M_Frame.uasset" 1006
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/Materials/M_Frame.uexp" 1007
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_WindowFrame.uasset" 1008
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_WindowFrame.uexp" 1009
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_PillarFrame300.uasset" 1010
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_PillarFrame300.uexp" 1011
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_PillarFrame.uasset" 1012
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_PillarFrame.uexp" 1013
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_GlassWindow.uasset" 1014
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_GlassWindow.uexp" 1015
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_DoorFrame.uasset" 1016
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_DoorFrame.uexp" 1017
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_CornerFrame.uasset" 1018
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_CornerFrame.uexp" 1019
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/MaterialSphere.uasset" 1020
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/MaterialSphere.uexp" 1021
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Dust_Particle_D.uasset" 1022
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Dust_Particle_D.uexp" 1023
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Dust_Particle_D.ubulk" 1024
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset" 1025
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/Materials/M_Dust_Particle.uexp" 1026
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/P_Ambient_Dust.uasset" 1027
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/P_Ambient_Dust.uexp" 1028
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Wood_Pine_N.uasset" 1029
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Wood_Pine_N.uexp" 1030
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Wood_Pine_N.ubulk" 1031
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Wood_Pine_D.uasset" 1032
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Wood_Pine_D.uexp" 1033
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Wood_Pine_D.ubulk" 1034
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Wood_Pine.uasset" 1035
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Wood_Pine.uexp" 1036
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Opacity/AlphaOffset.uasset" 1037
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Opacity/AlphaOffset.uexp" 1038
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset" 1039
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uexp" 1040
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Water_M.uasset" 1041
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Water_M.uexp" 1042
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Water_M.ubulk" 1043
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Water_N.uasset" 1044
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Water_N.uexp" 1045
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Water_N.ubulk" 1046
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Water_Ocean.uasset" 1047
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Water_Ocean.uexp" 1048
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Water_Lake.uasset" 1049
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Water_Lake.uexp" 1050
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Panel_N.uasset" 1051
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Panel_N.uexp" 1052
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Panel_N.ubulk" 1053
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Panel_M.uasset" 1054
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Panel_M.uexp" 1055
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Panel_M.ubulk" 1056
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Metal_Steel_D.uasset" 1057
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Metal_Steel_D.uexp" 1058
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Metal_Steel_D.ubulk" 1059
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Tech_Panel.uasset" 1060
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Tech_Panel.uexp" 1061
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset" 1062
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uexp" 1063
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.ubulk" 1064
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset" 1065
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uexp" 1066
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.ubulk" 1067
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset" 1068
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uexp" 1069
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset" 1070
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Tech_Hex_Tile.uexp" 1071
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Dot_N.uasset" 1072
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Dot_N.uexp" 1073
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Dot_N.ubulk" 1074
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Dot_M.uasset" 1075
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Dot_M.uexp" 1076
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Tech_Dot_M.ubulk" 1077
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Single_Tile_N.uasset" 1078
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Single_Tile_N.uexp" 1079
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Single_Tile_N.ubulk" 1080
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Checker_Noise_M.uasset" 1081
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Checker_Noise_M.uexp" 1082
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Checker_Noise_M.ubulk" 1083
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset" 1084
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Tech_Checker_Dot.uexp" 1085
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Slate_N.uasset" 1086
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Slate_N.uexp" 1087
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Slate_N.ubulk" 1088
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Slate_D.uasset" 1089
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Slate_D.uexp" 1090
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Slate_D.ubulk" 1091
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Rock_Slate.uasset" 1092
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Rock_Slate.uexp" 1093
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset" 1094
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Sandstone_N.uexp" 1095
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Sandstone_N.ubulk" 1096
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset" 1097
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Sandstone_D.uexp" 1098
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Sandstone_D.ubulk" 1099
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Rock_Sandstone.uasset" 1100
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Rock_Sandstone.uexp" 1101
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset" 1102
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uexp" 1103
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.ubulk" 1104
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset" 1105
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Rock_Marble_Polished.uexp" 1106
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset" 1107
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Basalt_N.uexp" 1108
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Basalt_N.ubulk" 1109
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Rock_Basalt.uasset" 1110
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Rock_Basalt.uexp" 1111
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Metal_Steel_N.uasset" 1112
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Metal_Steel_N.uexp" 1113
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Metal_Steel_N.ubulk" 1114
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Metal_Steel.uasset" 1115
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Metal_Steel.uexp" 1116
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Metal_Rust_D.uasset" 1117
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Metal_Rust_D.uexp" 1118
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Metal_Rust_D.ubulk" 1119
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Metal_Rust_N.uasset" 1120
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Metal_Rust_N.uexp" 1121
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Metal_Rust_N.ubulk" 1122
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Metal_Rust.uasset" 1123
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Metal_Rust.uexp" 1124
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Metal_Chrome.uasset" 1125
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Metal_Chrome.uexp" 1126
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Moss_N.uasset" 1127
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Moss_N.uexp" 1128
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Moss_N.ubulk" 1129
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_ground_Moss_D.uasset" 1130
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_ground_Moss_D.uexp" 1131
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_ground_Moss_D.ubulk" 1132
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Ground_Moss.uasset" 1133
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Ground_Moss.uexp" 1134
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset" 1135
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Gravel_N.uexp" 1136
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Gravel_N.ubulk" 1137
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset" 1138
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Gravel_D.uexp" 1139
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Gravel_D.ubulk" 1140
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Ground_Gravel.uasset" 1141
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Ground_Gravel.uexp" 1142
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Grass_N.uasset" 1143
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Grass_N.uexp" 1144
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Grass_N.ubulk" 1145
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Grass_D.uasset" 1146
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Grass_D.uexp" 1147
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ground_Grass_D.ubulk" 1148
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Ground_Grass.uasset" 1149
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Ground_Grass.uexp" 1150
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset" 1151
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uexp" 1152
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.ubulk" 1153
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset" 1154
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Tiles_N.uexp" 1155
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Tiles_N.ubulk" 1156
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset" 1157
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Tiles_M.uexp" 1158
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Tiles_M.ubulk" 1159
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset" 1160
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Tiles_D.uexp" 1161
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Tiles_D.ubulk" 1162
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Concrete_Tiles.uasset" 1163
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Concrete_Tiles.uexp" 1164
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset" 1165
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Grime_D.uexp" 1166
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Grime_D.ubulk" 1167
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Concrete_Grime.uasset" 1168
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Concrete_Grime.uexp" 1169
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset" 1170
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uexp" 1171
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.ubulk" 1172
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset" 1173
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uexp" 1174
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.ubulk" 1175
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset" 1176
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uexp" 1177
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.ubulk" 1178
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset" 1179
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uexp" 1180
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.ubulk" 1181
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Gradinet_01.uasset" 1182
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Gradinet_01.uexp" 1183
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Gradinet_01.ubulk" 1184
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset" 1185
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_CobbleStone_Smooth.uexp" 1186
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset" 1187
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uexp" 1188
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Rough_N.ubulk" 1189
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset" 1190
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uexp" 1191
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Rough_D.ubulk" 1192
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset" 1193
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_CobbleStone_Rough.uexp" 1194
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset" 1195
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uexp" 1196
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.ubulk" 1197
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset" 1198
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uexp" 1199
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.ubulk" 1200
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset" 1201
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uexp" 1202
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.ubulk" 1203
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset" 1204
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_CobbleStone_Pebble.uexp" 1205
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset" 1206
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ceramic_Tile_N.uexp" 1207
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ceramic_Tile_N.ubulk" 1208
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset" 1209
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ceramic_Tile_M.uexp" 1210
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Ceramic_Tile_M.ubulk" 1211
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset" 1212
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uexp" 1213
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset" 1214
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uexp" 1215
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.ubulk" 1216
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset" 1217
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uexp" 1218
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.ubulk" 1219
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset" 1220
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uexp" 1221
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.ubulk" 1222
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset" 1223
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uexp" 1224
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset" 1225
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uexp" 1226
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.ubulk" 1227
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset" 1228
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uexp" 1229
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.ubulk" 1230
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset" 1231
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Brick_Cut_Stone.uexp" 1232
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset" 1233
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uexp" 1234
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Old_N.ubulk" 1235
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset" 1236
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uexp" 1237
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Old_D.ubulk" 1238
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset" 1239
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Brick_Clay_Old.uexp" 1240
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset" 1241
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uexp" 1242
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.ubulk" 1243
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset" 1244
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uexp" 1245
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.ubulk" 1246
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset" 1247
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uexp" 1248
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.ubulk" 1249
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset" 1250
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uexp" 1251
+"../../../Engine/Content/Functions/Engine_MaterialFunctions03/Procedurals/ComputeFilterWidth.uasset" 1252
+"../../../Engine/Content/Functions/Engine_MaterialFunctions03/Procedurals/ComputeFilterWidth.uexp" 1253
+"../../../Engine/Content/EngineMaterials/AntiAliasedTextMaterialTranslucent.uasset" 1254
+"../../../Engine/Content/EngineMaterials/AntiAliasedTextMaterialTranslucent.uexp" 1255
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Maps/StarterMap_BuiltData.uasset" 1256
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Maps/StarterMap_BuiltData.uexp" 1257
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Maps/StarterMap_BuiltData.ubulk" 1258
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset" 1259
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Poured_N.uexp" 1260
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Poured_N.ubulk" 1261
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset" 1262
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Poured_D.uexp" 1263
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Concrete_Poured_D.ubulk" 1264
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Concrete_Poured.uasset" 1265
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Materials/M_Concrete_Poured.uexp" 1266
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Lamp_N.uasset" 1267
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Lamp_N.uexp" 1268
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Lamp_N.ubulk" 1269
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Lamp_M.uasset" 1270
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Lamp_M.uexp" 1271
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Lamp_M.ubulk" 1272
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/Materials/M_Lamp.uasset" 1273
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/Materials/M_Lamp.uexp" 1274
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_Lamp_Wall.uasset" 1275
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_Lamp_Wall.uexp" 1276
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset" 1277
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Blueprints/Blueprint_WallSconce.uexp" 1278
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/P_Steam_Lit.uasset" 1279
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/P_Steam_Lit.uexp" 1280
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Audio/Steam01_Cue.uasset" 1281
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Audio/Steam01_Cue.uexp" 1282
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset" 1283
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uexp" 1284
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Spark_Core.uasset" 1285
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Spark_Core.uexp" 1286
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Spark_Core.ubulk" 1287
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/Materials/M_Spark.uasset" 1288
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/Materials/M_Spark.uexp" 1289
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset" 1290
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uexp" 1291
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/P_Sparks.uasset" 1292
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/P_Sparks.uexp" 1293
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset" 1294
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Audio/Fire_Sparks01_Cue.uexp" 1295
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset" 1296
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uexp" 1297
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/P_Smoke.uasset" 1298
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/P_Smoke.uexp" 1299
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Audio/Smoke01_Cue.uasset" 1300
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Audio/Smoke01_Cue.uexp" 1301
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset" 1302
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uexp" 1303
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset" 1304
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uexp" 1305
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset" 1306
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Fire_Tiled_D.uexp" 1307
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Fire_Tiled_D.ubulk" 1308
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Fire_SubUV.uasset" 1309
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Fire_SubUV.uexp" 1310
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Textures/T_Fire_SubUV.ubulk" 1311
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset" 1312
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uexp" 1313
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/P_Fire.uasset" 1314
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Particles/P_Fire.uexp" 1315
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Audio/Fire01_Cue.uasset" 1316
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Audio/Fire01_Cue.uexp" 1317
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset" 1318
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uexp" 1319
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset" 1320
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Props/SM_Lamp_Ceiling.uexp" 1321
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" 1322
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uexp" 1323
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Audio/Starter_Music_Cue.uasset" 1324
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Audio/Starter_Music_Cue.uexp" 1325
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Audio/Collapse_Cue.uasset" 1326
+"C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Audio/Collapse_Cue.uexp" 1327
 "C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Architecture/Wall_Window_400x300.uasset" 1328
 "C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Architecture/Wall_Window_400x300.uexp" 1329
 "C:/Users/david/Desktop/Stemming The Disaster/Stemming-the-disaster/Content/StarterContent/Architecture/Wall_Door_400x300.uasset" 1330

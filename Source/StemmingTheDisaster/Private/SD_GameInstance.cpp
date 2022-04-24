@@ -11,7 +11,7 @@ USD_GameInstance::USD_GameInstance()
 void USD_GameInstance::StartSimulator(FString dis)
 {
 	//Clear / Reset all of the default values
-	remainingTime = 1200.0f; //Reset Time
+	remainingTime = 15.0f; //Reset Time
 	dialogueOptions.Empty(); //Empty the Dialogue Options
 	investmentOptions.Empty(); //Empty the investment options
 	investmentCareers.Empty(); //Empty the investment's associated careers
@@ -27,6 +27,14 @@ void USD_GameInstance::StartSimulator(FString dis)
 
 void USD_GameInstance::EndSimulator()
 {
+	careerPathScores.ValueSort([](int A, int B) {
+		return A > B; //Sort the values in career path in descending order
+		});
+	for (auto It = careerPathScores.CreateConstIterator(); It; ++It) //For the entire map
+	{
+		results.Add(It->Key); //Add the sorted career scores to the results array. It will be referenced in the results map
+		UE_LOG(LogTemp, Warning, TEXT("%s Added to results"), *It->Key);
+	}
 	return;
 }
 
