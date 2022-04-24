@@ -12,13 +12,15 @@ void USD_GameInstance::StartSimulator(FString dis)
 {
 	//Clear / Reset all of the default values
 	remainingTime = 15.0f; //Reset Time
+	maxTime = remainingTime; //Set the max time to the inital value of remaining time
+	remainingCurrency = 1000000; //Reset Currency
 	dialogueOptions.Empty(); //Empty the Dialogue Options
 	investmentOptions.Empty(); //Empty the investment options
 	investmentCareers.Empty(); //Empty the investment's associated careers
 	travelableMaps.Empty(); //Empty the travelable maps
 	careerPathScores.Empty(); //Empty the scores
 	results.Empty(); //Empty the results
-	if (dis == "Harvey")
+	if (dis == "Harvey") //Determine what disaster we are implementing
 	{
 		//Add the maps that we can travel to here
 	}
@@ -43,7 +45,7 @@ void USD_GameInstance::SetupMap(FString mapName)
 	//Setup variables upon the switching of maps. Called by level blueprint
 	dialogueOptions = exDat.createExplainData(mapName); //Populate the dialogue options
 	investmentOptions = inDat.createInvestmentData(mapName); //Populate the investment options
-	for (int i = 0; i < alreadyInvested.Num(); i++)
+	for (int i = 0; i < alreadyInvested.Num(); i++) //Iterate through things that have already been invested in
 	{
 		if (investmentOptions.Contains(alreadyInvested[i])) //Check if it's been invested in
 		{
@@ -131,59 +133,59 @@ void USD_GameInstance::ChangeMap(FString name)
 
 FString USD_GameInstance::GetCurrentAction()
 {
-	return currentAction;
+	return currentAction; //Return the current action
 }
 
 void USD_GameInstance::SetCurrentAction(FString action)
 {
-	currentAction = action;
+	currentAction = action; //Set a new current action
 }
 
 void USD_GameInstance::SetInteractableData(FText name, FText desc)
 {
-	interactableName = name.ToString();
-	interactableText = desc.ToString();
+	interactableName = name.ToString(); //Take the name from the interactable and set it to be rendered with the UI
+	interactableText = desc.ToString(); //Take the text from the interactable and set it to be rendered with the UI
 	return;
 }
 
 int USD_GameInstance::getCurrencyRemaining()
 {
-	return remainingCurrency;
+	return remainingCurrency; //Return how much currency remains
 }
 
 FString USD_GameInstance::getInteractableText()
 {
-	return interactableText;
+	return interactableText; //Return the text field of the interactable. Used by the UI
 }
 
 FString USD_GameInstance::getInteractableName()
 {
-	return interactableName;
+	return interactableName; //Return the name field of the interactable. Used by the UI
 }
 
 void USD_GameInstance::setInVR(bool mode)
 {
-	inVR = mode;
+	inVR = mode; //Set whether we are in VR
 }
 
 bool USD_GameInstance::getInVR()
 {
-	return inVR;
+	return inVR; //Return if we are in VR
 }
 
 void USD_GameInstance::scoreInteractable(FString career, int value)
 {
-	int* result = careerPathScores.Find(career);
+	int* result = careerPathScores.Find(career); //See if the career exists in the score TMap
 	if (result != nullptr) //If the map contains the career already
 	{
-		int scoreSum = *result + value;
-		careerPathScores.Remove(career);
-		careerPathScores.Add(career, scoreSum);
-		UE_LOG(LogTemp, Warning, TEXT("Value changed: career %s has a value of %d"), *career, scoreSum);
+		int scoreSum = *result + value; //Add the current score and passed in value 
+		careerPathScores.Remove(career); //Remove the old score
+		careerPathScores.Add(career, scoreSum); //Reinsert the career with the new score
+		//UE_LOG(LogTemp, Warning, TEXT("Value changed: career %s has a value of %d"), *career, scoreSum);
 	}
-	else
+	else //If it doesn't exist
 	{
-		careerPathScores.Add(career, value);
+		careerPathScores.Add(career, value); //Add the career to the TMap
 	}
 }
 
@@ -193,4 +195,9 @@ FString USD_GameInstance::mapNameLookup(FString name)
 	if (name == "Airplane")
 		return TEXT("Air Plane");
 	return name; //If nothing was found, simply return what was sent.
+}
+
+float USD_GameInstance::getMaxTime()
+{
+	return maxTime;
 }
