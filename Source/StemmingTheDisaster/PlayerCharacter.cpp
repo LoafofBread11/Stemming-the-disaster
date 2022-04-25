@@ -211,8 +211,8 @@ void APlayerCharacter::Tick(float DeltaTime)
 		GI->setRemainingTime(time); //Set the new time
 		if (time <= 0.0f) //If no more time remains
 		{
-			GI->SetCurrentAction("RESULTS");
-			UGameplayStatics::OpenLevel((UObject*)GI, TEXT("ResultsMap"));//Go to the results map
+			GI->SetCurrentAction("RESULTS"); //Set proper action
+			GI->ChangeMap("ResultsMap"); //Go to results map
 		}
 	}
 

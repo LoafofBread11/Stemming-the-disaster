@@ -11,7 +11,7 @@ USD_GameInstance::USD_GameInstance()
 void USD_GameInstance::StartSimulator(FString dis)
 {
 	//Clear / Reset all of the default values
-	remainingTime = 60.0f; //Reset Time
+	remainingTime = 15.0f; //Reset Time
 	maxTime = remainingTime; //Set the max time to the inital value of remaining time
 	remainingCurrency = 1000000; //Reset Currency
 	dialogueOptions.Empty(); //Empty the Dialogue Options
@@ -125,7 +125,8 @@ void USD_GameInstance::ChangeMap(FString name)
 
 	AFadeOutTravelCube* newCube = GetWorld()->SpawnActor<AFadeOutTravelCube>(AFadeOutTravelCube::StaticClass(), spawnLoc, FRotator(0.0f)); //Spawn the travel cube
 	newCube->mapName = name;
-	SetCurrentAction("TRAVELING"); //Ensure no actions can occur while we are traveling
+	if(name != "ResultsMap") // If we aren't going to the results map
+		SetCurrentAction("TRAVELING"); //Ensure no actions can occur while we are traveling
 	if (!inVR) //If not in VR
 		spawnLoc.Z -= 125; //Reset the camera height
 	return;
