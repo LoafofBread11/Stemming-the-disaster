@@ -293,7 +293,7 @@ void ANarrator::HandleFlags() {
 								FString dCode = code.Mid(2, 3);
 								if (dCode.IsNumeric())
 								{
-									int x;
+									int x = 0;
 									FDefaultValueHelper::ParseInt(dCode, x);
 									dialogueLookup(x);
 								}
@@ -319,7 +319,8 @@ void ANarrator::HandleFlags() {
 							}
 							else
 							{
-								//Investment failed.
+								CB->shakeVal = 1.0f; //Enable shake to indicate something went wrong
+								CB->flag = -1; //Reset the flag value. Normally not needed since buttons are destroyed, but this isn't the case here
 							}
 							return;
 						}
@@ -361,10 +362,10 @@ void ANarrator::HandleFlags() {
 
 void ANarrator::dialogueLookup(int code)
 {
-	/*
+	
 	switch (code)
 	{
-		//Depending on the code, GI->GenerateDialouge("", "");
+		case 0: GI->GenerateDialouge("New Dialogue", "F_GDialogue"); break;
 	}
-	*/
+	
 }

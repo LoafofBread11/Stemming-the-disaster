@@ -38,4 +38,15 @@ class STEMMINGTHEDISASTER_API AInvestConfirmButton : public AButtonMain
 
 		//Funtion to set the item's description.
 		void setItemDesc(FString newItemDesc);
+
+		//Values for a shake effect for when a bad investment is made
+		UPROPERTY(VisibleAnywhere)
+		float shakeVal = 0.0f;
+
+		//Starting values for the origin of the button on the x / y plane
+		UPROPERTY(VisibleAnywhere)
+		float startingY = 0.0f;
+
+		UPROPERTY(VisibleAnywhere)
+		float startingX = 0.0f;
 };

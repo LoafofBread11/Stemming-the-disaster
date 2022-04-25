@@ -11,7 +11,7 @@ USD_GameInstance::USD_GameInstance()
 void USD_GameInstance::StartSimulator(FString dis)
 {
 	//Clear / Reset all of the default values
-	remainingTime = 15.0f; //Reset Time
+	remainingTime = 60.0f; //Reset Time
 	maxTime = remainingTime; //Set the max time to the inital value of remaining time
 	remainingCurrency = 1000000; //Reset Currency
 	dialogueOptions.Empty(); //Empty the Dialogue Options
