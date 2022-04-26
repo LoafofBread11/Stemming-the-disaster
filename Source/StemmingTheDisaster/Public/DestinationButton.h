@@ -6,6 +6,7 @@
 #include "ButtonMain.h"
 #include "Kismet/GameplayStatics.h"
 #include "SD_GameInstance.h"
+#include "FadeOutTravelCube.h"
 #include "DestinationButton.generated.h"
 
 UCLASS()

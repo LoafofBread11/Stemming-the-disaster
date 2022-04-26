@@ -2,6 +2,10 @@
 	"BuildId": "17155196",
 	"Modules": 
 	{
+<<<<<<< HEAD
 		"StemmingTheDisaster": "UE4Editor-StemmingTheDisaster-0910.dll"
+=======
+		"StemmingTheDisaster": "UE4Editor-StemmingTheDisaster-1152.dll"
+>>>>>>> main
 	}
 }

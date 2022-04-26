@@ -17,6 +17,7 @@ TArray<TPair <FString, FString>> ExplainData::createExplainData(FString mapName)
 	if (mapName == "S1VerticalSlice")
 	{
 		retArr.Add(TPair<FString, FString>("Test Dialogue", "F_test"));
+		retArr.Add(TPair<FString, FString>("Generation", "T_000test"));
 	}
 
 	return retArr; //Return the populated array
