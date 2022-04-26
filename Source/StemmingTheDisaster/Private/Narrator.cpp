@@ -65,7 +65,7 @@ void ANarrator::Tick(float DeltaTime)
 		voiceTimeRemaining -= DeltaTime; //Subtract the delta time from the voice clip time
 		if (voiceTimeRemaining <= 0.0f) //Check if the time has depleted
 		{
-			GI->ChangeMap("Sprint1VerticalSlice"); //Change map to an arbitrary map, will depend on what simulation is being played in the future
+			GI->ChangeMap("NetworkOutageMap"); //Change map to an arbitrary map, will depend on what simulation is being played in the future
 		}
 	}
 	if (GI->GetCurrentAction() == "DONE") //If the simulation is over (And we are not yet in the results)
@@ -185,7 +185,7 @@ void ANarrator::CreateTravelMenu() {
 	for (i = 0; i < GI->travelableMaps.Num(); i++) {   // Iterate through travelableMaps array
 		AButtonMain* newButton = GetWorld()->SpawnActor<ADestinationButton>(ADestinationButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, baseZ + 15.0f + (i * 30.0f)), myRot);   // Spawn newButton actor for ADestinationButton
 		
-		newButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f));   // Modify newButton scale
+		newButton->SetActorScale3D(FVector(0.5f, 0.25f, 0.25f));   // Modify newButton scale
 		newButton->setScale(); //Normalize scale within the button
 		newButton->setText(FText::FromString(GI->mapNameLookup(GI->travelableMaps[i])));   // Set newButton text
 

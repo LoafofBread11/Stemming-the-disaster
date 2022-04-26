@@ -5,7 +5,7 @@
 
 USD_GameInstance::USD_GameInstance()
 {
-	travelableMaps.Add("Airplane"); //Adding airplane to travelable maps in Sprint 2. Done here only because Start Simulator is not implemented / called yet.
+
 }
 
 void USD_GameInstance::StartSimulator(FString dis)
@@ -22,7 +22,8 @@ void USD_GameInstance::StartSimulator(FString dis)
 	results.Empty(); //Empty the results
 	if (dis == "Harvey") //Determine what disaster we are implementing
 	{
-		//Add the maps that we can travel to here
+		travelableMaps.Add("NetworkOutageMap");
+		travelableMaps.Add("RescueStationMap");
 	}
 	return;
 }
@@ -64,7 +65,7 @@ void USD_GameInstance::SetupMap(FString mapName)
 		currentAction = "IDLE";
 
 	//Set the spawn location, used for transitions
-	if (mapName == "Results" || mapName == "StartMap" || mapName == "S1VerticalSlice")
+	if (mapName == "Results" || mapName == "StartMap" || mapName == "S1VerticalSlice" || mapName == "RescueStation" || mapName == "InternetOutage")
 		spawnLoc = FVector(0.0f, 0.0f, 6.25f);
 	else if (mapName == "Airplane")
 		spawnLoc = FVector(-210.0f, -200.0f, 15.0f);
@@ -195,6 +196,10 @@ FString USD_GameInstance::mapNameLookup(FString name)
 	//Compare the sent in name to different names to see if a match is given. Some maps may already be human readable.
 	if (name == "Airplane")
 		return TEXT("Air Plane");
+	else if (name == "RescueStationMap")
+		return TEXT("Rescue Station");
+	else if (name == "NetworkOutageMap")
+		return TEXT("Network Outage");
 	return name; //If nothing was found, simply return what was sent.
 }
 

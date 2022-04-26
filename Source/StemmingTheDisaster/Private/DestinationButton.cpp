@@ -5,7 +5,7 @@
 
 ADestinationButton::ADestinationButton() : AButtonMain()
 {
-
+	
 }
 
 void ADestinationButton::BeginPlay()
