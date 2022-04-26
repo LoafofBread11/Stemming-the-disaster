@@ -244,7 +244,7 @@ FHitResult APlayerCharacter::Hitscan()
 	FVector startLoc = camera->GetComponentLocation(); //Determine the start location of the beam
 	FVector Forward = camera->GetForwardVector(); //Determine the forward vector (The direction of the camera as represented by a 3 value vector)
 	startLoc += (Forward * 15); //Advance the start location by the forward vector * 15, done so the beam is not interrupted by the camera
-	FVector endLoc = (Forward * 1000) + startLoc; //Determine the end location
+	FVector endLoc = (Forward * 10000) + startLoc; //Determine the end location
 	FCollisionQueryParams colpar; //Create collision parameters. Needed for the function call, but we do not need to do anything with them
 	if(debugMode) //If we are in debug mode
 		DrawDebugLine(GetWorld(), startLoc, endLoc, FColor::Green, false, 1, 0, 1); //Draw the line represented by the trace
