@@ -125,7 +125,7 @@ void APlayerCharacter::BeginPlay()
 		if (GI->GetCurrentAction() == "RESULTS" || GI->GetCurrentAction() == "START") //If we're in the results room
 		{
 			valueWidget->SetRelativeScale3D(FVector(0.0f)); //Hide the components anyway
-			reticleWidget->SetRelativeScale3D(FVector(0.0f));
+			//Don't hide the reticle, it is still useful
 			lAtWidget->SetRelativeScale3D(FVector(0.0f));
 			captionWidget->SetRelativeScale3D(FVector(0.0f));
 			interactableName->SetRelativeScale3D(FVector(0.0f));
@@ -157,22 +157,22 @@ void APlayerCharacter::Tick(float DeltaTime)
 			AInteractable* collideInt = Cast<AInteractable>(OutHit.GetActor()); //Attempt to cast the object to an interactable
 			if (collideInt) //If successful
 			{
-				lookingAtText = collideInt->textName;
+				lookingAtText = collideInt->textName; //Set the text to the interactable
 			}
 			else
 			{
-				ANarrator* collideNar = Cast<ANarrator>(OutHit.GetActor());
-				if (collideNar)
+				ANarrator* collideNar = Cast<ANarrator>(OutHit.GetActor()); //Cast to the narrator
+				if (collideNar) //If successful
 				{
-					lookingAtText = "Narrator";
+					lookingAtText = "Narrator"; //Set text to Narrator
 				}
 				else
 				{
 					lookingAtText = ""; //Set looking at text to nothing, then check rest of conditions
-					AButtonMain* collideBut = Cast<AButtonMain>(OutHit.GetActor());
-					if (collideBut)
+					AButtonMain* collideBut = Cast<AButtonMain>(OutHit.GetActor()); //Check if looking at button
+					if (collideBut) //If successful
 					{
-						collideBut->isHighlighted = 1.0f;
+						collideBut->isHighlighted = 1.0f; //Highlight the button
 					}
 				}
 			}
@@ -201,6 +201,7 @@ void APlayerCharacter::Tick(float DeltaTime)
 			done = true; //Then we are done
 			GI->SetCurrentAction("DONE"); //Sets current action to done
 			GI->setRemainingTime(3.0f); //Allow 3 seconds of done time
+			GI->EndSimulator(); //Calculate the results
 		}
 	}
 	else if (GI->GetCurrentAction() == "DONE")
@@ -210,8 +211,8 @@ void APlayerCharacter::Tick(float DeltaTime)
 		GI->setRemainingTime(time); //Set the new time
 		if (time <= 0.0f) //If no more time remains
 		{
-			GI->SetCurrentAction("RESULTS");
-			UGameplayStatics::OpenLevel((UObject*)GI, TEXT("ResultsMap"));//Go to the results map
+			GI->SetCurrentAction("RESULTS"); //Set proper action
+			GI->ChangeMap("ResultsMap"); //Go to results map
 		}
 	}
 
@@ -243,7 +244,7 @@ FHitResult APlayerCharacter::Hitscan()
 	FVector startLoc = camera->GetComponentLocation(); //Determine the start location of the beam
 	FVector Forward = camera->GetForwardVector(); //Determine the forward vector (The direction of the camera as represented by a 3 value vector)
 	startLoc += (Forward * 15); //Advance the start location by the forward vector * 15, done so the beam is not interrupted by the camera
-	FVector endLoc = (Forward * 1000) + startLoc; //Determine the end location
+	FVector endLoc = (Forward * 10000) + startLoc; //Determine the end location
 	FCollisionQueryParams colpar; //Create collision parameters. Needed for the function call, but we do not need to do anything with them
 	if(debugMode) //If we are in debug mode
 		DrawDebugLine(GetWorld(), startLoc, endLoc, FColor::Green, false, 1, 0, 1); //Draw the line represented by the trace

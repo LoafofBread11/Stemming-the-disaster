@@ -20,6 +20,6 @@ void ADestinationButton::raiseFlag()
 	GI = Cast<USD_GameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
 	if (mapName != "" && (GI->GetCurrentAction() != "DONE"))
 	{
-		UGameplayStatics::OpenLevel((UObject*)GI, FName(mapName));
+		GI->ChangeMap(mapName);
 	}
 }
