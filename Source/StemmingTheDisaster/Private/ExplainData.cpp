@@ -19,6 +19,10 @@ TArray<TPair <FString, FString>> ExplainData::createExplainData(FString mapName)
 		retArr.Add(TPair<FString, FString>("Test Dialogue", "F_test"));
 		retArr.Add(TPair<FString, FString>("Generation", "T_000test"));
 	}
+	else if (mapName == "InternetOutage")
+	{
+		retArr.Add(TPair<FString, FString>("Outage", "F_test"));
+	}
 
 	return retArr; //Return the populated array
 }
