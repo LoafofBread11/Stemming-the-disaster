@@ -100,11 +100,14 @@ void ANarrator::CreateInvestMenu() {
 	if (GI->GetCurrentAction() == "DONE")
 		return; //Kill the action if the simulation is done
 	GI->SetCurrentAction("NARRATOR_INVEST");
-	FVector myLoc = GetActorLocation();
+	FVector myLoc = GetActorLocation() + (GetActorRightVector() * -71) + (GetActorForwardVector() * 71); //Create the location with reference to the narrator
 	FRotator myRot = GetActorRotation();
-	myRot.Yaw *= 4.0f;
+	if (myRot.Yaw >= 225.0f)
+		myRot.Yaw += 135.0f; //Make buttons face the right way
+	else
+		myRot.Yaw -= 225.0f; //Separated as to not loop over euler angles, keep it from 0 - 360
 
-	AButtonMain* newBackButton = GetWorld()->SpawnActor<ABackButton>(ABackButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, baseZ - 15.0f), myRot);   // Spawn newBackButton actor for ABackButton
+	AButtonMain* newBackButton = GetWorld()->SpawnActor<ABackButton>(ABackButton::StaticClass(), FVector(myLoc.X, myLoc.Y, baseZ - 15.0f), myRot);   // Spawn newBackButton actor for ABackButton
 	newBackButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f));   // Modify newBackButton scale
 	newBackButton->setScale(); //Normalize scale within the button
 	newBackButton->setText(FText::FromString(TEXT("Back")));   // Set newBackButton text
@@ -114,7 +117,7 @@ void ANarrator::CreateInvestMenu() {
 	float spawnHeight = 0.0f;
 	for (auto It = GI->investmentOptions.CreateConstIterator(); It; ++It)
 	{
-		AButtonMain* newButton = GetWorld()->SpawnActor<AInvestConfirmButton>(AInvestConfirmButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, baseZ + 15.0f + spawnHeight), myRot);
+		AButtonMain* newButton = GetWorld()->SpawnActor<AInvestConfirmButton>(AInvestConfirmButton::StaticClass(), FVector(myLoc.X, myLoc.Y, baseZ + 15.0f + spawnHeight), myRot);
 		newButton->SetActorScale3D(FVector(0.375f, 0.25f, 0.25f));   // Modify newButton scale
 		newButton->setScale(); //Normalize scale within the button
 		FString cost = "$" + FString::FromInt(It.Value());
@@ -133,26 +136,29 @@ void ANarrator::CreateInvestMenu() {
 void ANarrator::CreateMainMenu() {
 	if (GI->GetCurrentAction() == "DONE")
 		return; //Kill the action if the simulation is done
-	FVector myLoc = GetActorLocation(); // Stores the actors location and rotation
+	FVector myLoc = GetActorLocation() + (GetActorRightVector() * -71) + (GetActorForwardVector() * 71); //Create the location with reference to the narrator
 	FRotator myRot = GetActorRotation();
-	myRot.Yaw = myRot.Yaw * 4.0f; // Sets myRot to turn around since buttons were spawning facing the narrator, not player
+	if (myRot.Yaw >= 225.0f)
+		myRot.Yaw += 135.0f; //Make buttons face the right way
+	else
+		myRot.Yaw -= 225.0f; //Separated as to not loop over euler angles, keep it from 0 - 360
 
-	AButtonMain* newBackButton = GetWorld()->SpawnActor<ABackButton>(ABackButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, baseZ - 15.0f), myRot); // spawns backbutton
+	AButtonMain* newBackButton = GetWorld()->SpawnActor<ABackButton>(ABackButton::StaticClass(), FVector(myLoc.X, myLoc.Y, baseZ - 15.0f), myRot); // spawns backbutton
 	newBackButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f)); // Reduces scale
 	newBackButton->setScale(); //Normalize scale within the button
 	newBackButton->setText(FText::FromString("Back"));
 
-	AButtonMain* newInvestButton = GetWorld()->SpawnActor<AMenuButton>(AMenuButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, baseZ + 75.0f), myRot); // spawns InvestButton
+	AButtonMain* newInvestButton = GetWorld()->SpawnActor<AMenuButton>(AMenuButton::StaticClass(), FVector(myLoc.X, myLoc.Y, baseZ + 75.0f), myRot); // spawns InvestButton
 	newInvestButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f)); // Reduces scale
 	newInvestButton->setScale(); //Normalize scale within the button
 	newInvestButton->setText(FText::FromString("Invest"));
 
-	AButtonMain* newExplainButton = GetWorld()->SpawnActor<AMenuButton>(AMenuButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, baseZ + 45.0f), myRot); // Spawns ExplainButton
+	AButtonMain* newExplainButton = GetWorld()->SpawnActor<AMenuButton>(AMenuButton::StaticClass(), FVector(myLoc.X, myLoc.Y, baseZ + 45.0f), myRot); // Spawns ExplainButton
 	newExplainButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f)); // Reduces scale
 	newExplainButton->setScale(); //Normalize scale within the button
 	newExplainButton->setText(FText::FromString("Explain"));
 
-	AButtonMain* newTravelButton = GetWorld()->SpawnActor<AMenuButton>(AMenuButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, baseZ + 15.0f), myRot); // Spawns TravelButton
+	AButtonMain* newTravelButton = GetWorld()->SpawnActor<AMenuButton>(AMenuButton::StaticClass(), FVector(myLoc.X, myLoc.Y, baseZ + 15.0f), myRot); // Spawns TravelButton
 	newTravelButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f)); // Reduces scale
 	newTravelButton->setScale(); //Normalize scale within the button
 	newTravelButton->setText(FText::FromString("Travel"));
@@ -168,12 +174,15 @@ void ANarrator::CreateTravelMenu() {
 	if (GI->GetCurrentAction() == "DONE")
 		return; //Kill the action if the simulation is done
 	GI->SetCurrentAction("NARRATOR_TRAVEL");
-	FVector myLoc = GetActorLocation();   // Get actor location and rotation to spawn button
+	FVector myLoc = GetActorLocation() + (GetActorRightVector() * -71) + (GetActorForwardVector() * 71); //Create the location with reference to the narrator
 	FRotator myRot = GetActorRotation();
-	myRot.Yaw *= 4.0; //Correct face of buttons
+	if (myRot.Yaw >= 225.0f)
+		myRot.Yaw += 135.0f; //Make buttons face the right way
+	else
+		myRot.Yaw -= 225.0f; //Separated as to not loop over euler angles, keep it from 0 - 360
 	int i = 0;
 
-	AButtonMain* newBackButton = GetWorld()->SpawnActor<ABackButton>(ABackButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, baseZ - 15.0f), myRot);   // Spawn newBackButton actor for ABackButton
+	AButtonMain* newBackButton = GetWorld()->SpawnActor<ABackButton>(ABackButton::StaticClass(), FVector(myLoc.X, myLoc.Y, baseZ - 15.0f), myRot);   // Spawn newBackButton actor for ABackButton
 
 	newBackButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f));   // Modify newBackButton scale
 	newBackButton->setScale(); //Normalize scale within the button
@@ -183,7 +192,7 @@ void ANarrator::CreateTravelMenu() {
 
 
 	for (i = 0; i < GI->travelableMaps.Num(); i++) {   // Iterate through travelableMaps array
-		AButtonMain* newButton = GetWorld()->SpawnActor<ADestinationButton>(ADestinationButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, baseZ + 15.0f + (i * 30.0f)), myRot);   // Spawn newButton actor for ADestinationButton
+		AButtonMain* newButton = GetWorld()->SpawnActor<ADestinationButton>(ADestinationButton::StaticClass(), FVector(myLoc.X, myLoc.Y, baseZ + 15.0f + (i * 30.0f)), myRot);   // Spawn newButton actor for ADestinationButton
 		
 		newButton->SetActorScale3D(FVector(0.5f, 0.25f, 0.25f));   // Modify newButton scale
 		newButton->setScale(); //Normalize scale within the button
@@ -200,12 +209,15 @@ void ANarrator::CreateExplainMenu() {
 	if (GI->GetCurrentAction() == "DONE")
 		return; //Kill the action if the simulation is done
 	GI->SetCurrentAction("NARRATOR_EXPLAIN");
-	FVector myLoc = GetActorLocation();   // Get actor location and rotation to spawn button
+	FVector myLoc = GetActorLocation() + (GetActorRightVector() * -71) + (GetActorForwardVector() * 71); //Create the location with reference to the narrator
 	FRotator myRot = GetActorRotation();
-	myRot.Yaw *= 4.0; //Correct face of buttons
+	if (myRot.Yaw >= 225.0f)
+		myRot.Yaw += 135.0f; //Make buttons face the right way
+	else
+		myRot.Yaw -= 225.0f; //Separated as to not loop over euler angles, keep it from 0 - 360
 	int i = 0;
 
-	AButtonMain* newBackButton = GetWorld()->SpawnActor<ABackButton>(ABackButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, baseZ - 15.0f), myRot);   // Spawn newBackButton actor for ABackButton
+	AButtonMain* newBackButton = GetWorld()->SpawnActor<ABackButton>(ABackButton::StaticClass(), FVector(myLoc.X, myLoc.Y, baseZ - 15.0f), myRot);   // Spawn newBackButton actor for ABackButton
 
 	newBackButton->SetActorScale3D(FVector(0.25f, 0.25f, 0.25f));   // Modify newBackButton scale
 	newBackButton->setScale(); //Do scale correction
@@ -215,7 +227,7 @@ void ANarrator::CreateExplainMenu() {
 
 
 	for (i = 0; i < GI->dialogueOptions.Num(); i++) {   // Iterate through dialogueOptions array
-		AButtonMain* newButton = GetWorld()->SpawnActor<AExplainButton>(AExplainButton::StaticClass(), FVector(myLoc.X + 100.0f, myLoc.Y, baseZ + 15.0f + (i * 30.0f)), myRot);   // Spawn newButton actor for ADestinationButton
+		AButtonMain* newButton = GetWorld()->SpawnActor<AExplainButton>(AExplainButton::StaticClass(), FVector(myLoc.X, myLoc.Y, baseZ + 15.0f + (i * 30.0f)), myRot);   // Spawn newButton actor for ADestinationButton
 
 		newButton->SetActorScale3D(FVector(0.375f, 0.25f, 0.25f));   // Modify newButton scale
 		newButton->setScale(); //Set scale correction
