@@ -25,6 +25,8 @@ void USD_GameInstance::StartSimulator(FString dis)
 		travelableMaps.Add("NetworkOutageMap");
 		travelableMaps.Add("RescueStationMap");
 		travelableMaps.Add("ShelterMap");
+		travelableMaps.Add("CivilEngineering");
+		travelableMaps.Add("KingwoodFloodMap");
 	}
 	return;
 }
@@ -66,7 +68,7 @@ void USD_GameInstance::SetupMap(FString mapName)
 		currentAction = "IDLE";
 
 	//Set the spawn location, used for transitions
-	if (mapName == "Results" || mapName == "StartMap" || mapName == "S1VerticalSlice" || mapName == "RescueStation" || mapName == "InternetOutage" || mapName == "Shelter")
+	if (mapName == "Results" || mapName == "StartMap" || mapName == "S1VerticalSlice" || mapName == "RescueStation" || mapName == "InternetOutage" || mapName == "Shelter" || mapName == "CivilEngineering" || mapName == "KingwoodFlood") //TODO
 		spawnLoc = FVector(0.0f, 0.0f, 6.25f);
 	else if (mapName == "Airplane")
 		spawnLoc = FVector(-210.0f, -200.0f, 15.0f);
@@ -201,6 +203,12 @@ FString USD_GameInstance::mapNameLookup(FString name)
 		return TEXT("Rescue Station");
 	else if (name == "NetworkOutageMap")
 		return TEXT("Network Outage");
+	else if (name == "KingwoodFloodMap")
+		return TEXT("Kingwood Flood");
+	else if (name == "CivilEngineering")
+		return TEXT("Civil Engineering");
+	else if (name == "ShelterMap")
+		return TEXT("Emergency Shelter");
 	return name; //If nothing was found, simply return what was sent.
 }
 
