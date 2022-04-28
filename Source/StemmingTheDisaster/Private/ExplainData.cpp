@@ -21,7 +21,31 @@ TArray<TPair <FString, FString>> ExplainData::createExplainData(FString mapName)
 	}
 	else if (mapName == "InternetOutage")
 	{
-		retArr.Add(TPair<FString, FString>("Outage", "F_test"));
+		retArr.Add(TPair<FString, FString>("Help", "F_Help"));
+		retArr.Add(TPair<FString, FString>("Intro", "F_OutageIntro"));
+		
+	}
+	else if (mapName == "RescueStation")
+	{
+		retArr.Add(TPair<FString, FString>("Help", "F_Help"));
+		retArr.Add(TPair<FString, FString>("Intro", "F_RescueIntro"));
+		
+	}
+	else if (mapName == "KingwoodFlood")
+	{
+		retArr.Add(TPair<FString, FString>("Help", "F_Help"));
+		retArr.Add(TPair<FString, FString>("Intro", "F_KingFloodIntro"));
+	}
+	else if (mapName == "CivilEngineering")
+	{
+		retArr.Add(TPair<FString, FString>("Help", "F_Help"));
+		retArr.Add(TPair<FString, FString>("Intro", "F_CivilEIntro"));
+		
+	}
+	else if (mapName == "Shelter")
+	{
+		retArr.Add(TPair<FString, FString>("Help", "F_Help"));
+		retArr.Add(TPair<FString, FString>("Intro", "F_ShelterIntro"));
 	}
 
 	return retArr; //Return the populated array

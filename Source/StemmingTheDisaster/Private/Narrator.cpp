@@ -51,7 +51,7 @@ void ANarrator::Tick(float DeltaTime)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Made it here"));
 		GI->SetCurrentAction("START_EXPLAIN");
-		FString location = "/Game/VoiceClips/F_test.F_test"; //Make the location string
+		FString location = "/Game/VoiceClips/F_PlaneIntro.F_PlaneIntro"; //Make the location string
 		USoundCue* cue = Cast<USoundCue>(StaticLoadObject(USoundCue::StaticClass(), NULL, *location)); //Attempt to load the voice clip
 		if (cue) //If the cue load was successful
 		{
