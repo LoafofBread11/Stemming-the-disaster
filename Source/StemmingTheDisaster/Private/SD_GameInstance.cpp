@@ -24,6 +24,7 @@ void USD_GameInstance::StartSimulator(FString dis)
 	{
 		travelableMaps.Add("NetworkOutageMap");
 		travelableMaps.Add("RescueStationMap");
+		travelableMaps.Add("ShelterMap");
 	}
 	return;
 }
@@ -65,7 +66,7 @@ void USD_GameInstance::SetupMap(FString mapName)
 		currentAction = "IDLE";
 
 	//Set the spawn location, used for transitions
-	if (mapName == "Results" || mapName == "StartMap" || mapName == "S1VerticalSlice" || mapName == "RescueStation" || mapName == "InternetOutage")
+	if (mapName == "Results" || mapName == "StartMap" || mapName == "S1VerticalSlice" || mapName == "RescueStation" || mapName == "InternetOutage" || mapName == "Shelter")
 		spawnLoc = FVector(0.0f, 0.0f, 6.25f);
 	else if (mapName == "Airplane")
 		spawnLoc = FVector(-210.0f, -200.0f, 15.0f);
