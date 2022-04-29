@@ -20,6 +20,7 @@ void USD_GameInstance::StartSimulator(FString dis)
 	travelableMaps.Empty(); //Empty the travelable maps
 	careerPathScores.Empty(); //Empty the scores
 	results.Empty(); //Empty the results
+	alreadyInvested.Empty(); //Empty the list of things that have already been invested in
 	if (dis == "Harvey") //Determine what disaster we are implementing
 	{
 		travelableMaps.Add("NetworkOutageMap");
@@ -68,8 +69,10 @@ void USD_GameInstance::SetupMap(FString mapName)
 		currentAction = "IDLE";
 
 	//Set the spawn location, used for transitions
-	if (mapName == "Results" || mapName == "StartMap" || mapName == "S1VerticalSlice" || mapName == "RescueStation" || mapName == "InternetOutage" || mapName == "Shelter" || mapName == "CivilEngineering" || mapName == "KingwoodFlood") //TODO
+	if (mapName == "Results" || mapName == "StartMap" || mapName == "S1VerticalSlice" || mapName == "RescueStation" || mapName == "InternetOutage" || mapName == "Shelter" || mapName == "KingwoodFlood")
 		spawnLoc = FVector(0.0f, 0.0f, 6.25f);
+	else if(mapName == "CivilEngineering")
+		spawnLoc = FVector(-160.0f, -500.0f, 36.25f);
 	else if (mapName == "Airplane")
 		spawnLoc = FVector(-210.0f, -200.0f, 15.0f);
 	return;
