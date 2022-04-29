@@ -37,11 +37,15 @@ TMap<FString, int> InvestData::createInvestmentData(FString mapName)
 	}
 	else if (mapName == "Shelter")
 	{
-
+		retMap.Add(TPair<FString, int>("Fund Supply Import", 125000));
+		retMap.Add(TPair<FString, int>("Road Clearance", 100000));
+		retMap.Add(TPair<FString, int>("Increase Space for Rescued People", 100000));
 	}
 	else if (mapName == "RescueStation")
 	{
-
+		retMap.Add(TPair<FString, int>("Repair Rescue Equipment", 150000));
+		retMap.Add(TPair<FString, int>("Invest in Stronger Water Rescue Equipment", 100000));
+		retMap.Add(TPair<FString, int>("Research Better Drainage Systems", 100000));
 	}
 	return retMap; //Return the populated map
 }
@@ -73,11 +77,15 @@ TMap<FString, FString> InvestData::createInvestmentCareerData(FString mapName)
 	}
 	else if (mapName == "Shelter")
 	{
-
+		retMap.Add(TPair<FString, FString>("Fund Supply Import", "Logistics"));
+		retMap.Add(TPair<FString, FString>("Road Clearance", "Logistics"));
+		retMap.Add(TPair<FString, FString>("Increase Space for Rescued People", "Urban Planning"));
 	}
 	else if (mapName == "RescueStation")
 	{
-
+		retMap.Add(TPair<FString, FString>("Repair Rescue Equipment", "Mechanical Engineering"));
+		retMap.Add(TPair<FString, FString>("Invest in Stronger Water Rescue Equipment", "Materials Science"));
+		retMap.Add(TPair<FString, FString>("Research Better Drainage Systems", "Urban Planning"));
 	}
 
 	return retMap;
