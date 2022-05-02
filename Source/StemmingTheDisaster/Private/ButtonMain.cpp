@@ -94,4 +94,5 @@ void AButtonMain::setScale()
 
 void AButtonMain::raiseFlag()
 {
-	flag = 1; //Since this button is being used for the demo, it needs to set a flag.}
+	flag = 1; //Since this button is being used for the demo, it needs to set a flag.
+}
