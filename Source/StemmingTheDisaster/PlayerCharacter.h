@@ -78,4 +78,6 @@ public:
 	UPROPERTY(VisibleAnywhere)
 	class UWidgetComponent* interactableText;
 
+	UPROPERTY(VisibleAnywhere)
+	class UWidgetComponent* pauseMenu;
 };

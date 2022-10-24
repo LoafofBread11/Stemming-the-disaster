@@ -22,6 +22,15 @@
 				"Win64",
 				"Android"
 			]
+		},
+		{
+			"Name": "OculusVR",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Win32",
+				"Win64",
+				"Android"
+			]
 		}
 	]
 }

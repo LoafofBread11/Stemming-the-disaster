@@ -127,14 +127,14 @@ TArray <FString> USD_GameInstance::GetMaps()
 
 void USD_GameInstance::ChangeMap(FString name)
 {
-	if (!inVR) //If not in VR
+	//if (!inVR) //If not in VR
 		spawnLoc.Z += 125; //Increase the height of the box to be at the camera height
 
 	AFadeOutTravelCube* newCube = GetWorld()->SpawnActor<AFadeOutTravelCube>(AFadeOutTravelCube::StaticClass(), spawnLoc, FRotator(0.0f)); //Spawn the travel cube
 	newCube->mapName = name;
 	if(name != "ResultsMap") // If we aren't going to the results map
 		SetCurrentAction("TRAVELING"); //Ensure no actions can occur while we are traveling
-	if (!inVR) //If not in VR
+	//if (!inVR) //If not in VR
 		spawnLoc.Z -= 125; //Reset the camera height
 	return;
 }

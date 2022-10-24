@@ -108,6 +108,15 @@ APlayerCharacter::APlayerCharacter()
 	captionWidget->SetRelativeScale3D(FVector(1.0f, .075f, .075f));
 	captionWidget->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 
+	pauseMenu = CreateDefaultSubobject<UWidgetComponent>(TEXT("3D Pause Menu"));
+	static ConstructorHelpers::FClassFinder<UUserWidget> pauseObj(TEXT("/Game/UIWidgets/PauseMenu"));
+	if (pauseObj.Succeeded())
+	{
+		pauseMenu->SetWidgetClass(pauseObj.Class);
+	}
+	pauseMenu->SetupAttachment(camera);
+	pauseMenu->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+
 	AutoPossessPlayer = EAutoReceiveInput::Player0; //Set the pawn to take input from the player
 }
 
@@ -119,7 +128,7 @@ void APlayerCharacter::BeginPlay()
 	if (GI->getInVR()) //If we are in VR
 	{
 		FVector loc = GetActorLocation(); //Get location of actor
-		loc.Z += 150; //Raise location by 150 units
+		//loc.Z += 150; //Raise location by 150 units
 		SetActorLocation(loc); //Set the location
 		UE_LOG(LogTemp, Warning, TEXT("%s"), *GI->GetCurrentAction());
 		if (GI->GetCurrentAction() == "RESULTS" || GI->GetCurrentAction() == "START") //If we're in the results room
@@ -292,3 +301,4 @@ FString APlayerCharacter::GetLookingAtText()
 {
 	return lookingAtText;
 }
+
