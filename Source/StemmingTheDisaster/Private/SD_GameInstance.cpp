@@ -42,6 +42,17 @@ void USD_GameInstance::EndSimulator()
 		results.Add(It->Key); //Add the sorted career scores to the results array. It will be referenced in the results map
 		UE_LOG(LogTemp, Warning, TEXT("%s Added to results"), *It->Key);
 	}
+	IPlatformFile& FileManager = FPlatformFileManager::Get().GetPlatformFile();
+	FString file = FPaths::ProjectConfigDir() + "savedata.csv";
+	FString stringToWrite = "\nResults\n";
+
+	UE_LOG(LogTemp, Warning, TEXT("file: %s"), *FString(file));
+	if (FFileHelper::SaveStringToFile(stringToWrite, *file, FFileHelper::EEncodingOptions::AutoDetect, &IFileManager::Get(), EFileWrite::FILEWRITE_Append)) {
+		UE_LOG(LogTemp, Warning, TEXT("SUCCESS"));
+	}
+	else {
+		UE_LOG(LogTemp, Warning, TEXT("FAILURE"));
+	}
 	return;
 }
 
@@ -90,6 +101,24 @@ bool USD_GameInstance::MakeInvestment(FString item)
 	if (invest != nullptr) //If the investment exists
 	{	
 		int cost = *invest; //store the cost of the item
+
+		IPlatformFile& FileManager = FPlatformFileManager::Get().GetPlatformFile();
+		FString file = FPaths::ProjectConfigDir() + "savedata.csv";
+		/*if (inVR) {store to local oculus quest 2 files, couldn't figure out in time
+			file = "/mnt/sdcard/StemmingFromDisaster/savedata.csv";
+		}*/
+		FString stringToWrite = item + "," + FString::FromInt(cost) + ", " + FDateTime::Now().ToString() + "\n";
+		if (!FPaths::FileExists(file)) {
+			stringToWrite = "Investments, Cost, Time\n" + stringToWrite;
+		}
+		UE_LOG(LogTemp, Warning, TEXT("file: %s"), *FString(file));
+		if (FFileHelper::SaveStringToFile(stringToWrite, *file, FFileHelper::EEncodingOptions::AutoDetect, &IFileManager::Get(), EFileWrite::FILEWRITE_Append)) {
+			UE_LOG(LogTemp, Warning, TEXT("SUCCESS"));
+		}
+		else {
+			UE_LOG(LogTemp, Warning, TEXT("FAILURE"));
+		}
+
 		if (cost <= remainingCurrency) //See if there is enough funds
 		{
 			remainingCurrency = remainingCurrency - cost; //Subtract the currency
