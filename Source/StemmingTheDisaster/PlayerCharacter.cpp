@@ -203,9 +203,10 @@ void APlayerCharacter::Tick(float DeltaTime)
 	if (!done) //If not done yet
 	{
 		float time = GI->getRemainingTime(); //Get the remaining time
+		int currency = GI->getCurrencyRemaining(); //Get the remaining currency
 		time -= DeltaTime; //Subtract the delta time from it
 		GI->setRemainingTime(time); //Set the new time
-		if (time <= 0.0f) //If no more time remains
+		if (time <= 0.0f || currency < 100000) //If no more time remains or cannot invest anymore
 		{
 			done = true; //Then we are done
 			GI->SetCurrentAction("DONE"); //Sets current action to done
@@ -216,9 +217,10 @@ void APlayerCharacter::Tick(float DeltaTime)
 	else if (GI->GetCurrentAction() == "DONE")
 	{
 		float time = GI->getRemainingTime(); //Get the remaining time
+		int currency = GI->getCurrencyRemaining(); // Get remaining currency
 		time -= DeltaTime; //Subtract the delta time from it
 		GI->setRemainingTime(time); //Set the new time
-		if (time <= 0.0f) //If no more time remains
+		if (time <= 0.0f || currency < 100000) //If no more time remains or cannot invest anymore
 		{
 			GI->SetCurrentAction("RESULTS"); //Set proper action
 			GI->ChangeMap("ResultsMap"); //Go to results map
