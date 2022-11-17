@@ -220,7 +220,7 @@ void APlayerCharacter::Tick(float DeltaTime)
 		int currency = GI->getCurrencyRemaining(); // Get remaining currency
 		time -= DeltaTime; //Subtract the delta time from it
 		GI->setRemainingTime(time); //Set the new time
-		if (time <= 0.0f || currency < 100000) //If no more time remains or cannot invest anymore
+		if (time <= 0.0f) //If no more time remains
 		{
 			GI->SetCurrentAction("RESULTS"); //Set proper action
 			GI->ChangeMap("ResultsMap"); //Go to results map
