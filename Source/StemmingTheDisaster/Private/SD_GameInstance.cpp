@@ -165,6 +165,7 @@ void USD_GameInstance::ChangeMap(FString name)
 		SetCurrentAction("TRAVELING"); //Ensure no actions can occur while we are traveling
 	//if (!inVR) //If not in VR
 		spawnLoc.Z -= 125; //Reset the camera height
+	currentMap = name;
 	return;
 }
 

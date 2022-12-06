@@ -46,6 +46,9 @@ class STEMMINGTHEDISASTER_API USD_GameInstance : public UGameInstance
 		TArray <FString> travelableMaps; //array of all maps that can be traveled to
 
 		UPROPERTY(VisibleAnywhere)
+		FString currentMap = ""; //The name of the map that is currently loaded
+
+		UPROPERTY(VisibleAnywhere)
 		TArray<FString> alreadyInvested; //Array of every item that has already been invested in
 
 		UPROPERTY(VisibleAnywhere)

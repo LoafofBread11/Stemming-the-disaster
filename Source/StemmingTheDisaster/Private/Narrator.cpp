@@ -181,6 +181,7 @@ void ANarrator::CreateTravelMenu() {
 	else
 		myRot.Yaw -= 225.0f; //Separated as to not loop over euler angles, keep it from 0 - 360
 	int i = 0;
+	int j = 0;
 
 	AButtonMain* newBackButton = GetWorld()->SpawnActor<ABackButton>(ABackButton::StaticClass(), FVector(myLoc.X, myLoc.Y, baseZ - 15.0f), myRot);   // Spawn newBackButton actor for ABackButton
 
@@ -192,16 +193,20 @@ void ANarrator::CreateTravelMenu() {
 
 
 	for (i = 0; i < GI->travelableMaps.Num(); i++) {   // Iterate through travelableMaps array
-		AButtonMain* newButton = GetWorld()->SpawnActor<ADestinationButton>(ADestinationButton::StaticClass(), FVector(myLoc.X, myLoc.Y, baseZ + 15.0f + (i * 30.0f)), myRot);   // Spawn newButton actor for ADestinationButton
-		
-		newButton->SetActorScale3D(FVector(0.5f, 0.25f, 0.25f));   // Modify newButton scale
-		newButton->setScale(); //Normalize scale within the button
-		newButton->setText(FText::FromString(GI->mapNameLookup(GI->travelableMaps[i])));   // Set newButton text
+		if (GI->travelableMaps[i] != GI->currentMap) { // Don't create button for map player is already on
+			AButtonMain* newButton = GetWorld()->SpawnActor<ADestinationButton>(ADestinationButton::StaticClass(), FVector(myLoc.X, myLoc.Y, baseZ + 15.0f + (j * 30.0f)), myRot);   // Spawn newButton actor for ADestinationButton
 
-		ADestinationButton* DB = Cast<ADestinationButton>(newButton);   // Cast base button to destination
-		DB->mapName = GI->travelableMaps[i];   // Set mapName for DB
+			newButton->SetActorScale3D(FVector(0.5f, 0.25f, 0.25f));   // Modify newButton scale
+			newButton->setScale(); //Normalize scale within the button
+			newButton->setText(FText::FromString(GI->mapNameLookup(GI->travelableMaps[i])));   // Set newButton text
 
-		buttons.Add(newButton);   // Add newButton to buttons array
+			ADestinationButton* DB = Cast<ADestinationButton>(newButton);   // Cast base button to destination
+			DB->mapName = GI->travelableMaps[i];   // Set mapName for DB
+
+			buttons.Add(newButton);   // Add newButton to buttons array
+
+			j++;
+		}
 	}
 }
 
