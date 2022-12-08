@@ -28,6 +28,9 @@ class STEMMINGTHEDISASTER_API USD_GameInstance : public UGameInstance
 		FString interactableName = ""; //The name of an interactable currently being displayed, referenced by UI
 
 		UPROPERTY(VisibleAnywhere)
+			FString currentMap = ""; //The name of the map that is currently loaded
+
+		UPROPERTY(VisibleAnywhere)
 		TMap <FString, int> careerPathScores; //scores of all the investments, known as scoreList in LucidChart
 
 		UPROPERTY(VisibleAnywhere)
@@ -44,9 +47,6 @@ class STEMMINGTHEDISASTER_API USD_GameInstance : public UGameInstance
 
 		UPROPERTY(VisibleAnywhere)
 		TArray <FString> travelableMaps; //array of all maps that can be traveled to
-
-		UPROPERTY(VisibleAnywhere)
-		FString currentMap = ""; //The name of the map that is currently loaded
 
 		UPROPERTY(VisibleAnywhere)
 		TArray<FString> alreadyInvested; //Array of every item that has already been invested in
